@@ -93,8 +93,18 @@ alias bks="brew cask search"
 alias bki="brew cask install"
 alias bku="brew cask uninstall"
 
-alias rmr="rm -r"
+alias rmr="sudo rm -r"
 
 alias n="npm"
 alias ni="npm install"
 export PATH=/usr/local/bin:$PATH
+alias iftop="/usr/local/Cellar/iftop/1.0pre4/sbin/./iftop"
+
+
+####################################################
+alias sshyc="ssh yc@121.40.61.76"
+alias sshubu="ssh akatsuki@10.211.55.8"
+alias sshqa="ssh akatsukiliu@80.242.18.243"
+alias sshprod="ssh akatsukiliu@80.242.17.226"
+alias sshdev="ssh akatsukiliu@10.211.55.6"
+alias sshubb="ssh akatsuki@10.211.55.9"
