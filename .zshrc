@@ -103,8 +103,8 @@ alias iftop="/usr/local/Cellar/iftop/1.0pre4/sbin/./iftop"
 
 ####################################################
 alias sshyc="ssh yc@121.40.61.76"
-alias sshubu="ssh akatsuki@10.211.55.8"
 alias sshqa="ssh akatsukiliu@80.242.18.243"
 alias sshprod="ssh akatsukiliu@80.242.17.226"
-alias sshdev="ssh akatsukiliu@10.211.55.6"
-alias sshubb="ssh akatsuki@10.211.55.9"
+alias sshdev="ssh akatsukiliu@10.211.55.17"
+alias sshubb="ssh akatsuki@10.211.55.11"
+alias sshixo="ssh liuakat@10.254.20.42"
