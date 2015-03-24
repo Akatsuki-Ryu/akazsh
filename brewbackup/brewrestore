@@ -1,0 +1,37 @@
+#!/bin/bash
+
+failed_items=""
+function install_package() {
+echo EXECUTING: brew install $1 $2
+brew install $1 $2
+[ $? -ne 0 ] && $failed_items="$failed_items $1" # package failed to install.
+}
+brew tap caskroom/cask
+brew tap homebrew/php
+brew tap homebrew/versions
+install_package brew-cask ''
+install_package fontconfig ''
+install_package freetype ''
+install_package gd ''
+install_package gdbm ''
+install_package icu4c ''
+install_package iftop ''
+install_package jpeg ''
+install_package libimobiledevice ''
+install_package libplist ''
+install_package libpng ''
+install_package libtasn1 ''
+install_package libtiff ''
+install_package libusb ''
+install_package libxml2 ''
+install_package netpbm ''
+install_package node ''
+install_package openssl ''
+install_package python ''
+install_package readline ''
+install_package sqlite ''
+install_package usbmuxd ''
+install_package vnstat ''
+install_package wget ''
+install_package youtube-dl ''
+[ ! -z $failed_items ] && echo The following items were failed to install: && echo $failed_items
