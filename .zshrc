@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="tjkirch"
 
 #config for the libmobiledevice log
 export DYLD_LIBRARY_PATH=/Users/akatsuki/libmobiledevice/:$DYLD_LIBRARY_PATH
@@ -83,7 +83,7 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 # Example aliases
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
-alias bup="brew update && bk update && b upgrade"
+alias bup="brew update && bk update && b upgrade --all"
 alias b="brew"
 alias bi="brew install"
 alias bu="brew uninstall"
@@ -98,13 +98,13 @@ alias rmr="sudo rm -r"
 alias n="npm"
 alias ni="npm install"
 export PATH=/usr/local/bin:$PATH
-alias iftop="/usr/local/Cellar/iftop/1.0pre4/sbin/./iftop"
+alias iftop="sudo /usr/local/Cellar/iftop/1.0pre4/sbin/./iftop"
 
 
 ####################################################
 alias sshyc="ssh yc@121.40.61.76"
 alias sshqa="ssh akatsukiliu@80.242.18.243"
 alias sshprod="ssh akatsukiliu@80.242.17.226"
-alias sshdev="ssh akatsukiliu@10.211.55.4"
+alias sshdev="ssh akatsukiliu@10.211.55.6"
 alias sshubb="ssh akatsuki@10.211.55.11"
 alias sshixo="ssh liuakat@10.254.20.42"
