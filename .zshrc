@@ -109,5 +109,7 @@ alias sshdev="ssh akatsukiliu@10.211.55.6"
 alias sshubb="ssh akatsuki@10.211.55.11"
 alias sshixo="ssh liuakat@10.254.20.42"
 alias sshhome="ssh akatsuki@82.130.43.149"
+alias sshkelly="ssh kelly@73.15.216.167"
+
 
 
