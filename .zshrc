@@ -102,9 +102,9 @@ alias ni="npm install"
 export PATH=/usr/local/bin:$PATH
 alias iftop="sudo /usr/local/Cellar/iftop/1.0pre4/sbin/./iftop"
 
-alias api="apt-get install"
-alias apup="apt-get update"
-alias apu="apt-get uninstall"
+alias api="sudo apt-get install"
+alias apup="sudo apt-get update"
+alias apu="sudo apt-get uninstall"
 
 
 ####################################################
