@@ -94,11 +94,17 @@ alias bki="brew cask install"
 alias bku="brew cask uninstall"
 
 alias rmr="sudo rm -r"
+alias zipsp="zip -r -s 15m zip.zip "
+
 
 alias n="npm"
 alias ni="npm install"
 export PATH=/usr/local/bin:$PATH
 alias iftop="sudo /usr/local/Cellar/iftop/1.0pre4/sbin/./iftop"
+
+alias api="apt-get install"
+alias apup="apt-get update"
+alias apu="apt-get uninstall"
 
 
 ####################################################
@@ -112,4 +118,4 @@ alias sshhome="ssh akatsuki@82.130.43.149"
 alias sshkelly="ssh kelly@73.15.216.167"
 
 
-
+###################################
