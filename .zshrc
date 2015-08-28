@@ -102,15 +102,16 @@ alias ni="npm install"
 export PATH=/usr/local/bin:$PATH
 alias iftop="sudo /usr/local/Cellar/iftop/1.0pre4/sbin/./iftop"
 
-alias api="sudo apt-get install"
-alias apup="sudo apt-get update"
-alias apu="sudo apt-get uninstall"
+alias api="apt-get install"
+alias apup="apt-get update"
+alias apu="apt-get uninstall"
 
 
 ####################################################
 alias sshyc="ssh yc@121.40.61.76"
-alias sshqa="ssh akatsukiliu@80.242.18.243"
+alias sshqa="ssh akatsukiliu@10.5.115.126"
 alias sshprod="ssh akatsukiliu@80.242.17.226"
+alias sshqaold="ssh akatsukiliu@80.242.18.243"
 alias sshdev="ssh akatsukiliu@10.211.55.6"
 alias sshubb="ssh akatsuki@10.211.55.11"
 alias sshixo="ssh liuakat@10.254.20.42"
