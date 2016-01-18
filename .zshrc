@@ -95,6 +95,8 @@ alias bku="brew cask uninstall"
 
 alias rmr="sudo rm -r"
 alias zipsp="zip -r -s 15m zip.zip "
+alias spotrip="spotify-ripper -u akatsuki_ryu -p liuxiaofeng "
+
 
 
 alias n="npm"
