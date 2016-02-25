@@ -13,7 +13,6 @@ brew tap homebrew/versions
 install_package archey ''
 install_package atk ''
 install_package autoconf ''
-install_package brew-cask ''
 install_package cairo ''
 install_package cmake ''
 install_package cmatrix ''
