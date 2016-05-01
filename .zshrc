@@ -118,7 +118,7 @@ alias sshdev="ssh akatsukiliu@10.211.55.6"
 alias sshubb="ssh akatsuki@10.211.55.11"
 alias sshixo="ssh liuakat@10.254.20.42"
 alias sshhome="ssh akatsuki@82.130.43.139"
-alias sshkelly="ssh kelly@73.15.216.167"
+alias android="/Users/akatsuki/Library/Android/sdk/tools/android"
 
 
 ###################################
@@ -126,3 +126,5 @@ alias sshkelly="ssh kelly@73.15.216.167"
 alias sshaaltohtml="ssh -L 8080:wwwproxy.hut.fi:80 liux2@kosh.aalto.fi"
 alias sshaaltoall="ssh -D8080 liux2@kosh.aalto.fi"
 export PATH="/usr/local/sbin:$PATH"
+
+
