@@ -88,17 +88,21 @@ alias b="brew"
 alias bi="brew install"
 alias bu="brew uninstall"
 alias bs="brew search"
+alias bl="brew list"
 alias bk="brew cask"
 alias bks="brew cask search"
 alias bki="brew cask install"
 alias bku="brew cask uninstall"
+alias bkl="brew cask list"
 
+#########################system level
 alias rmr="sudo rm -r"
 alias zipsp="zip -r -s 15m zip.zip "
+alias d="pwd"
 alias spotrip="spotify-ripper -u akatsuki_ryu -p liuxiaofeng "
 
 
-
+#################################applications
 alias n="npm"
 alias ni="npm install"
 export PATH=/usr/local/bin:$PATH
