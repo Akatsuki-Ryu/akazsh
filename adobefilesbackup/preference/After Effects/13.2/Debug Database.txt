@@ -1,0 +1,56 @@
+AE.IncludeReverseFudgeInLayerStartTime	true	true
+AEDebugDatabaseVersion	2	0
+AEResolveQTDataRefs	true	
+AddTimestampToLogFileNames	false	false
+AddUTCTimestampToTraces	false	false
+AllowDynamicLinkToOwnProjectType	false	false
+AnywhereSupported	true	true
+CodeProfiler_AutoStart	false	false
+ConsiderTimeStepForActiveLayersInGuid	true	true
+CreateLogFilesThatDoNotExist	false	false
+DS.DisablePixelFormatShaders	false	false
+DS.ForceCPUOnly	false	false
+DrawCacheMarksCursor	false	false
+DvaMarshalRPCLogging	false	false
+DynamicLinkAutoQuit	true	true
+DynamicLinkVideoRenderInfinite	false	false
+EnableCacheWorkAreaInBackground2	true	true
+EnbableSmallBlockAllocatorForES	true	true
+ExporterQT.DNxHDNativeSupportEnabled	false	false
+IgnoreOpenGLSniffer	false	false
+InitMediaCore2	true	true
+LegacyQTCodecsAndGamma	false	
+LogTimeInTicks	true	true
+MC.AudioRenderer.ComplexityBeforeRender	200	200
+MFDiskCacheManager.DefaultFreeSpacePercentagePerVolume	10	10
+MFDiskCacheManager.DiskSweepInterval	600000	600000
+ML.EnableDiskCache	false	false
+ML.LoadTestingPluginsAtStartup	false	false
+ML.MaxPlaybackSpeed	32	32
+ML.UseDVAAudioDeviceEngine	false	false
+MPSelfLinkLog	false	false
+MaxLogSize	0	0
+MediaCoreAsyncFrameCount3	10	10
+MemoryAccountDirect2	true	true
+MemoryFudgeBuffer2	262144000	262144000
+MemoryYoYoLog	false	false
+QT.DisableQuickTime32	false	false
+QT.EnableNativeExports	true	true
+QT.ForceReferenceMoviesToImporterQuickTime	false	false
+QT32ServerManager.StartupTimeout	30000	30000
+REDRocketCompletelyDisabled	false	false
+REDRocketMaximumNumberOfCardsToUse	0	0
+SimulateRotoBrushLowMemory	false	false
+SpecialColorForDiskMemCachedFrames3	false	false
+Sync Settings Disabled	false	false
+SyncServiceStaging	false	false
+TraceAsync	false	false
+TraceSyslog		
+UseMacClientStorageUploadAPI	false	false
+UseOGLSwapBuffer	true	true
+UseSWFWelcomeScreen	false	false
+VariableFeatherDebugCornerAngles	false	false
+VirtualAllocFrames	true	true
+VirtualAllocMinSizeInK3	300	300
+enabledynamiclink2	true	true
+showAllParamsInAMEDialog	false	false

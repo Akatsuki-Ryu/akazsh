@@ -1,0 +1,85 @@
+<?xml version='1.0'?>
+<prop.map version='4'>
+<prop.list>
+<prop.pair>
+<key>AppSettings</key>
+<prop.list>
+<prop.pair>
+<key>PauseCameraAndMicDuringPlaybackEnabled</key>
+<true/>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>AudioDeviceSettingsSection</key>
+<prop.list>
+<prop.pair>
+<key>AudioDeviceClassIdentifier</key>
+<int type='unsigned' size='32'>0</int>
+</prop.pair>
+<prop.pair>
+<key>AudioDeviceIOSettings</key>
+<ustring></ustring>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>AudioSettings</key>
+<prop.list>
+<prop.pair>
+<key>AudioInputEnabled</key>
+<true/>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>CameraSettings</key>
+<prop.list>
+<prop.pair>
+<key>CameraInput</key>
+<true/>
+</prop.pair>
+<prop.pair>
+<key>LastCameraIndex</key>
+<int type='signed' size='32'>0</int>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>FirstLaunches</key>
+<prop.list>
+<prop.pair>
+<key>First Launch 1.0.2</key>
+<false/>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>MRUProjects v20</key>
+<prop.list>
+<prop.pair>
+<key>MRU1</key>
+<string>/Users/akatsuki/Documents/Adobe/Character Animator/Preview/Getting Started Project (Preview 2)</string>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>RecordStageSettings</key>
+<prop.list>
+<prop.pair>
+<key>LastSavePath</key>
+<string>/Users/akatsuki/Desktop</string>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>__eXoPrivateData__</key>
+<prop.list>
+<prop.pair>
+<key>sLastSetWorkspace</key>
+<ustring>Default Workspace</ustring>
+</prop.pair>
+</prop.list>
+</prop.pair>
+</prop.list>
+</prop.map>

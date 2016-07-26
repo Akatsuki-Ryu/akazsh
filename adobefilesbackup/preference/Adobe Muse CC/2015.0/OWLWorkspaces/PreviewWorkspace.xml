@@ -1,0 +1,64 @@
+<OWLWorkspace>
+<OWLWorkspaceProps>
+<prop.list>
+</prop.list>
+</OWLWorkspaceProps>
+<OWLWorkspaceBookmark bookmarkdata='workspacedata-is-in-CDATA-section'>
+<![CDATA[<workspace version="1">
+	<dock anchor="top" content="control-bar" is-closed="false">
+		<control-bar id="1" origin="-15 -2" size="1778 32" is-closed="false" app-data="ControlStrip"/>
+	</dock>
+	<dock anchor="bottom" content="control-bar" is-closed="true"/>
+	<dock anchor="left" content="palette toolbar" is-closed="false">
+		<toolbar id="2" size-variant="vertical-narrow" is-closed="true" app-data="Toolbar"/>
+	</dock>
+	<dock anchor="right" content="palette toolbar" is-closed="false">
+		<tab-pane mode="icon" preferred-iconic-length="136" layout-mode="auto-flow">
+			<tab-group active-palette="3" is-closed="true">
+				<palette id="3" is-closed="false" preferred-unconstrained-size="228 323" preferred-constrained-size="228 323" current-state="1" is-minimized="false" app-data="DVATextPalette" host-cached-sizes="false"/>
+				<palette id="4" is-closed="false" preferred-unconstrained-size="228 243" preferred-constrained-size="228 169" current-state="1" is-minimized="false" app-data="DVAColorPalette" host-cached-sizes="false"/>
+			</tab-group>
+			<tab-group active-palette="5" is-closed="true">
+				<palette id="5" is-closed="false" preferred-unconstrained-size="228 128" preferred-constrained-size="228 128" current-state="1" is-minimized="false" app-data="DVASwatchPalette" host-cached-sizes="false"/>
+			</tab-group>
+			<tab-group active-palette="6" is-closed="true">
+				<palette id="6" is-closed="false" preferred-unconstrained-size="228 311" preferred-constrained-size="228 311" current-state="1" is-minimized="false" app-data="WidgetsLibraryPalette" host-cached-sizes="false"/>
+				<palette id="7" is-closed="false" preferred-unconstrained-size="228 207" preferred-constrained-size="228 207" current-state="1" is-minimized="false" app-data="StatesPalette" host-cached-sizes="false"/>
+				<palette id="8" is-closed="false" preferred-unconstrained-size="228 264" preferred-constrained-size="228 264" current-state="1" is-minimized="false" app-data="DVAScrollEffectsPalette" host-cached-sizes="false"/>
+			</tab-group>
+			<tab-group active-palette="9" is-closed="true">
+				<palette id="9" is-closed="false" preferred-unconstrained-size="228 177" preferred-constrained-size="228 177" current-state="1" is-minimized="false" app-data="LayersPalette" host-cached-sizes="false"/>
+				<palette id="10" is-closed="false" preferred-unconstrained-size="228 234" preferred-constrained-size="228 234" current-state="1" is-minimized="false" app-data="UserLibraryPalette" host-cached-sizes="false"/>
+				<palette id="11" is-closed="false" preferred-unconstrained-size="228 177" preferred-constrained-size="228 169" current-state="1" is-minimized="false" app-data="LinksPalette" host-cached-sizes="false"/>
+			</tab-group>
+			<tab-group active-palette="12" is-closed="true">
+				<palette id="12" is-closed="false" preferred-unconstrained-size="228 131" preferred-constrained-size="228 131" current-state="1" is-minimized="false" app-data="CharacterStylePalette" host-cached-sizes="false"/>
+				<palette id="13" is-closed="false" preferred-unconstrained-size="228 131" preferred-constrained-size="228 131" current-state="1" is-minimized="false" app-data="ParagraphStylePalette" host-cached-sizes="false"/>
+				<palette id="14" is-closed="false" preferred-unconstrained-size="228 131" preferred-constrained-size="228 131" current-state="1" is-minimized="false" app-data="GraphicStylePalette" host-cached-sizes="false"/>
+				<palette id="15" is-closed="false" preferred-unconstrained-size="228 131" preferred-constrained-size="228 131" current-state="1" is-minimized="false" app-data="ListStylePalette" host-cached-sizes="false"/>
+			</tab-group>
+			<tab-group active-palette="16" is-closed="true">
+				<palette id="16" is-closed="false" preferred-unconstrained-size="228 128" preferred-constrained-size="228 128" current-state="1" is-minimized="false" app-data="DVAGlyphsPalette" host-cached-sizes="false"/>
+				<palette id="17" is-closed="false" preferred-unconstrained-size="228 185" preferred-constrained-size="228 185" current-state="1" is-minimized="false" app-data="DVAListsPalette" host-cached-sizes="false"/>
+				<palette id="18" is-closed="false" preferred-unconstrained-size="228 120" preferred-constrained-size="228 120" current-state="1" is-minimized="false" app-data="DVATextWrapPalette" host-cached-sizes="false"/>
+			</tab-group>
+			<tab-group active-palette="19" is-closed="true">
+				<palette id="19" is-closed="false" preferred-unconstrained-size="228 158" preferred-constrained-size="228 158" current-state="1" is-minimized="false" app-data="DVAAlignPalette" host-cached-sizes="false"/>
+				<palette id="20" is-closed="false" preferred-unconstrained-size="228 117" preferred-constrained-size="228 117" current-state="1" is-minimized="false" app-data="DVASpacingPalette" host-cached-sizes="false"/>
+				<palette id="21" is-closed="false" preferred-unconstrained-size="228 93" preferred-constrained-size="228 93" current-state="1" is-minimized="false" app-data="DVATransformPalette" host-cached-sizes="false"/>
+				<palette id="22" is-closed="false" preferred-unconstrained-size="228 200" preferred-constrained-size="228 200" current-state="1" is-minimized="false" app-data="DVAEffectsPalette" host-cached-sizes="false"/>
+				<palette id="23" is-closed="false" preferred-unconstrained-size="228 156" preferred-constrained-size="228 156" current-state="1" is-minimized="false" app-data="DVAStrokePalette" host-cached-sizes="false"/>
+				<palette id="24" is-closed="false" preferred-unconstrained-size="228 233" preferred-constrained-size="228 233" current-state="1" is-minimized="false" app-data="DVAFillPalette" host-cached-sizes="false"/>
+			</tab-group>
+			<tab-group active-palette="25" is-closed="true">
+				<palette id="25" is-closed="false" preferred-unconstrained-size="228 112" preferred-constrained-size="228 169" current-state="1" is-minimized="false" app-data="PreflightPalette" host-cached-sizes="false"/>
+			</tab-group>
+			<tab-group active-palette="26" is-closed="true">
+				<palette id="26" is-closed="false" preferred-unconstrained-size="228 200" preferred-constrained-size="228 200" current-state="1" is-minimized="false" app-data="DVAContentPalette" host-cached-sizes="false"/>
+			</tab-group>
+		</tab-pane>
+	</dock>
+</workspace>
+]]>
+</OWLWorkspaceBookmark>
+</OWLWorkspace>

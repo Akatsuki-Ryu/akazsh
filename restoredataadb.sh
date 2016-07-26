@@ -15,4 +15,14 @@ rm -r .*
 cd ~/Library/Preferences/Adobe
 rm -r .*
 
+cd ~/akazsh
+cd adobefilesbackup
+cd Adobe
+sudo scp -r * /Library/Application\ Support/Adobe
+cd ..
+cd caches
+sudo scp -r .* /Library/Caches
+cd ..
+cd preference
+sudo scp -r * ~/Library/Preferences/Adobe
 

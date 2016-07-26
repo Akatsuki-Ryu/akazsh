@@ -1,0 +1,159 @@
+<?xml version='1.0'?>
+<prop.map version='4'>
+<prop.list>
+<prop.pair>
+<key>DialogInfo</key>
+<prop.list>
+<prop.pair>
+<key>Camera</key>
+<string>&lt;prop.list&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;DialogID&lt;/key&gt;
+&lt;ustring&gt;Camera&lt;/ustring&gt;
+&lt;/prop.pair&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;Position&lt;/key&gt;
+&lt;array&gt;
+&lt;array.type&gt;&lt;int type=&apos;signed&apos; size=&apos;32&apos;/&gt;&lt;/array.type&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;-1645&lt;/int&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;-58&lt;/int&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;0&lt;/int&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;0&lt;/int&gt;
+&lt;/array&gt;
+&lt;/prop.pair&gt;
+&lt;/prop.list&gt;
+</string>
+</prop.pair>
+<prop.pair>
+<key>ChooseLayer</key>
+<string>&lt;prop.list&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;DialogID&lt;/key&gt;
+&lt;ustring&gt;ChooseLayer&lt;/ustring&gt;
+&lt;/prop.pair&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;Position&lt;/key&gt;
+&lt;array&gt;
+&lt;array.type&gt;&lt;int type=&apos;signed&apos; size=&apos;32&apos;/&gt;&lt;/array.type&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;-1474&lt;/int&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;76&lt;/int&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;0&lt;/int&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;0&lt;/int&gt;
+&lt;/array&gt;
+&lt;/prop.pair&gt;
+&lt;/prop.list&gt;
+</string>
+</prop.pair>
+<prop.pair>
+<key>ChooseLayerAdv</key>
+<string>&lt;prop.list&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;DialogID&lt;/key&gt;
+&lt;ustring&gt;ChooseLayerAdv&lt;/ustring&gt;
+&lt;/prop.pair&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;Position&lt;/key&gt;
+&lt;array&gt;
+&lt;array.type&gt;&lt;int type=&apos;signed&apos; size=&apos;32&apos;/&gt;&lt;/array.type&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;-1498&lt;/int&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;30&lt;/int&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;0&lt;/int&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;0&lt;/int&gt;
+&lt;/array&gt;
+&lt;/prop.pair&gt;
+&lt;/prop.list&gt;
+</string>
+</prop.pair>
+<prop.pair>
+<key>CompSettings</key>
+<string>&lt;prop.list&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;DialogID&lt;/key&gt;
+&lt;ustring&gt;CompSettings&lt;/ustring&gt;
+&lt;/prop.pair&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;Position&lt;/key&gt;
+&lt;array&gt;
+&lt;array.type&gt;&lt;int type=&apos;signed&apos; size=&apos;32&apos;/&gt;&lt;/array.type&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;-1551&lt;/int&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;-90&lt;/int&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;0&lt;/int&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;0&lt;/int&gt;
+&lt;/array&gt;
+&lt;/prop.pair&gt;
+&lt;/prop.list&gt;
+</string>
+</prop.pair>
+<prop.pair>
+<key>TipOfDay</key>
+<string>&lt;prop.list&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;DialogID&lt;/key&gt;
+&lt;ustring&gt;TipOfDay&lt;/ustring&gt;
+&lt;/prop.pair&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;Position&lt;/key&gt;
+&lt;array&gt;
+&lt;array.type&gt;&lt;int type=&apos;signed&apos; size=&apos;32&apos;/&gt;&lt;/array.type&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;-1182&lt;/int&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;174&lt;/int&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;0&lt;/int&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;0&lt;/int&gt;
+&lt;/array&gt;
+&lt;/prop.pair&gt;
+&lt;/prop.list&gt;
+</string>
+</prop.pair>
+<prop.pair>
+<key>WarningDialog</key>
+<string>&lt;prop.list&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;DialogID&lt;/key&gt;
+&lt;ustring&gt;WarningDialog&lt;/ustring&gt;
+&lt;/prop.pair&gt;
+&lt;prop.pair&gt;
+&lt;key&gt;Position&lt;/key&gt;
+&lt;array&gt;
+&lt;array.type&gt;&lt;int type=&apos;signed&apos; size=&apos;32&apos;/&gt;&lt;/array.type&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;-1511&lt;/int&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;214&lt;/int&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;0&lt;/int&gt;
+&lt;int type=&apos;signed&apos; size=&apos;32&apos;&gt;0&lt;/int&gt;
+&lt;/array&gt;
+&lt;/prop.pair&gt;
+&lt;/prop.list&gt;
+</string>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>MonitorInfo</key>
+<prop.list>
+<prop.pair>
+<key>Monitor-0</key>
+<array>
+<array.type><int type='signed' size='32'/></array.type>
+<int type='signed' size='32'>0</int>
+<int type='signed' size='32'>23</int>
+<int type='signed' size='32'>1395</int>
+<int type='signed' size='32'>877</int>
+</array>
+</prop.pair>
+<prop.pair>
+<key>Monitor-1</key>
+<array>
+<array.type><int type='signed' size='32'/></array.type>
+<int type='signed' size='32'>-2560</int>
+<int type='signed' size='32'>-517</int>
+<int type='signed' size='32'>2560</int>
+<int type='signed' size='32'>1417</int>
+</array>
+</prop.pair>
+<prop.pair>
+<key>NumMonitors</key>
+<int type='unsigned' size='32'>2</int>
+</prop.pair>
+</prop.list>
+</prop.pair>
+</prop.list>
+</prop.map>

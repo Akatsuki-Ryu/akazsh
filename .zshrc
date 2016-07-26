@@ -121,7 +121,7 @@ alias sshqaold="ssh akatsukiliu@80.242.18.243"
 alias sshdev="ssh akatsukiliu@10.211.55.6"
 alias sshubb="ssh akatsuki@10.211.55.11"
 alias sshixo="ssh liuakat@10.254.20.42"
-alias sshhome="ssh akatsuki@82.130.43.139"
+alias sshhome="ssh akatsuki@82.130.43.149"
 alias android="/Users/akatsuki/Library/Android/sdk/tools/android"
 
 
@@ -132,3 +132,5 @@ alias sshaaltoall="ssh -D8080 liux2@kosh.aalto.fi"
 export PATH="/usr/local/sbin:$PATH"
 
 
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

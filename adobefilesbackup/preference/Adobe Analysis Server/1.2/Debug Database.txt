@@ -1,0 +1,9 @@
+AddUTCTimestampToTraces	false	false
+Analysis Multithreaded	true	true
+AnalysisMaxProcessingThreads(-1:half,0:all)	-1	-1
+AnalysisMaxSimultaneousJobThreads(-1:half,0:all)	-1	-1
+CreateLogFilesThatDoNotExist	false	false
+DebugLaunchWaitInMS	0	0
+DvaMarshalRPCLogging	false	false
+LogTimeInTicks	true	true
+WriteAnalysisServerTrackFile	false	false

@@ -1,0 +1,4 @@
+AGMDrawbotMaxThreads(-1:half,0:all)	-1	-1
+AGMDrawbotMinThreadHeight	50	50
+AGMDrawbotVisualizeThreads	false	false
+CodeProfiler_AutoStart	false	false

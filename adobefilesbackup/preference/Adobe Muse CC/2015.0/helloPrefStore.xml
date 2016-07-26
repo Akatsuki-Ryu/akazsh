@@ -1,0 +1,14 @@
+<prop.list>
+<prop.pair>
+<key>helloExperienceGroup</key>
+<int type='signed' size='32'>1</int>
+</prop.pair>
+<prop.pair>
+<key>helloPrefVersion</key>
+<ustring>2015.0</ustring>
+</prop.pair>
+<prop.pair>
+<key>helloUIDontShowAgain</key>
+<false/>
+</prop.pair>
+</prop.list>

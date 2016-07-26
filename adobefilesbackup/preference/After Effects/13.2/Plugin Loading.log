@@ -1,0 +1,160 @@
+-------- Plugin Loading Log ------------
+
+Loading from root path: /Applications/Adobe After Effects CC 2014/Adobe After Effects CC 2014.app/Contents/Plug-ins/(MediaCore)/
+Scanning for the following file types: *.bundle, *.plugin, *.prmp, *.vst
+
+Scanning /Applications/Adobe After Effects CC 2014/Adobe After Effects CC 2014.app/Contents/Plug-ins/(MediaCore)/ and sub-directories
+
+Loading /Applications/Adobe After Effects CC 2014/Adobe After Effects CC 2014.app/Contents/Plug-ins/(MediaCore)/ExporterAIFF.bundle
+The registry tells us to cache so the plugin will be loaded from the cache.
+Loading from the registry...
+The plugin was successfully loaded from the registry.
+
+Loading /Applications/Adobe After Effects CC 2014/Adobe After Effects CC 2014.app/Contents/Plug-ins/(MediaCore)/ExporterCoreAudio.bundle
+The registry tells us not to cache so the plugin will be loaded from disk.
+Loading from disk...
+This plugin was recognized by loader d3092dcf-904a-4a97-b4ca-66aed7540d57.
+
+Loading /Applications/Adobe After Effects CC 2014/Adobe After Effects CC 2014.app/Contents/Plug-ins/(MediaCore)/ExporterMP3.bundle
+The registry tells us to cache so the plugin will be loaded from the cache.
+Loading from the registry...
+The plugin was successfully loaded from the registry.
+
+Loading /Applications/Adobe After Effects CC 2014/Adobe After Effects CC 2014.app/Contents/Plug-ins/(MediaCore)/ExporterQuickTimeHost.bundle
+The registry tells us not to cache so the plugin will be loaded from disk.
+Loading from disk...
+This plugin was recognized by loader d3092dcf-904a-4a97-b4ca-66aed7540d57.
+
+Loading /Applications/Adobe After Effects CC 2014/Adobe After Effects CC 2014.app/Contents/Plug-ins/(MediaCore)/ExporterXDCAMHD.bundle
+The registry tells us to cache so the plugin will be loaded from the cache.
+Loading from the registry...
+The plugin was successfully loaded from the registry.
+The plugin was successfully loaded from the registry.
+
+Loading /Applications/Adobe After Effects CC 2014/Adobe After Effects CC 2014.app/Contents/Plug-ins/(MediaCore)/ImporterAiff.bundle
+The registry tells us to cache so the plugin will be loaded from the cache.
+Loading from the registry...
+The plugin was successfully loaded from the registry.
+
+Loading /Applications/Adobe After Effects CC 2014/Adobe After Effects CC 2014.app/Contents/Plug-ins/(MediaCore)/ImporterARRIRAW.bundle
+The registry tells us to cache so the plugin will be loaded from the cache.
+Loading from the registry...
+The plugin was successfully loaded from the registry.
+
+Loading /Applications/Adobe After Effects CC 2014/Adobe After Effects CC 2014.app/Contents/Plug-ins/(MediaCore)/ImporterASND.bundle
+The registry tells us to cache so the plugin will be loaded from the cache.
+Loading from the registry...
+The plugin was successfully loaded from the registry.
+
+Loading /Applications/Adobe After Effects CC 2014/Adobe After Effects CC 2014.app/Contents/Plug-ins/(MediaCore)/ImporterDPX.bundle
+The registry tells us to cache so the plugin will be loaded from the cache.
+Loading from the registry...
+The plugin was successfully loaded from the registry.
+
+Loading /Applications/Adobe After Effects CC 2014/Adobe After Effects CC 2014.app/Contents/Plug-ins/(MediaCore)/ImporterF65.bundle
+The registry tells us to cache so the plugin will be loaded from the cache.
+Loading from the registry...
+The plugin has a PiPL.
+The plugin was successfully loaded from the registry.
+
+Loading /Applications/Adobe After Effects CC 2014/Adobe After Effects CC 2014.app/Contents/Plug-ins/(MediaCore)/ImporterFastMPEG.bundle
+The registry tells us to cache so the plugin will be loaded from the cache.
+Loading from the registry...
+The plugin was successfully loaded from the registry.
+
+Loading /Applications/Adobe After Effects CC 2014/Adobe After Effects CC 2014.app/Contents/Plug-ins/(MediaCore)/ImporterFlash.bundle
+The registry tells us to cache so the plugin will be loaded from the cache.
+Loading from the registry...
+The plugin was successfully loaded from the registry.
+
+Loading /Applications/Adobe After Effects CC 2014/Adobe After Effects CC 2014.app/Contents/Plug-ins/(MediaCore)/ImporterFLV.bundle
+The registry tells us to cache so the plugin will be loaded from the cache.
+Loading from the registry...
+The plugin was successfully loaded from the registry.
+
+Loading /Applications/Adobe After Effects CC 2014/Adobe After Effects CC 2014.app/Contents/Plug-ins/(MediaCore)/ImporterIllustratorAE.bundle
+The registry tells us not to cache so the plugin will be loaded from disk.
+Loading from disk...
+This plugin was recognized by loader ba1058cd-0007-44e4-bf1a-0ef51307b979.
+
+Loading /Applications/Adobe After Effects CC 2014/Adobe After Effects CC 2014.app/Contents/Plug-ins/(MediaCore)/ImporterJPEG.bundle
+The registry tells us to cache so the plugin will be loaded from the cache.
+Loading from the registry...
+The plugin was successfully loaded from the registry.
+
+Loading /Applications/Adobe After Effects CC 2014/Adobe After Effects CC 2014.app/Contents/Plug-ins/(MediaCore)/ImporterMP3.bundle
+The registry tells us to cache so the plugin will be loaded from the cache.
+Loading from the registry...
+The plugin was successfully loaded from the registry.
+
+Loading /Applications/Adobe After Effects CC 2014/Adobe After Effects CC 2014.app/Contents/Plug-ins/(MediaCore)/ImporterMPEG.bundle
+The registry tells us to cache so the plugin will be loaded from the cache.
+Loading from the registry...
+The plugin was successfully loaded from the registry.
+
+Loading /Applications/Adobe After Effects CC 2014/Adobe After Effects CC 2014.app/Contents/Plug-ins/(MediaCore)/ImporterMXF.bundle
+The registry tells us to cache so the plugin will be loaded from the cache.
+Loading from the registry...
+The plugin was successfully loaded from the registry.
+
+Loading /Applications/Adobe After Effects CC 2014/Adobe After Effects CC 2014.app/Contents/Plug-ins/(MediaCore)/ImporterPhotoshopAE.bundle
+The registry tells us not to cache so the plugin will be loaded from disk.
+Loading from disk...
+This plugin was recognized by loader ba1058cd-0007-44e4-bf1a-0ef51307b979.
+
+Loading /Applications/Adobe After Effects CC 2014/Adobe After Effects CC 2014.app/Contents/Plug-ins/(MediaCore)/ImporterPNG.bundle
+The registry tells us to cache so the plugin will be loaded from the cache.
+Loading from the registry...
+The plugin was successfully loaded from the registry.
+
+Loading /Applications/Adobe After Effects CC 2014/Adobe After Effects CC 2014.app/Contents/Plug-ins/(MediaCore)/ImporterQuickTime.bundle
+The registry tells us not to cache so the plugin will be loaded from disk.
+Loading from disk...
+This plugin was recognized by loader ba1058cd-0007-44e4-bf1a-0ef51307b979.
+
+Loading /Applications/Adobe After Effects CC 2014/Adobe After Effects CC 2014.app/Contents/Plug-ins/(MediaCore)/ImporterRED.bundle
+The registry tells us to cache so the plugin will be loaded from the cache.
+Loading from the registry...
+The plugin has a PiPL.
+The plugin was successfully loaded from the registry.
+
+Loading /Applications/Adobe After Effects CC 2014/Adobe After Effects CC 2014.app/Contents/Plug-ins/(MediaCore)/ImporterTarga.bundle
+The registry tells us to cache so the plugin will be loaded from the cache.
+Loading from the registry...
+The plugin was successfully loaded from the registry.
+
+Loading /Applications/Adobe After Effects CC 2014/Adobe After Effects CC 2014.app/Contents/Plug-ins/(MediaCore)/ImporterTiff.bundle
+The registry tells us to cache so the plugin will be loaded from the cache.
+Loading from the registry...
+The plugin was successfully loaded from the registry.
+
+Loading /Applications/Adobe After Effects CC 2014/Adobe After Effects CC 2014.app/Contents/Plug-ins/(MediaCore)/ImporterWave.bundle
+The registry tells us to cache so the plugin will be loaded from the cache.
+Loading from the registry...
+The plugin was successfully loaded from the registry.
+
+Loading /Applications/Adobe After Effects CC 2014/Adobe After Effects CC 2014.app/Contents/Plug-ins/(MediaCore)/ImporterXDCAMEX.bundle
+The registry tells us to cache so the plugin will be loaded from the cache.
+Loading from the registry...
+The plugin was successfully loaded from the registry.
+
+Loading /Applications/Adobe After Effects CC 2014/Adobe After Effects CC 2014.app/Contents/Plug-ins/(MediaCore)/TransmitDesktopAudio.bundle
+The registry tells us to cache so the plugin will be loaded from the cache.
+Loading from the registry...
+The plugin was successfully loaded from the registry.
+
+Loading /Applications/Adobe After Effects CC 2014/Adobe After Effects CC 2014.app/Contents/Plug-ins/(MediaCore)/TransmitDV.bundle
+The registry tells us to cache so the plugin will be loaded from the cache.
+Loading from the registry...
+The plugin was successfully loaded from the registry.
+
+Loading /Applications/Adobe After Effects CC 2014/Adobe After Effects CC 2014.app/Contents/Plug-ins/(MediaCore)/TransmitFullScreen.bundle
+The registry tells us to cache so the plugin will be loaded from the cache.
+Loading from the registry...
+The plugin was successfully loaded from the registry.
+
+Loading from root path: /Library/Application Support/Adobe/Common/Plug-ins/7.0/MediaCore
+Scanning for the following file types: *.bundle, *.plugin, *.prmp, *.vst
+
+Scanning /Library/Application Support/Adobe/Common/Plug-ins/7.0/MediaCore and sub-directories
+

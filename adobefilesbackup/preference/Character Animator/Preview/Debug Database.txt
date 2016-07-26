@@ -1,0 +1,68 @@
+AGMDrawbot	true	true
+AGMDrawbotMaxThreads(-1:half,0:all)	-1	-1
+AGMDrawbotMinThreadHeight	50	50
+AGMDrawbotVisualizeThreads	false	false
+AddUTCTimestampToTraces	false	false
+AnalyticsEnabled	true	true
+AudioPlaybackStream::PreviewLipSyncherFilter	false	false
+CacheWarpContainers	true	true
+CameraTrackerEyeGazeApplyTemporalFiltering	true	true
+CameraTrackerEyeGazeCurrResultThresh	0.5	0.5
+CameraTrackerEyeGazeLastResultFactor	0.59999999999999998	0.59999999999999998
+CameraTrackerEyeGazeUseHeadCoords	false	false
+CameraTrackerEyeGazeUseSoftThresh	true	true
+CameraTrackerPublishDebuggingInfo	false	false
+CameraTrackerRefinePose	true	true
+CodeProfiler_AutoStart	false	false
+CreateLogFilesThatDoNotExist	false	false
+Enable Javascript Debugging	false	false
+Enable Object Tracker	false	false
+FasterCompilePNGCompression	true	true
+FasterExportPNGCompression	true	true
+FilterUtils::HardLimiterInputBoost	10	10
+FilterUtils::HardLimiterLinkChannels	true	true
+FilterUtils::HardLimiterLookahead	5	5
+FilterUtils::HardLimiterMaximumAmplitude	0	0
+FilterUtils::HardLimiterRelease	100	100
+LipSyncher::ApplyHardLimiterToInputAudio	true	true
+LipSyncher::AudioLevelThresh	-50	-50
+LipSyncher::MapPhoneProbsToVisemeProbsWithMax	true	true
+LipSyncher::MaxConsonantDurationInFrames	-1	-1
+LipSyncher::MaxSilenceDurationInFrames	-1	-1
+LipSyncher::MaxVowelDurationInFrames	-1	-1
+LipSyncher::MinConsonantDurationInFrames	6	6
+LipSyncher::MinSilenceDurationInFrames	20	20
+LipSyncher::MinVowelDurationInFrames	6	6
+LipSyncher::NumLookaheadFrames	50	50
+LipSyncher::PhoneMappingIxIySpread	0	0
+LipSyncher::PhoneMappingLSpread1	0	0
+LipSyncher::PhoneMappingLSpread2	0.300000011921	0.300000011921
+LipSyncher::PhoneMappingUxUwSpread	0	0
+LipSyncher::PublishDebuggingInfo	false	false
+LipSyncher::PublishingTimeOffsetInSeconds	0.041666666666666664	0.041666666666666664
+LipSyncher::RunLookaheadAlg	true	true
+LipSyncher::TransitionMatrixConsonantToConsonantProbability	0.0500000007451	0.0500000007451
+LipSyncher::TransitionMatrixPlosiveToSilentProbability	0	0
+LipSyncher::TransitionMatrixSelfTransitionProbability	0.75	0.75
+LipSyncher::TransitionMatrixVowelToVowelProbability	0.0500000007451	0.0500000007451
+LipSyncher::VisemeProbThresh	0.10000000149	0.10000000149
+LipSyncher::WriteLookaheadAlgOutputToFile	false	false
+LoadLuaScriptsFromSourceTreeRelease	false	false
+LogTimeInTicks	true	true
+Object Tracker Enabled	false	false
+PersistentRunningState	false	
+PrettyPrintJSON	false	false
+ProfileThisApp	false	false
+ProjectPanelShowHiddenItems	false	false
+RecoveryCountdown	0	
+Render::Display Warped Triangles	false	false
+Render::MaxExportRenderThreads(-1:half,0:all)	-1	-1
+ShowTestMenu	false	false
+Splash::SleepOnLaunch	false	false
+Use Simple Mouth Shape Classifier	true	true
+UseDescriptiveCompilerPaths	false	false
+bypassCompile	false	false
+bypassCrashDetection	false	false
+checkForMissingSetCommitName	false	false
+dvaaudiodevice.EnableTestTone	false	false
+useIncrementalMCTRebuild	true	true
