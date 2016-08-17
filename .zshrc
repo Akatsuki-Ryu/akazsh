@@ -83,6 +83,11 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 # Example aliases
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
+
+
+
+#######################################################################brew related 
+
 alias bup="brew update && bk update && b upgrade --all"
 alias b="brew"
 alias bi="brew install"
@@ -95,22 +100,26 @@ alias bki="brew cask install"
 alias bku="brew cask uninstall"
 alias bkl="brew cask list"
 
+
+
 #########################system level
 alias rmr="sudo rm -r"
 alias zipsp="zip -r -s 15m zip.zip "
 alias d="pwd"
 alias spotrip="spotify-ripper -u akatsuki_ryu -p liuxiaofeng "
+alias tmn="tmux new -s phone"
+alias tma="tmux attach -t phone"
 
 
-#################################applications
+#################################applications and linux
 alias n="npm"
 alias ni="npm install"
 export PATH=/usr/local/bin:$PATH
 alias iftop="sudo /usr/local/Cellar/iftop/1.0pre4/sbin/./iftop"
 
-alias api="apt-get install"
-alias apup="apt-get update"
-alias apu="apt-get uninstall"
+alias api="sudo apt-get install"
+alias apup="sudo apt-get update"
+alias apu="sudo apt-get uninstall"
 
 
 ####################################################
@@ -133,4 +142,3 @@ export PATH="/usr/local/sbin:$PATH"
 
 
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
