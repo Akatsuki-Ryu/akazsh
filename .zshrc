@@ -109,6 +109,7 @@ alias d="pwd"
 alias spotrip="spotify-ripper -u akatsuki_ryu -p liuxiaofeng "
 alias tmn="tmux new -s phone"
 alias tma="tmux attach -t phone"
+alias tmu="tmux kill-session -t phone"
 
 
 #################################applications and linux
