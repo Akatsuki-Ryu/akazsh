@@ -97,6 +97,7 @@ alias bl="brew list"
 alias bk="brew cask"
 alias bks="brew cask search"
 alias bki="brew cask install"
+alias bkif="brew cask install --force"
 alias bku="brew cask uninstall"
 alias bkl="brew cask list"
 
