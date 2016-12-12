@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+
+declare -i verboseMode=1
+
+usage="Usage: $0 [-h|q|v]\n
+    -h\tHelp
+    -q\tQuiet mode
+    -v\tVerbose mode"
+
+while getopts "hqv" opt;
+    do case ${opt} in
+        h ) echo -e ${usage}
+            exit 1;;
+        q ) verboseMode=0;;
+        v ) verboseMode=1;;
+    esac
+done
+shift $(($OPTIND - 1))
+
+if [[ -f ~/.karabiner.d/configuration/.pckeyboard.json ]]; then # switch to Mac
+    command cp -f ~/.karabiner.d/configuration/mackeyboard.json ~/.karabiner.d/configuration/karabiner.json
+    command mv -f ~/.karabiner.d/configuration/.pckeyboard.json ~/.karabiner.d/configuration/pckeyboard.json
+    command mv -f ~/.karabiner.d/configuration/mackeyboard.json ~/.karabiner.d/configuration/.mackeyboard.json
+    if [[ -n verboseMode ]]; then echo "Mac keyboard active in Karabiner Elements!"; fi
+elif [[ -f ~/.karabiner.d/configuration/.mackeyboard.json ]]; then # switch to PC
+    command cp -f ~/.karabiner.d/configuration/pckeyboard.json ~/.karabiner.d/configuration/karabiner.json
+    command mv -f ~/.karabiner.d/configuration/pckeyboard.json ~/.karabiner.d/configuration/.pckeyboard.json
+    command mv -f ~/.karabiner.d/configuration/.mackeyboard.json ~/.karabiner.d/configuration/mackeyboard.json
+    if [[ -n verboseMode ]]; then echo "PC keyboard active in Karabiner Elements!"; fi
+else # unknown state - default to Mac
+    command cp -f ~/.karabiner.d/configuration/mackeyboard.json ~/.karabiner.d/configuration/karabiner.json
+    command mv -f ~/.karabiner.d/configuration/mackeyboard.json ~/.karabiner.d/configuration/.mackeyboard.json
+    echo "Current state unknown - defaulting to Mac keyboard active in Karabiner Elements!"
+fi
