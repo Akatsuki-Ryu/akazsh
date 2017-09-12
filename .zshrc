@@ -133,15 +133,24 @@ alias sshdev="ssh akatsukiliu@10.211.55.6"
 alias sshubb="ssh akatsuki@10.211.55.11"
 alias sshixo="ssh liuakat@10.254.20.42"
 alias sshhome="ssh akatsuki@82.130.43.149"
-alias android="/Users/akatsuki/Library/Android/sdk/tools/android"
+##alias android="/Users/akatsuki/Library/Android/sdk/tools/android"
 alias sshxiaomi="ssh root@82.130.43.149"
 
 
 ###################################
 
+alias topp="top -o cpu"
 alias sshaaltohtml="ssh -L 8080:wwwproxy.hut.fi:80 liux2@kosh.aalto.fi"
 alias sshaaltoall="ssh -D8080 liux2@kosh.aalto.fi"
 export PATH="/usr/local/sbin:$PATH"
+alias ise="ionic serve"
+alias ira="ionic cordova run android"
+
+alias ariad="aria2c --conf-path="/Users/akatsuki/.aria2/aria2.conf" -D"
 
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
