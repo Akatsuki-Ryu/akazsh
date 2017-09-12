@@ -144,7 +144,12 @@ alias sshaaltohtml="ssh -L 8080:wwwproxy.hut.fi:80 liux2@kosh.aalto.fi"
 alias sshaaltoall="ssh -D8080 liux2@kosh.aalto.fi"
 export PATH="/usr/local/sbin:$PATH"
 alias ise="ionic serve"
+<<<<<<< HEAD
 alias ira="ionic cordova run android"
+=======
+alias ira="ionic run android"
+alias killremote="killall "Remote Desktop""
+>>>>>>> bed2359c58ee0132386c240769c75ce33e8a9807
 
 alias ariad="aria2c --conf-path="/Users/akatsuki/.aria2/aria2.conf" -D"
 
@@ -153,4 +158,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+<<<<<<< HEAD
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+=======
+>>>>>>> bed2359c58ee0132386c240769c75ce33e8a9807
