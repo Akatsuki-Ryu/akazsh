@@ -134,6 +134,7 @@ alias sshqa="ssh akatsukiliu@10.5.115.126"
 ##alias sshixo="ssh liuakat@10.254.20.42"
 alias sshhome="ssh akatsuki@82.130.43.170"
 alias sshbel="ssh -p 50022 akatsuki@82.130.43.170"
+alias sshair="ssh akatsuki@192.168.31.100"
 ##alias android="/Users/akatsuki/Library/Android/sdk/tools/android"
 alias sshxiaomi="ssh root@82.130.43.170"
 
