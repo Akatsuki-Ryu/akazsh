@@ -88,7 +88,7 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 
 #######################################################################brew related 
 
-alias bup="brew update && bk update && b upgrade --all"
+alias bup="brew update && b upgrade --all"
 alias b="brew"
 alias bi="brew install"
 alias bu="brew uninstall"
