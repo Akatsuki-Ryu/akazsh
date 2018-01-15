@@ -147,6 +147,7 @@ alias sshaaltoall="ssh -D8080 liux2@kosh.aalto.fi"
 export PATH="/usr/local/sbin:$PATH"
 alias ise="ionic serve"
 alias ira="ionic cordova run android"
+alias irar="ionic cordova run android --livereload"
 alias killremote="killall "Remote Desktop""
 
 
