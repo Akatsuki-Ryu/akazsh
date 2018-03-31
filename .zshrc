@@ -132,11 +132,11 @@ alias sshqa="ssh akatsukiliu@10.5.115.126"
 ##alias sshdev="ssh akatsukiliu@10.211.55.6"
 ##alias sshubb="ssh akatsuki@10.211.55.11"
 ##alias sshixo="ssh liuakat@10.254.20.42"
-alias sshhome="ssh akatsuki@82.130.43.170"
-alias sshbel="ssh -p 50022 akatsuki@82.130.43.170"
-alias sshair="ssh akatsuki@192.168.31.100"
+alias sshhome="ssh -p 10022 akatsuki@82.130.43.175"
+alias sshbel="ssh -p 20022 akatsuki@82.130.43.175"
+alias sshmac="ssh akatsuki@192.168.31.104"
 ##alias android="/Users/akatsuki/Library/Android/sdk/tools/android"
-alias sshxiaomi="ssh root@82.130.43.170"
+alias sshxiaomi="ssh root@82.130.43.175"
 
 
 ###################################
@@ -150,6 +150,9 @@ alias ira="ionic cordova run android"
 alias irar="ionic cordova run android --livereload"
 alias killremote="killall "Remote Desktop""
 
+##alias creatersa="ssh-keygen -b 1024 -t rsa -f id_rsa -P """
 
-alias ariad="aria2c --conf-path="/Users/akatsuki/.aria2/aria2.conf" -D"
+export PATH=$PATH:/Users/akatsuki/Library/Android/sdk/platform-tools
+
+
 
