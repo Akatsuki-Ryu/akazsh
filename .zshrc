@@ -88,7 +88,7 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 
 #######################################################################brew related 
 
-alias bup="brew update && b upgrade --all"
+alias bup="brew update && b upgrade && b cleanup --all"
 alias b="brew"
 alias bi="brew install"
 alias bu="brew uninstall"
@@ -105,12 +105,13 @@ alias bkl="brew cask list"
 
 #########################system level
 alias rmr="sudo rm -r"
-alias zipsp="zip -r -s 15m zip.zip "
-alias d="pwd"
+alias zipsp="zip -r -s 150m zip.zip "
+alias p="pwd"
 alias spotrip="spotify-ripper -u akatsuki_ryu -p liuxiaofeng "
 alias tmn="tmux new -s phone"
 alias tma="tmux attach -t phone"
 alias tmu="tmux kill-session -t phone"
+alias d="docker"
 
 
 #################################applications and linux
@@ -132,7 +133,7 @@ alias sshqa="ssh akatsukiliu@10.5.115.126"
 ##alias sshdev="ssh akatsukiliu@10.211.55.6"
 ##alias sshubb="ssh akatsuki@10.211.55.11"
 ##alias sshixo="ssh liuakat@10.254.20.42"
-alias sshhome="ssh -p 10022 akatsuki@82.130.43.175"
+alias sshhome="ssh -p 10022 akatsuki@62.78.181.155"
 alias sshbel="ssh -p 20022 akatsuki@82.130.43.175"
 alias sshmac="ssh akatsuki@192.168.31.104"
 ##alias android="/Users/akatsuki/Library/Android/sdk/tools/android"
@@ -144,6 +145,7 @@ alias sshxiaomi="ssh root@82.130.43.175"
 alias topp="top -o cpu"
 alias sshaaltohtml="ssh -L 8080:wwwproxy.hut.fi:80 liux2@kosh.aalto.fi"
 alias sshaaltoall="ssh -D8080 liux2@kosh.aalto.fi"
+alias sshvpn="ssh -D8080 -p10022 akatsuki@62.78.181.155"
 export PATH="/usr/local/sbin:$PATH"
 alias ise="ionic serve"
 alias ira="ionic cordova run android"
@@ -153,6 +155,8 @@ alias killremote="killall "Remote Desktop""
 ##alias creatersa="ssh-keygen -b 1024 -t rsa -f id_rsa -P """
 
 export PATH=$PATH:/Users/akatsuki/Library/Android/sdk/platform-tools
+export PATH=$PATH:/Library/Developer/CommandLineTools/usr/bin/codesign_allocate
+
 
 
 

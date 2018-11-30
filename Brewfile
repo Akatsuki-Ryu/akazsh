@@ -61,5 +61,4 @@ cask "sogouinput"
 cask "spotify"
 cask "sublime-text"
 cask "the-unarchiver"
-cask "tower"
 
