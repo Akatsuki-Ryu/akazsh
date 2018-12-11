@@ -83,19 +83,18 @@ cask adobe-creative-cloud
 cask blender
 cask daisydisk
 cask firestormos
-cask franz
-cask google-backup-and-sync
-cask google-japanese-ime
-cask handbrake
-cask istat-menus
-cask karabiner-elements
-cask microsoft-office
-cask openemu
-cask rescuetime
-cask slack
-cask spotify
-cask teamviewer
-cask unity
+cask free-download-manager
+cask google-chrome
+cask grammarly
+cask insomniax
+cask iterm2
+cask kitematic
+cask mplayerx
+cask qq
+cask sizeup
+cask sogouinput
+cask sublime-text
+cask the-unarchiver
 
 tap ethereum/ethereum
 
@@ -110,19 +109,18 @@ brew brew-file
 cask alfred
 cask carbon-copy-cloner
 cask desmume
-cask flux
-cask free-download-manager
-cask google-chrome
-cask grammarly
-cask insomniax
-cask iterm2
-cask kitematic
-cask mplayerx
-cask qq
-cask sizeup
-cask sogouinput
-cask sublime-text
-cask the-unarchiver
+cask franz
+cask google-backup-and-sync
+cask google-japanese-ime
+cask handbrake
+cask istat-menus
+cask karabiner-elements
+cask microsoft-office
+cask openemu
+cask rescuetime
+cask slack
+cask spotify
+cask teamviewer
 
 # App Store applications
 appstore 1436953057 GhosteryLite (1.0.0)
