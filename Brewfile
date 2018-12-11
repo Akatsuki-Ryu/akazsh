@@ -1,8 +1,9 @@
 
-# Other Homebrew packages
+# tap repositories and their packages
+
+tap homebrew/core
 brew autoconf
 brew automake
-brew brew-file
 brew cmake
 brew cmatrix
 brew cmus
@@ -72,41 +73,56 @@ brew xvid
 brew xz
 brew youtube-dl
 
-# Other Cask applications
-cask adobe-creative-cloud
-cask alfred
-cask blender
-cask carbon-copy-cloner
-cask daisydisk
-cask desmume
+tap homebrew/bundle
+
+tap homebrew/cask-versions
 cask discord-ptb
+
+tap homebrew/cask
+cask adobe-creative-cloud
+cask blender
+cask daisydisk
 cask firestormos
-cask flux
 cask franz
-cask free-download-manager
 cask google-backup-and-sync
-cask google-chrome
 cask google-japanese-ime
-cask grammarly
 cask handbrake
-cask insomniax
 cask istat-menus
-cask iterm2
 cask karabiner-elements
-cask kitematic
 cask microsoft-office
-cask mplayerx
 cask openemu
-cask qq
 cask rescuetime
-cask sizeup
 cask slack
-cask sogouinput
 cask spotify
-cask sublime-text
 cask teamviewer
-cask the-unarchiver
 cask unity
+
+tap ethereum/ethereum
+
+tap mas-cli/tap
+
+tap paritytech/paritytech
+
+tap rcmdnk/file
+brew brew-file
+
+# Other Cask applications
+cask alfred
+cask carbon-copy-cloner
+cask desmume
+cask flux
+cask free-download-manager
+cask google-chrome
+cask grammarly
+cask insomniax
+cask iterm2
+cask kitematic
+cask mplayerx
+cask qq
+cask sizeup
+cask sogouinput
+cask sublime-text
+cask the-unarchiver
 
 # App Store applications
 appstore 1436953057 GhosteryLite (1.0.0)
