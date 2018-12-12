@@ -99,8 +99,10 @@ alias bks="brew cask search"
 alias bki="brew cask install"
 alias bkif="brew cask install --force"
 alias bku="brew cask uninstall"
+alias bkuf="brew cask uninstall --force"
 alias bkl="brew cask list"
-
+alias bdelall="brew remove --force $(brew list) --ignore-dependencies  "
+alias bkdelall="brew cask remove --force $(brew cask list) "
 
 
 #########################system level
@@ -112,6 +114,7 @@ alias tmn="tmux new -s phone"
 alias tma="tmux attach -t phone"
 alias tmu="tmux kill-session -t phone"
 alias d="docker"
+alias mc='LANG=en_EN.UTF-8 mc'
 
 
 #################################applications and linux
