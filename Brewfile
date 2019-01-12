@@ -55,6 +55,7 @@ brew pcre
 brew pcre2
 brew peco
 brew pkg-config
+brew python
 brew python@2
 brew qt
 brew readline
@@ -65,6 +66,8 @@ brew snappy
 brew sqlite
 brew theora
 brew tmux
+brew trash
+brew tree
 brew usbmuxd
 brew wget
 brew x264
@@ -87,8 +90,9 @@ cask free-download-manager
 cask google-chrome
 cask grammarly
 cask insomniax
-cask iterm2
-cask kitematic
+cask istat-menus
+cask karabiner-elements
+cask mamp
 cask mplayerx
 cask qq
 cask sizeup
@@ -113,8 +117,9 @@ cask franz
 cask google-backup-and-sync
 cask google-japanese-ime
 cask handbrake
-cask istat-menus
-cask karabiner-elements
+cask intellij-idea
+cask iterm2
+cask kitematic
 cask microsoft-office
 cask openemu
 cask rescuetime
@@ -124,8 +129,6 @@ cask teamviewer
 
 # App Store applications
 appstore 1436953057 GhosteryLite (1.0.0)
-appstore 409183694 Keynote (8.3)
-appstore 1198047227 Magic Lasso (1.5.1)
 appstore 409907375 Remote Desktop (3.9)
 appstore 1385985095 uBlock (1.3)
-appstore 836500024 WeChat (2.3.20)
+appstore 836500024 WeChat (2.3.22)
