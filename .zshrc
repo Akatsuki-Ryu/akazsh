@@ -88,7 +88,7 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 
 #######################################################################brew related 
 
-alias bup="brew update && b upgrade && b cleanup --all"
+alias bup="brew update && b upgrade && b cleanup"
 alias b="brew"
 alias bi="brew install"
 alias bu="brew uninstall"
@@ -109,7 +109,7 @@ alias bkdelall="brew cask remove --force $(brew cask list) "
 alias rmr="sudo rm -r"
 alias zipsp="zip -r -s 150m zip.zip "
 alias p="pwd"
-alias spotrip="spotify-ripper -u akatsuki_ryu -p liuxiaofeng "
+alias zippwd="zip -e zip.zip"
 alias tmn="tmux new -s phone"
 alias tma="tmux attach -t phone"
 alias tmu="tmux kill-session -t phone"
