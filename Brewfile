@@ -93,7 +93,6 @@ cask grammarly
 cask insomniax
 cask istat-menus
 cask karabiner-elements
-cask mamp
 cask mplayerx
 cask postman
 cask rescuetime
