@@ -17,6 +17,7 @@ brew glib
 brew gmp
 brew gperftools
 brew gradle
+brew htop
 brew icu4c
 brew iftop
 brew isl
@@ -94,11 +95,13 @@ cask istat-menus
 cask karabiner-elements
 cask mamp
 cask mplayerx
-cask qq
-cask sizeup
-cask sogouinput
-cask sublime-text
-cask the-unarchiver
+cask postman
+cask rescuetime
+cask slack
+cask spotify
+cask teamviewer
+
+tap argon/mas
 
 tap ethereum/ethereum
 
@@ -122,10 +125,11 @@ cask iterm2
 cask kitematic
 cask microsoft-office
 cask openemu
-cask rescuetime
-cask slack
-cask spotify
-cask teamviewer
+cask qq
+cask sizeup
+cask sogouinput
+cask sublime-text
+cask the-unarchiver
 
 # App Store applications
 appstore 1436953057 GhosteryLite (1.0.0)
