@@ -115,7 +115,7 @@ alias tma="tmux attach -t phone"
 alias tmu="tmux kill-session -t phone"
 alias d="docker"
 alias mc='LANG=en_EN.UTF-8 mc'
-
+alias h='htop'
 
 #################################applications and linux
 alias n="npm"
