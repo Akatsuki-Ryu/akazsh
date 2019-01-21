@@ -49,6 +49,7 @@ brew mas
 brew midnight-commander
 brew mp4v2
 brew mpfr
+brew nginx
 brew node
 brew openssl
 brew opus
@@ -80,25 +81,25 @@ brew youtube-dl
 tap homebrew/bundle
 
 tap homebrew/cask-versions
-cask discord-ptb
 
 tap homebrew/cask
 cask adobe-creative-cloud
 cask blender
 cask daisydisk
-cask firestormos
-cask free-download-manager
-cask google-chrome
-cask grammarly
-cask insomniax
-cask istat-menus
-cask karabiner-elements
+cask discord
+cask franz
+cask google-backup-and-sync
+cask google-japanese-ime
+cask handbrake
+cask intellij-idea
+cask iterm2
+cask kitematic
 cask mplayerx
-cask postman
-cask rescuetime
-cask slack
-cask spotify
-cask teamviewer
+cask qq
+cask sizeup
+cask sogouinput
+cask sublime-text
+cask the-unarchiver
 
 tap argon/mas
 
@@ -115,20 +116,19 @@ brew brew-file
 cask alfred
 cask carbon-copy-cloner
 cask desmume
-cask franz
-cask google-backup-and-sync
-cask google-japanese-ime
-cask handbrake
-cask intellij-idea
-cask iterm2
-cask kitematic
+cask firestormos
+cask free-download-manager
+cask google-chrome
+cask grammarly
+cask insomniax
+cask istat-menus
+cask karabiner-elements
 cask microsoft-office
 cask openemu
-cask qq
-cask sizeup
-cask sogouinput
-cask sublime-text
-cask the-unarchiver
+cask rescuetime
+cask slack
+cask spotify
+cask teamviewer
 
 # App Store applications
 appstore 1436953057 GhosteryLite (1.0.0)
