@@ -88,7 +88,7 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 
 #######################################################################brew related 
 
-alias bup="brew update && b upgrade && b cleanup"
+alias bup="sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup; say mission complete"
 alias b="brew"
 alias bi="brew install"
 alias bu="brew uninstall"
@@ -116,6 +116,8 @@ alias tmu="tmux kill-session -t phone"
 alias d="docker"
 alias mc='LANG=en_EN.UTF-8 mc'
 alias h='htop'
+alias mksnapshot='tmutil snapshot'
+alias lssnapshot='tmutil listlocalsnapshots /Volumes'
 
 #################################applications and linux
 alias n="npm"
@@ -128,7 +130,14 @@ alias apup="sudo apt-get update"
 alias apu="sudo apt-get uninstall"
 
 
-####################################################
+
+################################################### local navi
+alias do="cd ~/Downloads"
+alias dd="cd ~/Desktop"
+alias dl="cd ~/Downloads"
+
+
+#################################################### network navi
 alias sshyc="ssh yc@121.40.61.76"
 alias sshqa="ssh akatsukiliu@10.5.115.126"
 ##alias sshprod="ssh akatsukiliu@80.242.17.226"
@@ -138,14 +147,13 @@ alias sshqa="ssh akatsukiliu@10.5.115.126"
 ##alias sshixo="ssh liuakat@10.254.20.42"
 alias sshhome="ssh -p 10022 akatsuki@62.78.181.155"
 alias sshdigi="ssh -p 20022 akatsuki@62.78.181.155"
-alias sshmac="ssh akatsuki@192.168.31.104"
+alias sshavi="ssh -p 30022 akatsuki@62.78.181.155"
 ##alias android="/Users/akatsuki/Library/Android/sdk/tools/android"
 alias sshxiaomi="ssh root@82.130.43.175"
 
 
-###################################
+################################### system navi
 
-alias topp="top -o cpu"
 alias sshaaltohtml="ssh -L 8080:wwwproxy.hut.fi:80 liux2@kosh.aalto.fi"
 alias sshaaltoall="ssh -D8080 liux2@kosh.aalto.fi"
 alias sshvpn="ssh -D8080 -p10022 akatsuki@62.78.181.155"
@@ -159,6 +167,16 @@ alias killremote="killall "Remote Desktop""
 
 export PATH=$PATH:/Users/akatsuki/Library/Android/sdk/platform-tools
 export PATH=$PATH:/Library/Developer/CommandLineTools/usr/bin/codesign_allocate
+
+# Recursively delete `.DS_Store` files
+# Empty the Trash on all mounted volumes and the main HDD.
+# Also, clear Apple’s System Logs to improve shell startup speed.
+# Finally, clear download history from quarantine. https://mths.be/bum
+alias cleanup="find . -type f -name '*.DS_Store' -ls -delete;sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent'"
+
+
+# Airport CLI alias
+alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport'
 
 
 
