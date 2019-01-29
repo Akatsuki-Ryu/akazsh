@@ -78,6 +78,7 @@ brew xvid
 brew xz
 brew youtube-dl
 brew ncdu
+brew bat
 
 tap homebrew/bundle
 
