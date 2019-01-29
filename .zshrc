@@ -117,6 +117,7 @@ alias tmu="tmux kill-session -t phone"
 alias d="docker"
 alias mc='LANG=en_EN.UTF-8 mc'
 alias h='htop'
+alias du='ncdu --color dark -rr -x --exclude .git --exclude node_modules'
 alias mksnapshot='tmutil snapshot'
 alias lssnapshot='tmutil listlocalsnapshots /Volumes'
 

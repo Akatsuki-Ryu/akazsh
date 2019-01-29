@@ -77,6 +77,7 @@ brew x265
 brew xvid
 brew xz
 brew youtube-dl
+brew ncdu
 
 tap homebrew/bundle
 
