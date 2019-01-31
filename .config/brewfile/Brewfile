@@ -2,6 +2,7 @@
 # tap repositories and their packages
 
 tap homebrew/core
+brew aom
 brew autoconf
 brew automake
 brew bat
@@ -9,7 +10,6 @@ brew cairo
 brew cmake
 brew cmatrix
 brew cmus
-brew diff-so-fancy
 brew docker
 brew faad2
 brew fd
@@ -24,6 +24,7 @@ brew gdbm
 brew genact
 brew gettext
 brew ghostscript
+brew git
 brew glib
 brew gmp
 brew gperftools
@@ -64,6 +65,7 @@ brew midnight-commander
 brew mp4v2
 brew mpfr
 brew ncdu
+brew ncurses
 brew nginx
 brew nmap
 brew node
@@ -99,6 +101,7 @@ brew x265
 brew xvid
 brew xz
 brew youtube-dl
+brew zsh
 brew zsh-autosuggestions
 brew zsh-completions
 
@@ -136,6 +139,9 @@ tap paritytech/paritytech
 
 tap rcmdnk/file
 brew brew-file
+
+tap sambadevi/powerlevel9k
+brew powerlevel9k
 
 # Other Cask applications
 cask alfred
