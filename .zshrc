@@ -185,3 +185,6 @@ alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/C
 
 
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
