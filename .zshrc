@@ -97,6 +97,10 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
+ source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
+
 
 #config for the libmobiledevice log
 export DYLD_LIBRARY_PATH=/Users/akatsuki/libmobiledevice/:$DYLD_LIBRARY_PATH
