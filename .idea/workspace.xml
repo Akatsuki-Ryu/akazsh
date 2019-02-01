@@ -33,8 +33,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.zshrc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="219" column="18" selection-start-line="219" selection-start-column="18" selection-end-line="219" selection-end-column="18" />
+            <state relative-caret-position="826">
+              <caret line="298" lean-forward="true" selection-start-line="298" selection-end-line="298" />
             </state>
           </provider>
         </entry>
@@ -44,6 +44,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>battery</find>
+      <find>ram</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -405,7 +406,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9546000" />
+    <option name="totallyTimeSpent" value="11165000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1664" height="1417" extended-state="0" />
@@ -511,8 +512,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.zshrc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="219" column="18" selection-start-line="219" selection-start-column="18" selection-end-line="219" selection-end-column="18" />
+        <state relative-caret-position="826">
+          <caret line="298" lean-forward="true" selection-start-line="298" selection-end-line="298" />
         </state>
       </provider>
     </entry>
