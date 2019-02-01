@@ -1,4 +1,4 @@
-# If you come from bash you might have to change your $PATH.
+l# If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
@@ -277,7 +277,8 @@ POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(history context dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time root_indicator background_jobs  load ram swap battery time custom_internet_signal)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time root_indicator background_jobs  load ram swap battery time )
+# for network status , we can add custom_internet_signal to the menu segments, but it will slow down the terminal 
 
 #POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="↱"
 #POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="↳ "
