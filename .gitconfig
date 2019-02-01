@@ -2,7 +2,9 @@
 	name = akatsuki
 	email = AkafreakingBox
 [core]
-	pager = diff-so-fancy | less --tabs=4 -RFX
+
+    
+
 [color]
 	ui = true
 [color "diff-highlight"]
@@ -17,6 +19,9 @@
 	old = red bold
 	new = green bold
 	whitespace = red reverse
+
+
 [pager]
-	diff = diff-so-fancy | less --tabs=4 -RFX
-	show = diff-so-fancy | less --tabs=4 -RFX
+    log = diff-highlight | less
+    show = diff-highlight | less
+    diff = diff-highlight | less
