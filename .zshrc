@@ -98,8 +98,11 @@ source $ZSH/oh-my-zsh.sh
 
 source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
  source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
+  [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=0'
 
 
 #config for the libmobiledevice log
@@ -229,6 +232,9 @@ POWERLEVEL9K_COLOR_SCHEME='dark'
 
 POWERLEVEL9K_LEFT_SEGMENT_SEPARATOR=$'\uE0B0'
 POWERLEVEL9K_RIGHT_SEGMENT_SEPARATOR=$'\uE0B2'
+
+#POWERLEVEL9K_LEFT_SEGMENT_SEPARATOR=$''
+#POWERLEVEL9K_RIGHT_SEGMENT_SEPARATOR=$''
 POWERLEVEL9K_VCS_BRANCH_ICON=$'\uF126 '
 #POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(icons_test)
 
