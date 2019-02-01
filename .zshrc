@@ -102,7 +102,7 @@ source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
 
   [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=0'
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
 
 
 #config for the libmobiledevice log
