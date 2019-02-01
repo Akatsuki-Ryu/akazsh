@@ -215,6 +215,8 @@ alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/C
 
 
 #########################################################################################################################################33
+
+
 #new line
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 
@@ -222,13 +224,13 @@ POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(history context dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(newline status newline command_execution_time root_indicator background_jobs  load ram swap battery time)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time root_indicator background_jobs  load ram swap battery time)
 
 #POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="↱"
 #POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="↳ "
 
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
-POWERLEVEL9K_COLOR_SCHEME='dark'
+# POWERLEVEL9K_COLOR_SCHEME='dark' #default is black
 
 POWERLEVEL9K_LEFT_SEGMENT_SEPARATOR=$'\uE0B0'
 POWERLEVEL9K_RIGHT_SEGMENT_SEPARATOR=$'\uE0B2'
@@ -265,8 +267,19 @@ POWERLEVEL9K_LOAD_NORMAL_VISUAL_IDENTIFIER_COLOR="green"
 
 POWERLEVEL9K_BACKGROUND_JOBS_VERBOSE="true"
 POWERLEVEL9K_BATTERY_STAGES=($'\u2581 ' $'\u2582 ' $'\u2583 ' $'\u2584 ' $'\u2585 ' $'\u2586 ' $'\u2587 ' $'\u2588 ')
-# POWERLEVEL9K_BATTERY_LEVEL_BACKGROUND=(red1 orangered1 darkorange orange1 gold1 yellow1 yellow2 greenyellow chartreuse1 chartreuse2 green1)
+ POWERLEVEL9K_BATTERY_LEVEL_BACKGROUND=(red2 orangered2 darkorange orange2 gold2 yellow2 yellow3 155 chartreuse2 chartreuse3 green2)
+POWERLEVEL9K_BATTERY_DISCONNECTED_FOREGROUND="darkreda"
+POWERLEVEL9K_BATTERY_CHARGING_FOREGROUND="green4"
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD="2"
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_PRECISION="3"
+
+POWERLEVEL9K_LOAD_NORMAL_BACKGROUND="grey"
+POWERLEVEL9K_LOAD_NORMAL_FOREGROUND="white"
+POWERLEVEL9K_LOAD_WARNING_BACKGROUND="yellow"
+POWERLEVEL9K_LOAD_WARNING_FOREGROUND="white"
+POWERLEVEL9K_LOAD_CRITICAL_BACKGROUND="red"
+POWERLEVEL9K_LOAD_CRITICAL_FOREGROUND="white"
+
+
 
 
