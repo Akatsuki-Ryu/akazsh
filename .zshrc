@@ -152,6 +152,8 @@ alias cat='bat'
 alias ping='prettyping'
 alias mksnapshot='tmutil snapshot'
 alias lssnapshot='tmutil listlocalsnapshots /Volumes'
+alias t='tig'
+
 
 #################################applications and linux
 alias n="npm"
