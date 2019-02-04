@@ -12,7 +12,7 @@ rm -r .config
 rm -r .tmux.conf
 rm -r .zshrc
 rm -r .ssh	
-rm -r tigrc
+rm -r .tigrc
 
 ln -s akazsh/.gitconfig .gitconfig
  ln -s akazsh/.config .config
