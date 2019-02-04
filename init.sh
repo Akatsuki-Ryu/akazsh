@@ -3,6 +3,9 @@ echo this will overwrite the setting on this user ....
 
 read -p "ok? (y/N): " yn
 case "$yn" in [yY]*) ;; *) echo "abort." ; exit ;; esac
+
+# linking diff_highlight to system . git should be from brew . this needs to be confirmed 
+	sudo ln -s /usr/local/share/git-core/contrib/diff-highlight/diff-highlight /usr/local/bin/diff-highlight
 	
 rm -r .gitconfig
 rm -r .config	
