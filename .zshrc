@@ -277,8 +277,8 @@ POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 #right new line
 POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
 
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(history context dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time root_indicator background_jobs  load ram swap battery time )
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(time context dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time root_indicator background_jobs  load ram swap battery history )
 # for network status , we can add custom_internet_signal to the menu segments, but it will slow down the terminal 
 
 #POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="↱"
