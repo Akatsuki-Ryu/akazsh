@@ -177,14 +177,3 @@ bind status  H      ?git reset --hard HEAD
 
 # ! で revert
 bind main    !      ?git revert %(commit)
-
-
-## 以下、Shift付きでブランチ指定、Alt付きでコミットID指定のコマンド
-
-# = で checkout
-bind main    =      ?git checkout %(branch)
-bind refs    =      ?git checkout %(branch)
-bind main    <Esc>= ?git checkout %(commit)
-
-# - で直前のブランチに戻る (checkout -)
-bind generic -      ?git checkout -
