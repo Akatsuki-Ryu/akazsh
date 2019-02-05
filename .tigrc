@@ -139,7 +139,7 @@ bind generic _      ?git reset --hard HEAD@{"%(prompt Enter HEAD@{} number: )"}
 # ^ で reset --soft
 bind generic ^      ?git reset --soft HEAD^
 
-<<<<<<< HEAD
+
 
 # . で HEAD との diff
 bind main    .      !sh -c "git diff %(commit) | tig"
@@ -177,5 +177,3 @@ bind status  H      ?git reset --hard HEAD
 
 # ! で revert
 bind main    !      ?git revert %(commit)
-=======
->>>>>>> 94a4833399cf4a757e692da87656dc254e921fd3
