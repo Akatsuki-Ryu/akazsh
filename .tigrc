@@ -1,3 +1,6 @@
+# source from https://qiita.com/sfus/items/063797a1dd8fdc7d032f
+
+
 # main view の左端にコミットIDを表示する
 set main-view = id date author:email-user commit-title:graph=yes,refs=yes
 
@@ -109,4 +112,42 @@ bind refs    <Esc>u ?sh -c "git checkout %(branch) && git pull %(remote) --ff-on
 
 # P で remote への push
 bind generic P      ?git push -u %(remote) %(repo:head)
+
+
+
+
+# C で commit (refs での C は checkout, main での C は cherry-pick だが上書きする)
+bind generic C      !git commit
+bind refs    C      !git commit
+bind main    C      !git commit
+
+# Alt-c で commit --allow-empty
+bind generic <Esc>c !git commit --allow-empty
+
+# + で commit --amend
+bind generic +      !git commit --amend --allow-empty
+
+
+
+# L で reflog
+bind generic L      !sh -c "git reflog --pretty=raw | tig --pretty=raw"
+
+# _ で指定 reflog 番号にリセット
+bind generic _      ?git reset --hard HEAD@{"%(prompt Enter HEAD@{} number: )"}
+
+
+# ^ で reset --soft
+bind generic ^      ?git reset --soft HEAD^
+
+
+# . で HEAD との diff
+bind main    .      !sh -c "git diff %(commit) | tig"
+bind diff    .      !sh -c "git diff %(commit) | tig"
+bind refs    .      !sh -c "git diff %(branch) | tig"
+
+# Alt-. で指定 commit ID との diff
+bind main    <Esc>. ?sh -c "git diff %(commit)..%(prompt Enter commit ID: ) | tig"
+bind diff    <Esc>. ?sh -c "git diff %(commit)..%(prompt Enter commit ID: ) | tig"
+bind refs    <Esc>. ?sh -c "git diff %(branch)..%(prompt Enter branch name: ) | tig"
+
 
