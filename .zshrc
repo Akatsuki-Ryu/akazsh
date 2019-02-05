@@ -152,7 +152,8 @@ alias cat='bat'
 alias ping='prettyping'
 alias mksnapshot='tmutil snapshot'
 alias lssnapshot='tmutil listlocalsnapshots /Volumes'
-alias t='tig'
+alias t='tig --all'
+alias gaac='git add --all; git commit -m'
 
 
 #################################applications and linux
