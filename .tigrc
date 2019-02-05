@@ -151,3 +151,28 @@ bind diff    <Esc>. ?sh -c "git diff %(commit)..%(prompt Enter commit ID: ) | ti
 bind refs    <Esc>. ?sh -c "git diff %(branch)..%(prompt Enter branch name: ) | tig"
 
 
+
+# S で stash save
+bind generic S      ?git stash save "%(prompt Enter stash comment: )"
+
+# Y で stash pop
+bind diff    Y      ?git stash pop %(stash)
+bind stash   Y      ?git stash pop %(stash)
+
+# Alt-y で stash applye
+bind diff    <Esc>y ?git stash apply %(stash)
+bind stash   <Esc>y ?git stash apply %(stash)
+
+
+
+
+# H で reset --hard
+bind main    H      ?git reset --hard %(commit)
+bind diff    H      ?git reset --hard %(commit)
+bind refs    H      ?git reset --hard %(branch)
+
+# H で reset --hard HEAD (status-view)
+bind status  H      ?git reset --hard HEAD
+
+# ! で revert
+bind main    !      ?git revert %(commit)
