@@ -1,3 +1,16 @@
+echo now we will install brew . press N to skip 
+
+read -p "ok? (y/N): " yn
+case "$yn" in [yY]*) /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+;; *) echo "skip." ; ;; esac
+
+
+
+
+
+
+
+
 cd ..
 echo this will overwrite the setting on this user .... 
 
