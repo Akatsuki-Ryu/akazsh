@@ -19,7 +19,6 @@ set diff-view   = line-number:yes,interval=1 text:yes,commit-title-overflow=no
 set blob-view-line-number = yes
 set blame-view-line-number = yes
 
-set wrap-lines = yes
 
 # # 画面を垂直方向に分割する
 # set vertical-split = yes
@@ -234,3 +233,7 @@ bind main    <Esc>i ?git rebase -i %(commit)
 bind diff    <Esc>i ?git rebase -i %(commit)
 
 
+
+
+#automatic wrap long lines 
+set wrap-lines = yes
