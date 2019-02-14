@@ -147,6 +147,7 @@ alias tmu="tmux kill-session -t phone"
 alias d="docker"
 alias mc='LANG=en_EN.UTF-8 mc'
 alias h='htop'
+alias hs='sudo htop'
 alias du='ncdu -2 -x --exclude .git'
 alias cat='bat'
 alias ping='prettyping'
