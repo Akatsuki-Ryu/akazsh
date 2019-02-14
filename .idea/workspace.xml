@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a1a3f9e-2875-4bbe-8663-52547aa72b09" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9a1a3f9e-2875-4bbe-8663-52547aa72b09" name="Default" comment="" />
     <ignored path="akazsh.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -33,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.zshrc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="154" column="53" selection-start-line="154" selection-start-column="53" selection-end-line="154" selection-end-column="53" />
+            <state relative-caret-position="369">
+              <caret line="125" column="22" lean-forward="true" selection-start-line="125" selection-start-column="22" selection-end-line="125" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -405,12 +403,12 @@
       <workItem from="1549032576044" duration="3465000" />
       <workItem from="1549046534387" duration="4226000" />
       <workItem from="1550185233440" duration="1016000" />
-      <workItem from="1550187333264" duration="49000" />
+      <workItem from="1550187333264" duration="121000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13114000" />
+    <option name="totallyTimeSpent" value="13186000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1393" height="877" extended-state="0" />
@@ -516,8 +514,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.zshrc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="154" column="53" selection-start-line="154" selection-start-column="53" selection-end-line="154" selection-end-column="53" />
+        <state relative-caret-position="369">
+          <caret line="125" column="22" lean-forward="true" selection-start-line="125" selection-start-column="22" selection-end-line="125" selection-end-column="22" />
         </state>
       </provider>
     </entry>
