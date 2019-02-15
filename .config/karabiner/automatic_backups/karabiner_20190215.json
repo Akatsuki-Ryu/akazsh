@@ -141,7 +141,7 @@
                 },
                 {
                     "from": {
-                        "key_code": "grave_accent_and_tilde"
+                        "key_code": "non_us_backslash"
                     },
                     "to": {
                         "key_code": "left_shift"
@@ -149,7 +149,7 @@
                 },
                 {
                     "from": {
-                        "key_code": "non_us_backslash"
+                        "key_code": "grave_accent_and_tilde"
                     },
                     "to": {
                         "key_code": "escape"
@@ -158,14 +158,6 @@
                 {
                     "from": {
                         "key_code": "non_us_pound"
-                    },
-                    "to": {
-                        "key_code": "return_or_enter"
-                    }
-                },
-                {
-                    "from": {
-                        "key_code": "backslash"
                     },
                     "to": {
                         "key_code": "return_or_enter"
