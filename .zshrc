@@ -112,6 +112,9 @@ PATH=${PATH}:/Users/akatsuki/libmobiledevice/
 
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 
+################path for golang
+export GOPATH=$HOME/go
+
 alias zshconfig="subl ~/.zshrc"
 
 
