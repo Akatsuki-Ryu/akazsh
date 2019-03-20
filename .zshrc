@@ -172,7 +172,7 @@ alias apu="sudo apt-get uninstall"
 
 
 ################################################### local navi
-alias do="cd ~/Downloads"
+alias do="cd ~/Documents"
 alias dd="cd ~/Desktop"
 alias dl="cd ~/Downloads"
 
