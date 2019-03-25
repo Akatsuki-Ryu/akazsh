@@ -163,6 +163,7 @@ alias gaac='git add --all; git commit -m'
 #################################applications and linux
 alias n="npm"
 alias ni="npm install"
+alias ns="npm start"
 export PATH=/usr/local/bin:$PATH
 alias iftop="sudo /usr/local/Cellar/iftop/1.0pre4/sbin/./iftop"
 
@@ -386,3 +387,5 @@ POWERLEVEL9K_BATTERY_LOW_BACKGROUND="red"
 POWERLEVEL9K_TIME_FOREGROUND="blue"
 POWERLEVEL9K_TIME_BACKGROUND="black"
 
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
