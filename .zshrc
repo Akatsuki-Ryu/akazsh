@@ -163,6 +163,7 @@ alias gaac='git add --all; git commit -m'
 #################################applications and linux
 alias n="npm"
 alias ni="npm install"
+alias ncl="find . -name "node_modules" -type d -prune -exec rm -rf '{}' +"
 export PATH=/usr/local/bin:$PATH
 alias iftop="sudo /usr/local/Cellar/iftop/1.0pre4/sbin/./iftop"
 
