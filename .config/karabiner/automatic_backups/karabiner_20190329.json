@@ -15,17 +15,17 @@
                 },
                 "rules": [
                     {
-                        "description": "Change Option + i/j/k/l to Arrows",
+                        "description": "Change Option + h/j/k/l to Arrows",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "j",
+                                    "key_code": "h",
                                     "modifiers": {
                                         "mandatory": [
                                             "option"
                                         ],
                                         "optional": [
-                                            "any"
+                                            "caps_lock"
                                         ]
                                     }
                                 },
@@ -38,13 +38,13 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "k",
+                                    "key_code": "j",
                                     "modifiers": {
                                         "mandatory": [
                                             "option"
                                         ],
                                         "optional": [
-                                            "any"
+                                            "caps_lock"
                                         ]
                                     }
                                 },
@@ -57,13 +57,13 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "i",
+                                    "key_code": "k",
                                     "modifiers": {
                                         "mandatory": [
                                             "option"
                                         ],
                                         "optional": [
-                                            "any"
+                                            "caps_lock"
                                         ]
                                     }
                                 },
@@ -82,7 +82,7 @@
                                             "option"
                                         ],
                                         "optional": [
-                                            "any"
+                                            "caps_lock"
                                         ]
                                     }
                                 },
