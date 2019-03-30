@@ -441,7 +441,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "i",
+                                    "key_code": "y",
                                     "modifiers": {
                                         "mandatory": [
                                             "right_command",
