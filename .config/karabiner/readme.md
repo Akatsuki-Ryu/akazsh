@@ -10,6 +10,7 @@ applications
 n		note
 i		intellij
 s		safari 
+command s   slack
 c 		chrome
 d		discord
 command d dictionary
