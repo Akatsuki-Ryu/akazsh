@@ -145,14 +145,12 @@ cask grammarly
 cask intellij-idea
 cask iterm2
 cask kitematic
-cask minikube
 cask openemu
 cask qq
 cask shadowsocksx-ng
 cask slack
 cask spotify
 cask the-unarchiver
-cask wireshark
 
 tap argon/mas
 
@@ -185,14 +183,12 @@ cask insomniax
 cask istat-menus
 cask karabiner-elements
 cask microsoft-office
-cask netspot
 cask plistedit-pro
 cask rescuetime
 cask sizeup
 cask sogouinput
 cask sublime-text
-cask webstorm
-cask xccello
+cask wireshark
 
 # App Store applications
 appstore 409183694 com.apple.iWork.Keynote (9.0.1)
