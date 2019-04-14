@@ -120,8 +120,8 @@ alias zshconfig="subl ~/.zshrc"
 
 #######################################################################brew related 
 
-alias bup="sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; say data update mission complete"
-alias bupfull="sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup; say full data update mission complete"
+alias bup="sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; brew cask update; brew cask upgrade; say data update mission complete"
+alias bupfull="sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; brew cask update; brew cask upgrade; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup; say full data update mission complete"
 alias b="brew"
 alias bi="brew install"
 alias bu="brew uninstall"
