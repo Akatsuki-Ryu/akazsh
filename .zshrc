@@ -62,7 +62,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker docker-compose)
+plugins=(git docker-compose)
 
 
 
@@ -149,7 +149,6 @@ alias zippwd="zip -e zip.zip"
 alias tmn="tmux new -s phone"
 alias tma="tmux attach -t phone"
 alias tmu="tmux kill-session -t phone"
-alias d="docker"
 alias mc='LANG=en_EN.UTF-8 mc'
 alias h='htop'
 alias hs='sudo htop'
@@ -160,6 +159,16 @@ alias mksnapshot='tmutil snapshot'
 alias lssnapshot='tmutil listlocalsnapshots /Volumes'
 alias t='tig --all'
 alias gaac='git add --all; git commit -m'
+
+
+###############################docker 
+alias d="docker"
+alias di="docker image"
+alias dirmall="docker rmi $(docker images -q)"
+alias dkillall="docker kill $(docker ps -q)"
+alias drmall="docker rm $(docker ps -a -q)"
+alias dreset="docker kill $(docker ps -q); docker rm $(docker ps -a -q); docker rmi $(docker images -q)"
+
 
 
 #################################applications and linux
