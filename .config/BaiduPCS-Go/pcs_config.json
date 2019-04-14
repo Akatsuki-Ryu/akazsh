@@ -1,0 +1,11 @@
+{
+ "baidu_active_uid": 0,
+ "baidu_user_list": null,
+ "appid": 266719,
+ "cache_size": 30000,
+ "max_parallel": 100,
+ "max_download_load": 1,
+ "user_agent": "netdisk;8.3.1;android-android",
+ "savedir": "/Users/akatsuki/Downloads",
+ "enable_https": false
+}
