@@ -163,6 +163,7 @@ alias gaac='git add --all; git commit -m'
 
 ###############################docker 
 alias d="docker"
+alias dps="docker ps -al"
 alias di="docker image"
 alias dirmall="docker rmi $(docker images -q)"
 alias dkillall="docker kill $(docker ps -q)"
