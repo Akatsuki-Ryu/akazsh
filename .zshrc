@@ -160,6 +160,8 @@ alias lssnapshot='tmutil listlocalsnapshots /Volumes'
 alias t='tig --all'
 alias gaac='git add --all; git commit -m'
 
+alias kraken='open -na "GitKraken" --args -p $(pwd)'
+
 
 ###############################docker 
 alias d="docker"
