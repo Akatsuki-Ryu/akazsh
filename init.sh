@@ -22,7 +22,7 @@ case "$yn" in [yY]*) ;; *) echo "abort." ; exit ;; esac
 	sudo ln -s /usr/local/share/git-core/contrib/diff-highlight/diff-highlight /usr/local/bin/diff-highlight
 
 # taking gitconfig to seperate machines.
-#rm -r .gitconfig
+rm -r .gitconfig
 rm -r .config
 rm -r .tmux.conf
 rm -r .zshrc
