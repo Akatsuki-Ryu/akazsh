@@ -1,0 +1,2 @@
+[submodule "misc/shadowsocks-go"]
+	url = https://github.com/shadowsocks/shadowsocks-go
