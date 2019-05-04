@@ -3,6 +3,7 @@ echo now we will install brew . press N to skip
 
 read -p "ok? (y/N): " yn
 case "$yn" in [yY]*) /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	brew install rcmdnk/file/brew-file
 ;; *) echo "skip." ; ;; esac
 
 
@@ -35,3 +36,5 @@ cp akazsh/.gitconfig .gitconfig
   ln -s akazsh/.tmux.conf .tmux.conf
   ln -s akazsh/.zshrc .zshrc
   ln -s akazsh/.tigrc .tigrc
+
+
