@@ -135,23 +135,28 @@ tap homebrew/cask-versions
 tap homebrew/cask
 cask adobe-creative-cloud
 cask blender
-cask dash
-cask discord
+cask daisydisk
+cask desmume
+cask disk-drill
+cask docker
 cask eclipse-java
 cask firestormos
 cask free-download-manager
 cask google-backup-and-sync
 cask google-japanese-ime
 cask handbrake
-cask istat-menus
-cask java
-cask kitematic
-cask openemu
-cask qq
-cask shadowsocksx-ng
-cask skype
-cask sogouinput
-cask sublime-text
+cask intellij-idea
+cask iterm2
+cask karabiner-elements
+cask microsoft-office
+cask plistedit-pro
+cask rescuetime
+cask sizeup
+cask slack
+cask spotify
+cask the-unarchiver
+cask tor-browser
+cask zeronet
 
 tap argon/mas
 
@@ -173,29 +178,30 @@ brew powerlevel9k
 # Other Cask applications
 cask alfred
 cask carbon-copy-cloner
-cask desmume
-cask docker
+cask dash
+cask discord
+cask diskmaker-x
+cask dockstation
 cask energybar
 cask franz
 cask gitkraken
 cask google-chrome
 cask grammarly
-cask intellij-idea
-cask iterm2
-cask karabiner-elements
-cask microsoft-office
-cask plistedit-pro
-cask rescuetime
-cask sizeup
-cask slack
-cask spotify
-cask the-unarchiver
+cask insomniax
+cask istat-menus
+cask java
+cask kitematic
+cask openemu
+cask qq
+cask shadowsocksx-ng
+cask skype
+cask sogouinput
+cask sublime-text
+cask thunder
+cask wireshark
 
 # App Store applications
 appstore 409907375 com.apple.RemoteDesktop (3.9)
-appstore 1436953057 com.ghostery.lite (1.0.0)
 appstore 937984704 com.if.Amphetamine (4.1.6)
-appstore 582635628 com.jumsoft.keynote.toolbox (3.7.4)
 appstore 409183694 Keynote (9.0.1)
-appstore 1385985095 org.uBlockLLC.uBlock (1.3)
 appstore 836500024 WeChat (2.3.24)
