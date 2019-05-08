@@ -1184,7 +1184,7 @@
                     },
                     "to": [
                         {
-                            "shell_command": "open -a 'movist'"
+                            "shell_command": "open -a 'movist pro'"
                         }
                     ],
                     "type": "basic"
