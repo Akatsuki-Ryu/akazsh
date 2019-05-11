@@ -134,9 +134,8 @@ alias bkif="brew cask install --force"
 alias bku="brew cask uninstall"
 alias bkuf="brew cask uninstall --force"
 alias bkl="brew cask list"
-alias bdelall="brew remove --force $(brew list) --ignore-dependencies  "
 alias bdelall="brew list -1 | xargs brew rm "
-alias bkdelall="brew cask remove --force $(brew cask list) "
+alias bkdelall="brew cask list -1 | xargs brew cask rm "
 
 
 #########################system level
