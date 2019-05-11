@@ -1,4 +1,4 @@
-# Recent settings file for Wireshark 2.6.6.
+# Recent settings file for Wireshark 3.0.1.
 #
 # This file is regenerated each time Wireshark is quit
 # and when changing configuration profile.
@@ -63,15 +63,22 @@ gui.bytes_encoding: FROM_PACKET
 
 # Main window upper (or leftmost) pane size.
 # Decimal number.
-gui.geometry_main_upper_pane: 436
+gui.geometry_main_upper_pane: 517
 
 # Main window middle pane size.
 # Decimal number.
-gui.geometry_main_lower_pane: 436
+gui.geometry_main_lower_pane: 516
 
 # Packet list column pixel widths.
 # Each pair of strings consists of a column format and its pixel width.
-column.width: %m, -1, %t, -1, %s, -1, %d, -1, %p, -1, %L, -1, %i, 965
+column.width:
+        %m, -1,
+        %t, -1,
+        %s, -1,
+        %d, -1,
+        %p, -1,
+        %L, -1,
+        %i, 965
 
 # Open conversation dialog tabs.
 # List of conversation names, e.g. "TCP", "IPv6".
