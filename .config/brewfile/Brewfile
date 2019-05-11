@@ -133,7 +133,6 @@ tap homebrew/cask-versions
 tap homebrew/cask
 cask adobe-creative-cloud
 cask blender
-cask daisydisk
 cask docker
 cask firestormos
 cask free-download-manager
