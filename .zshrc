@@ -236,6 +236,7 @@ alias cleanup="find . -type f -name '*.DS_Store' -ls -delete;sudo rm -rfv /Volum
 
 # Airport CLI alias
 alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport'
+alias airscan='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -s'
 
 
 
