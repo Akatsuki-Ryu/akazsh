@@ -98,9 +98,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
- source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
- source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#take away powerlevel settings and autosuggestiinos and syntax highlight for linux 
+#source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
+# source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
   [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
@@ -115,7 +116,7 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 
 ################path for golang
 export GOPATH=$HOME/go
-alias zshconfig="subl ~/.zshrc"
+alias zshconfig="gedit ~/.zshrc"
 
 
 
