@@ -103,7 +103,9 @@ source $ZSH/oh-my-zsh.sh
 # source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-  [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+#  [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
+source /usr/share/autojump/autojump.sh
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
 
