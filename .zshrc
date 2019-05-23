@@ -118,7 +118,7 @@ alias zshconfig="subl ~/.zshrc"
 
 
 
-#######################################################################brew related 
+#######################################################################brew related
 
 alias bup="sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; brew cask update; brew cask upgrade; say data update mission complete"
 alias bupfull="sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; brew cask update; brew cask upgrade; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup; say full data update mission complete"
@@ -163,7 +163,7 @@ alias gaac='git add --all; git commit -m'
 alias kra='open -na "GitKraken" --args -p $(pwd)'
 
 
-###############################docker 
+###############################docker
 alias d="docker"
 alias dps="docker ps -al"
 alias di="docker image"
@@ -182,11 +182,10 @@ alias ns="npm start"
 export PATH=/usr/local/bin:$PATH
 alias iftop="sudo /usr/local/Cellar/iftop/1.0pre4/sbin/./iftop"
 
-alias api="sudo apt-get install"
-alias apup="sudo apt-get update"
-alias apu="sudo apt-get uninstall"
-alias apupg="sudo apt-get upgrade"
-alias apupgd="sudo apt-get dist-upgrade"
+alias ai="sudo apt-get install"
+alias aup="sudo apt-get update; sudo apt-get upgrade"
+alias au="sudo apt-get uninstall"
+alias aupfull="sudo apt-get dist-upgrade"
 
 
 
@@ -307,7 +306,7 @@ POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(time context dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time root_indicator background_jobs  load ram swap battery history )
-# for network status , we can add custom_internet_signal to the menu segments, but it will slow down the terminal 
+# for network status , we can add custom_internet_signal to the menu segments, but it will slow down the terminal
 
 #POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="↱"
 #POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="↳ "
