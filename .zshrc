@@ -154,7 +154,7 @@ alias mc='LANG=en_EN.UTF-8 mc'
 alias h='htop'
 alias hs='sudo htop'
 alias du='ncdu -2 -x --exclude .git'
-alias cat='bat'
+#alias cat='bat' # there is no bat in linux
 alias ping='prettyping'
 alias mksnapshot='tmutil snapshot'
 alias lssnapshot='tmutil listlocalsnapshots /Volumes'
