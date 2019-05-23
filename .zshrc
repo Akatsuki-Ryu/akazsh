@@ -185,6 +185,8 @@ alias iftop="sudo /usr/local/Cellar/iftop/1.0pre4/sbin/./iftop"
 alias api="sudo apt-get install"
 alias apup="sudo apt-get update"
 alias apu="sudo apt-get uninstall"
+alias apupg="sudo apt-get upgrade"
+alias apupgd="sudo apt-get dist-upgrade"
 
 
 
