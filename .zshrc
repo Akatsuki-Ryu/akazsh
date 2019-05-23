@@ -9,6 +9,7 @@ export ZSH=$HOME/.oh-my-zsh
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
+ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -62,7 +63,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker-compose)
+plugins=(git)
 
 
 
@@ -164,13 +165,13 @@ alias kra='open -na "GitKraken" --args -p $(pwd)'
 
 
 ###############################docker
-alias d="docker"
-alias dps="docker ps -al"
-alias di="docker image"
-alias dirmall="docker rmi $(docker images -q)"
-alias dkillall="docker kill $(docker ps -q)"
-alias drmall="docker rm $(docker ps -a -q)"
-alias dreset="docker kill $(docker ps -q); docker rm $(docker ps -a -q); docker rmi $(docker images -q)"
+#alias d="docker"
+#alias dps="docker ps -al"
+#alias di="docker image"
+#alias dirmall="docker rmi $(docker images -q)"
+#alias dkillall="docker kill $(docker ps -q)"
+#alias drmall="docker rm $(docker ps -a -q)"
+#alias dreset="docker kill $(docker ps -q); docker rm $(docker ps -a -q); docker rmi $(docker images -q)"
 
 
 
