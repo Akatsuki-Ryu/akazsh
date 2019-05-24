@@ -4,6 +4,7 @@ echo now we will install brew . press N to skip
 read -p "ok? (y/N): " yn
 case "$yn" in [yY]*) /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	brew install rcmdnk/file/brew-file
+	sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ;; *) echo "skip." ; ;; esac
 
 
