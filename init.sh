@@ -27,6 +27,7 @@ case "$yn" in [yY]*) ;; *) echo "abort." ; exit ;; esac
 rm -r .gitconfig
 rm -r .config
 rm -r .tmux.conf
+rm -r .tmux.conf.local
 rm -r .zshrc
 rm -r .tigrc
 
