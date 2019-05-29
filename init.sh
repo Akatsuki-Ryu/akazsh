@@ -27,14 +27,15 @@ case "$yn" in [yY]*) ;; *) echo "abort." ; exit ;; esac
 rm -r .gitconfig
 rm -r .config
 rm -r .tmux.conf
+rm -r .tmux.conf.local
 rm -r .zshrc
 rm -r .tigrc
 
 #ln -s akazsh/.gitconfig .gitconfig
 cp akazsh/.gitconfig .gitconfig
  ln -s akazsh/.config .config
-  ln -s akazsh/.tmux.conf.local .tmux.conf.local
-  ln -s akazsh/.tmux.conf .tmux.conf
+  ln -s akazsh/tmux/.tmux.conf.local .tmux.conf.local
+  ln -s akazsh/tmux/.tmux.conf .tmux.conf
   ln -s akazsh/.zshrc .zshrc
   ln -s akazsh/.tigrc .tigrc
 
