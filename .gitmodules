@@ -5,3 +5,5 @@
 [submodule "misc/BaiduPCS-Go"]
 	path = misc/BaiduPCS-Go
 	url = https://github.com/iikira/BaiduPCS-Go
+[submodule "tmux"]
+	url = https://github.com/gpakosz/.tmux
