@@ -9,7 +9,6 @@ export ZSH=$HOME/.oh-my-zsh
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
-ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -63,7 +62,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git docker-compose)
 
 
 
@@ -98,14 +97,11 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-#take away powerlevel settings and autosuggestiinos and syntax highlight for linux 
-#source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
-# source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-# source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
+ source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-#  [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
-
-source /usr/share/autojump/autojump.sh
+  [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
 
@@ -118,7 +114,7 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 
 ################path for golang
 export GOPATH=$HOME/go
-alias zshconfig="gedit ~/.zshrc"
+alias zshconfig="subl ~/.zshrc"
 
 
 
@@ -157,7 +153,7 @@ alias mc='LANG=en_EN.UTF-8 mc'
 alias h='htop'
 alias hs='sudo htop'
 alias du='ncdu -2 -x --exclude .git'
-#alias cat='bat' # there is no bat in linux
+alias cat='bat'
 alias ping='prettyping'
 alias mksnapshot='tmutil snapshot'
 alias lssnapshot='tmutil listlocalsnapshots /Volumes'
@@ -168,13 +164,13 @@ alias kra='open -na "GitKraken" --args -p $(pwd)'
 
 
 ###############################docker
-#alias d="docker"
-#alias dps="docker ps -al"
-#alias di="docker image"
-#alias dirmall="docker rmi $(docker images -q)"
-#alias dkillall="docker kill $(docker ps -q)"
-#alias drmall="docker rm $(docker ps -a -q)"
-#alias dreset="docker kill $(docker ps -q); docker rm $(docker ps -a -q); docker rmi $(docker images -q)"
+alias d="docker"
+alias dps="docker ps -al"
+alias di="docker image"
+alias dirmall="docker rmi $(docker images -q)"
+alias dkillall="docker kill $(docker ps -q)"
+alias drmall="docker rm $(docker ps -a -q)"
+alias dreset="docker kill $(docker ps -q); docker rm $(docker ps -a -q); docker rmi $(docker images -q)"
 
 
 
