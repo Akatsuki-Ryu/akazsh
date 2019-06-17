@@ -1,7 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 #jetbrain-agent 
-misc/jetbrain-agent/*
+misc/jetbrains-agent/*
 
 # dependencies
 /node_modules
