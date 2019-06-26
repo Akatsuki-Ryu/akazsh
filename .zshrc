@@ -231,6 +231,8 @@ alias killremote="killall "Remote Desktop""
 
 ##alias creatersa="ssh-keygen -b 1024 -t rsa -f id_rsa -P """
 
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+
 export PATH=$PATH:/Users/akatsuki/Library/Android/sdk/platform-tools
 export PATH=$PATH:/Library/Developer/CommandLineTools/usr/bin/codesign_allocate
 
