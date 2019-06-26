@@ -145,9 +145,7 @@ tap homebrew/cask-versions
 
 tap homebrew/cask
 cask adobe-creative-cloud
-cask android-studio
 cask carbon-copy-cloner
-cask dash
 cask discord
 cask dockstation
 cask energybar
@@ -158,8 +156,6 @@ cask grammarly
 cask intellij-idea
 cask iterm2
 cask karabiner-elements
-cask metasploit
-cask obs
 cask plistedit-pro
 cask rescuetime
 cask shadowsocksx-ng
@@ -167,7 +163,6 @@ cask skype
 cask sogouinput
 cask sublime-text
 cask tor-browser
-cask virtualbox
 cask wireshark
 cask zeronet
 
@@ -192,24 +187,19 @@ tap v2ray/v2ray
 brew v2ray-core
 
 # Other Cask applications
-cask alfred
 cask blender
-cask daisydisk
 cask desmume
 cask docker
-cask eclipse-java
 cask firestormos
 cask free-download-manager
 cask google-backup-and-sync
 cask google-japanese-ime
 cask handbrake
-cask istat-menus
 cask java
 cask kitematic
 cask microsoft-office
 cask openemu
 cask qq
-cask setapp
 cask sizeup
 cask slack
 cask spotify
