@@ -97,6 +97,7 @@ brew prettyping
 brew python
 brew qt
 brew readline
+brew reaver
 brew rtmpdump
 brew rubberband
 brew rust
