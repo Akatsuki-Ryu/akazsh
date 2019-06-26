@@ -2,16 +2,20 @@
 # tap repositories and their packages
 
 tap homebrew/core
+brew aircrack-ng
 brew aom
 brew autoconf
 brew autojump
 brew automake
 brew bat
+brew bettercap
 brew cairo
 brew cmake
 brew cmatrix
+brew cmocka
 brew cmus
 brew coreutils
+brew crunch
 brew cscope
 brew diff-so-fancy
 brew docker
@@ -39,7 +43,9 @@ brew gperftools
 brew gradle
 brew graphite2
 brew harfbuzz
+brew hashcat
 brew htop
+brew hwloc
 brew icu4c
 brew iftop
 brew isl
@@ -57,6 +63,7 @@ brew libidn2
 brew libimobiledevice
 brew libmpc
 brew libogg
+brew libpcap
 brew libplist
 brew libpng
 brew libsamplerate
@@ -73,6 +80,7 @@ brew libvpx
 brew libxml2
 brew little-cms2
 brew lua
+brew lzo
 brew mad
 brew mas
 brew midnight-commander
@@ -95,6 +103,7 @@ brew pixman
 brew pkg-config
 brew prettyping
 brew python
+brew python@2
 brew qt
 brew readline
 brew reaver
@@ -104,10 +113,13 @@ brew rust
 brew rustup-init
 brew s-lang
 brew sdl2
+brew shtool
 brew sl
 brew snappy
 brew speex
 brew sqlite
+brew sshfs
+brew tcpdump
 brew tesseract
 brew theora
 brew tig
@@ -133,23 +145,30 @@ tap homebrew/cask-versions
 
 tap homebrew/cask
 cask adobe-creative-cloud
-cask blender
-cask docker
-cask firestormos
-cask free-download-manager
-cask google-backup-and-sync
-cask google-japanese-ime
-cask handbrake
+cask android-studio
+cask carbon-copy-cloner
+cask dash
+cask discord
+cask dockstation
+cask energybar
+cask franz
+cask gitkraken
+cask google-chrome
+cask grammarly
 cask intellij-idea
 cask iterm2
 cask karabiner-elements
-cask microsoft-office
+cask metasploit
+cask obs
+cask plistedit-pro
 cask rescuetime
-cask sizeup
-cask slack
-cask spotify
-cask the-unarchiver
+cask shadowsocksx-ng
+cask skype
+cask sogouinput
+cask sublime-text
 cask tor-browser
+cask virtualbox
+cask wireshark
 cask zeronet
 
 tap argon/mas
@@ -169,27 +188,37 @@ brew brew-file
 tap sambadevi/powerlevel9k
 brew powerlevel9k
 
+tap v2ray/v2ray
+brew v2ray-core
+
 # Other Cask applications
 cask alfred
-cask carbon-copy-cloner
-cask discord
-cask energybar
-cask franz
-cask gitkraken
-cask google-chrome
-cask grammarly
+cask blender
+cask daisydisk
+cask desmume
+cask docker
+cask eclipse-java
+cask firestormos
+cask free-download-manager
+cask google-backup-and-sync
+cask google-japanese-ime
+cask handbrake
 cask istat-menus
 cask java
 cask kitematic
+cask microsoft-office
+cask openemu
 cask qq
-cask shadowsocksx-ng
-cask skype
-cask sogouinput
-cask sublime-text
-cask wireshark
+cask setapp
+cask sizeup
+cask slack
+cask spotify
+cask the-unarchiver
+cask tunnelblick
+cask wifispoof
 cask zenmap
 
 # App Store applications
-appstore 409907375 com.apple.RemoteDesktop (3.9)
-appstore 937984704 com.if.Amphetamine (4.1.6)
-appstore 836500024 WeChat (2.3.24)
+appstore 937984704 Amphetamine (4.2)
+appstore 409907375 Remote Desktop (3.9)
+appstore 836500024 WeChat (2.3.25)
