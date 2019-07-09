@@ -220,7 +220,7 @@ alias sshxiaomi="ssh root@82.130.43.175"
 
 alias sshaaltohtml="ssh -L 8080:wwwproxy.hut.fi:80 liux2@kosh.aalto.fi"
 alias sshaaltoall="ssh -D8080 liux2@kosh.aalto.fi"
-alias sshvpn="ssh -D8080 -p10022 akatsuki@62.78.181.155"
+alias sshvpn="networksetup -switchtolocation tunnel; ssh -D8080 -p10022 akatsuki@62.78.181.155"
 alias sshvpnixo="ssh -D8080 -p22 liuakat@10.100.5.11"
 alias shadowvpnserver="/Users/akatsuki/akazsh/shadowsocks/shadowsocks-server"
 alias v2rayvpnclient=" networksetup -switchtolocation tunnel; v2ray -config=/Users/akatsuki/akazsh/v2raybin/configclient.json;"
