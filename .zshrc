@@ -253,6 +253,9 @@ alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/C
 alias airscan='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -s'
 
 
+#code sign 
+alias codesign='codesign --force --deep --sign - '
+
 
 
 ########################################################################################################################################
