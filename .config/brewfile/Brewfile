@@ -150,7 +150,7 @@ cask discord
 cask dockstation
 cask energybar
 cask franz
-cask gitkraken
+# cask gitkraken
 cask google-chrome
 cask grammarly
 cask intellij-idea
@@ -188,7 +188,7 @@ brew v2ray-core
 
 # Other Cask applications
 cask blender
-cask desmume
+# cask desmume
 cask docker
 cask firestormos
 cask free-download-manager
@@ -198,9 +198,9 @@ cask handbrake
 cask java
 cask kitematic
 cask microsoft-office
-cask openemu
-cask qq
-cask sizeup
+# cask openemu
+# cask qq
+# cask sizeup
 cask slack
 cask spotify
 cask the-unarchiver
