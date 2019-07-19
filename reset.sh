@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-echo now we will UNinstall brew . press N to skip
+echo now we will UNinstall brew and reset. press N to skip
 
 read -p "ok? (y/N): " yn
 case "$yn" in [yY]*) /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
@@ -7,20 +7,11 @@ case "$yn" in [yY]*) /usr/bin/ruby -e "$(curl -fsSL https://raw.githubuserconten
 ;; *) echo "skip." ; ;; esac
 
 
-
-
-
-
-
-
 cd ..
 echo this will overwrite the setting on this user ....
 
 read -p "ok? (y/N): " yn
 case "$yn" in [yY]*) ;; *) echo "abort." ; exit ;; esac
-
-# linking diff_highlight to system . git should be from brew . this needs to be confirmed
-	sudo ln -s /usr/local/share/git-core/contrib/diff-highlight/diff-highlight /usr/local/bin/diff-highlight
 
 # taking gitconfig to seperate machines.
 rm -r .gitconfig
