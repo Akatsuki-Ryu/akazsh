@@ -210,8 +210,7 @@ alias sshdigi="ssh -p 20022 akatsuki@62.78.181.155"
 alias sshavi="ssh -p 30022 akatsuki@62.78.181.155"
 ##alias android="/Users/akatsuki/Library/Android/sdk/tools/android"
 alias sshmountavi="sshfs -p 30022 akatsuki@62.78.181.155:/Users/akatsuki /Users/akatsuki/mountavi"
-
-
+alias syncfromavi="rsync -av --rsh='ssh -p30022' akatsuki@62.78.181.155:~/0transfer /Users/akatsuki/"
 
 ######################################################remote mount 
 alias sshxiaomi="ssh root@82.130.43.175"
