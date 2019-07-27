@@ -767,22 +767,6 @@
                             "to": {
                                 "key_code": "left_alt"
                             }
-                        },
-                        {
-                            "from": {
-                                "key_code": "right_gui"
-                            },
-                            "to": {
-                                "key_code": "right_option"
-                            }
-                        },
-                        {
-                            "from": {
-                                "key_code": "right_option"
-                            },
-                            "to": {
-                                "key_code": "right_command"
-                            }
                         }
                     ]
                 }
