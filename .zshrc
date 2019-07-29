@@ -144,6 +144,8 @@ alias bkdelall="brew cask list -1 | xargs brew cask rm "
 
 #########################system level
 alias rmr="sudo rm -r"
+alias cpr="sudo cp -r"
+alias mvr="sudo mv -r"
 alias zipsp150="zip -r -s 150m zip.zip "
 alias zipsp10="zip -r -s 10m zip.zip "
 alias p="pwd"
