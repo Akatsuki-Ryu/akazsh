@@ -3,47 +3,103 @@
 
 tap homebrew/core
 brew aircrack-ng
+brew aom
+brew autoconf
 brew autojump
+brew automake
 brew bat
 brew bettercap
+brew cairo
 brew cmake
 brew cmatrix
+brew cmocka
+brew cmus
+brew coreutils
 brew crunch
+brew cscope
 brew diff-so-fancy
 brew docker
+brew faad2
 brew fd
+brew ffmpeg
+brew flac
 brew fontconfig
 brew freetype
+brew frei0r
+brew fribidi
 brew fzf
 brew gdbm
 brew genact
+brew geoip
 brew gettext
+brew ghostscript
+brew giflib
 brew git
 brew glib
+brew gmp
+brew gnutls
 brew go
+brew gperftools
 brew gradle
+brew graphite2
+brew harfbuzz
 brew hashcat
-brew hr
 brew htop
-brew hub
 brew hwloc
 brew icu4c
 brew iftop
+brew isl
+brew jpeg
+brew lame
+brew leptonica
+brew leveldb
+brew libao
+brew libass
+brew libbluray
+brew libcue
 brew libevent
 brew libffi
 brew libidn2
+brew libimobiledevice
+brew libmpc
+brew libogg
 brew libpcap
+brew libplist
 brew libpng
+brew libsamplerate
+brew libsndfile
+brew libsoxr
 brew libssh2
+brew libtasn1
+brew libtiff
+brew libtool
 brew libunistring
 brew libusb
+brew libvorbis
+brew libvpx
+brew libxml2
+brew little-cms2
+brew lua
+brew lzo
+brew mad
 brew mas
 brew midnight-commander
+brew mp4v2
+brew mpfr
+brew ncdu
 brew ncurses
+brew nettle
+brew nmap
 brew node
+brew opencore-amr
+brew openjpeg
 brew openssl
+brew opus
+brew p11-kit
 brew pcre
 brew pcre2
+brew peco
+brew pixman
 brew pkg-config
 brew prettyping
 brew python
@@ -52,17 +108,30 @@ brew qt
 brew readline
 brew reaver
 brew rtmpdump
+brew rubberband
 brew rust
 brew rustup-init
 brew s-lang
+brew sdl2
+brew shtool
 brew sl
+brew snappy
+brew speex
 brew sqlite
 brew sshfs
 brew tcpdump
+brew tesseract
+brew theora
 brew tig
 brew tmux
 brew tree
+brew unbound
+brew usbmuxd
+brew webp
 brew wget
+brew x264
+brew x265
+brew xvid
 brew xz
 brew youtube-dl
 brew zsh
@@ -70,29 +139,43 @@ brew zsh-autosuggestions
 brew zsh-completions
 brew zsh-syntax-highlighting
 
+tap homebrew/bundle
+
+tap homebrew/cask-versions
+
 tap homebrew/cask
 cask adobe-creative-cloud
 cask carbon-copy-cloner
-cask docker
+cask discord
+cask dockstation
 cask energybar
 cask franz
-cask gitkraken
+# cask gitkraken
 cask google-chrome
 cask grammarly
 cask intellij-idea
-cask java
-cask kitematic
+cask iterm2
+cask karabiner-elements
 cask plistedit-pro
 cask rescuetime
+cask shadowsocksx-ng
 cask skype
 cask sogouinput
 cask sublime-text
 cask tor-browser
-cask wifispoof
+cask wireshark
 cask zeronet
+
+tap argon/mas
+
+tap ethereum/ethereum
 
 tap iikira/baidupcs
 brew baidupcs-go
+
+tap mas-cli/tap
+
+tap paritytech/paritytech
 
 tap rcmdnk/file
 brew brew-file
@@ -103,28 +186,27 @@ brew powerlevel9k
 tap v2ray/v2ray
 brew v2ray-core
 
-tap vitorgalvao/tiny-scripts
-brew cask-repair
-
 # Other Cask applications
 cask blender
-cask discord
-cask dockstation
-cask firestorm
+# cask desmume
+cask docker
+cask firestormos
 cask free-download-manager
 cask google-backup-and-sync
 cask google-japanese-ime
 cask handbrake
-cask iterm2
-cask karabiner-elements
+cask java
+cask kitematic
 cask microsoft-office
-cask qq
-cask shadowsocksx-ng
+# cask openemu
+# cask qq
+# cask sizeup
 cask slack
 cask spotify
 cask the-unarchiver
 cask tunnelblick
-cask wireshark
+cask wifispoof
+cask zenmap
 
 # App Store applications
 appstore 937984704 Amphetamine (4.2)
