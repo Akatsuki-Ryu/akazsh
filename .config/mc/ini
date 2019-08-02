@@ -83,6 +83,8 @@ editor_filesize_threshold=64M
 editor_stop_format_chars=-+*\\,.;:&>
 mcview_eof=
 
+skin=modarin256root-defbg
+
 [Layout]
 message_visible=1
 keybar_visible=1
@@ -92,10 +94,10 @@ command_prompt=1
 menubar_visible=1
 free_space=1
 horizontal_split=0
-vertical_equal=1
-left_panel_size=60
+vertical_equal=0
+left_panel_size=80
 horizontal_equal=1
-top_panel_size=1
+top_panel_size=34
 
 [Misc]
 timeformat_recent=%b %e %H:%M
@@ -133,6 +135,8 @@ permission_mode=false
 torben_fj_mode=false
 quick_search_mode=2
 select_flags=6
+
+simple_swap=false
 
 [Panelize]
 Find *.orig after patching=find . -name \\*.orig -print
