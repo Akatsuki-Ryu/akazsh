@@ -115,6 +115,7 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 ################path for golang
 export GOPATH=$HOME/go
 alias zshconfig="subl ~/.zshrc"
+export MC_SKIN=$HOME/akazsh/.config/mc/solarized.ini
 
 
 
