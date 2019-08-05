@@ -817,12 +817,21 @@
                     "identifiers": {
                         "is_keyboard": true,
                         "is_pointing_device": false,
-                        "product_id": 592,
+                        "product_id": 611,
                         "vendor_id": 1452
                     },
                     "ignore": false,
                     "manipulate_caps_lock_led": true,
-                    "simple_modifications": []
+                    "simple_modifications": [
+                        {
+                            "from": {
+                                "key_code": "backslash"
+                            },
+                            "to": {
+                                "key_code": "return_or_enter"
+                            }
+                        }
+                    ]
                 }
             ],
             "fn_function_keys": [
