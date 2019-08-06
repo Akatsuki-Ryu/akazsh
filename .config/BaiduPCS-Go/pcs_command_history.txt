@@ -1,0 +1,7 @@
+help
+--version
+upgrade
+update
+x
+exit
+l
