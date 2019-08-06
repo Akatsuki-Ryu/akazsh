@@ -201,8 +201,8 @@ alias dl="cd ~/Downloads"
 
 
 #################################################### network navi
-alias sshyc="ssh yc@121.40.61.76"
-alias sshqa="ssh akatsukiliu@10.5.115.126"
+##alias sshyc="ssh yc@121.40.61.76"
+##alias sshqa="ssh akatsukiliu@10.5.115.126"
 ##alias sshprod="ssh akatsukiliu@80.242.17.226"
 ##alias sshqaold="ssh akatsukiliu@80.242.18.243"
 ##alias sshdev="ssh akatsukiliu@10.211.55.6"
@@ -211,6 +211,10 @@ alias sshqa="ssh akatsukiliu@10.5.115.126"
 alias sshhome="ssh -p 10022 akatsuki@62.78.181.155"
 alias sshdigi="ssh -p 20022 akatsuki@62.78.181.155"
 alias sshavi="ssh -p 30022 akatsuki@62.78.181.155"
+alias sshmini="ssh dghelsinki@192.168.50.79"
+alias sshminiakabox="ssh dghelsinki@192.168.50.80"
+alias sshprez="ssh akatsuki@192.168.50.84"
+
 ##alias android="/Users/akatsuki/Library/Android/sdk/tools/android"
 alias sshmountavi="sshfs -p 30022 akatsuki@62.78.181.155:/Users/akatsuki /Users/akatsuki/mountavi"
 alias syncfromavi="rsync -av --rsh='ssh -p30022' akatsuki@62.78.181.155:~/0transfer /Users/akatsuki/"
