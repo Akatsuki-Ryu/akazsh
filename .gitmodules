@@ -1,0 +1,3 @@
+[submodule "misc/BaiduPCS-Go"]
+	path = misc/BaiduPCS-Go
+	url = https://github.com/iikira/BaiduPCS-Go
