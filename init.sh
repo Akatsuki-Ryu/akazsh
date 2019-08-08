@@ -34,8 +34,8 @@ rm -r .tigrc
 #ln -s akazsh/.gitconfig .gitconfig
 cp akazsh/.gitconfig .gitconfig
  ln -s akazsh/.config .config
-  ln -s akazsh/tmux/.tmux.conf.local .tmux.conf.local
-  ln -s akazsh/tmux/.tmux.conf .tmux.conf
+  ln -s akazsh/.tmux/.tmux.conf.local .tmux.conf.local
+  ln -s akazsh/.tmux/.tmux.conf .tmux.conf
   ln -s akazsh/.zshrc .zshrc
   ln -s akazsh/.tigrc .tigrc
 
