@@ -1,3 +1,4 @@
+ENTRY "local" URL "/Users/akatsuki"
 ENTRY "sshhome" URL "/sh://62.78.181.155:10022/Users/akatsuki"
 ENTRY "sshdigi" URL "/sh://62.78.181.155:20022/Users/akatsuki"
 ENTRY "sshavi" URL "/sh://62.78.181.155:30022/Users/akatsuki"
