@@ -256,6 +256,8 @@ export PATH=$PATH:/Library/Developer/CommandLineTools/usr/bin/codesign_allocate
 # Finally, clear download history from quarantine. https://mths.be/bum
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete;sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent';say data cleaning up complete"
 
+eval $(thefuck --alias)
+alias f="fuck"
 
 # Airport CLI alias
 alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport'
@@ -433,4 +435,5 @@ POWERLEVEL9K_TIME_BACKGROUND="black"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
-eval $(thefuck --alias)
+
+
