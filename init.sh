@@ -28,7 +28,11 @@ case "$yn" in [yY]*) ;; *) echo "abort." ; exit ;; esac
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 
+#install font for powerlevel
+sudo apt-get install fonts-powerline
 
+#install autojump 
+sudo apt-get install autojump
 
 # taking gitconfig to seperate machines.
 rm -r .gitconfig
