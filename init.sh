@@ -12,7 +12,7 @@ case "$yn" in [yY]*) /usr/bin/ruby -e "$(curl -fsSL https://raw.githubuserconten
 
 
 
-
+exit
 
 cd ..
 echo this will overwrite the setting on this user ....
@@ -31,8 +31,10 @@ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/theme
 #install font for powerlevel
 sudo apt-get install fonts-powerline
 
-#install autojump 
+#install some basic features  
 sudo apt-get install autojump
+sudo apt-get install tig
+
 
 # taking gitconfig to seperate machines.
 rm -r .gitconfig
