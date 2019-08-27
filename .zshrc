@@ -215,6 +215,7 @@ alias sshavi="ssh -p 30022 akatsuki@62.78.181.155"
 alias sshmini="ssh dghelsinki@192.168.50.79"
 alias sshminiakabox="ssh dghelsinki@192.168.50.80"
 alias sshprez="ssh akatsuki@192.168.50.84"
+alias sshaws="ssh -i "akaboxcentos.pem.txt" centos@ec2-13-48-25-117.eu-north-1.compute.amazonaws.com"
 
 ##alias android="/Users/akatsuki/Library/Android/sdk/tools/android"
 alias sshmountavi="sshfs -p 30022 akatsuki@62.78.181.155:/Users/akatsuki /Users/akatsuki/mountavi"

@@ -23,6 +23,13 @@ case "$yn" in [yY]*) ;; *) echo "abort." ; exit ;; esac
 # linking diff_highlight to system . git should be from brew . this needs to be confirmed
 	sudo ln -s /usr/local/share/git-core/contrib/diff-highlight/diff-highlight /usr/local/bin/diff-highlight
 
+
+#installing oh my zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+
+
+
 # taking gitconfig to seperate machines.
 rm -r .gitconfig
 rm -r .config
