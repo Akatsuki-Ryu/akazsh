@@ -222,7 +222,7 @@ alias syncfromavi="rsync -av --rsh='ssh -p30022' akatsuki@62.78.181.155:~/0trans
 alias synctoavi="rsync -av /Users/akatsuki/0transfer  --rsh='ssh -p30022' akatsuki@62.78.181.155:~/ "
 
 ######################################################remote mount 
-alias sshxiaomi="ssh root@82.130.43.175"
+alias sshxiaomi="ssh root@192.168.31.1"
 
 
 ################################### system navi
