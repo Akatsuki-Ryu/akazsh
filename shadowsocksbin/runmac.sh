@@ -1,1 +1,0 @@
-macserver/ssserver -c config.json
