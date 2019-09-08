@@ -191,6 +191,7 @@ export PATH=/usr/local/bin:$PATH
 alias iftop="sudo /usr/local/Cellar/iftop/1.0pre4/sbin/./iftop"
 
 alias ai="sudo apt-get install"
+alias as="sudo apt search"
 alias aup="sudo apt-get update; sudo apt-get upgrade"
 alias au="sudo apt-get uninstall"
 alias aupfull="sudo apt-get dist-upgrade"
