@@ -151,9 +151,9 @@ alias k="ls -atlr"
 alias o="open ."
 alias x="exit"
 alias zippwd="zip -e zip.zip"
-alias tmn="tmux new -s phone"
-alias tma="tmux attach -t phone"
-alias tmu="tmux kill-session -t phone"
+alias tmn="tmux new -s akaboxsession"
+alias tma="tmux attach -t akaboxsession"
+alias tmu="tmux kill-session -t akaboxsession"
 alias mc='LANG=en_EN.UTF-8 mc'
 alias h='htop'
 alias hs='sudo htop'
