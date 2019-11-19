@@ -156,6 +156,7 @@ alias tma="tmux attach -t akaboxsession"
 alias tmu="tmux kill-session -t akaboxsession"
 alias mc='LANG=en_EN.UTF-8 mc'
 alias h='htop'
+alias a='glances'
 alias hs='sudo htop'
 alias du='ncdu -2 -x --exclude .git'
 alias cat='bat'
