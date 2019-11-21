@@ -240,6 +240,7 @@ export PATH="/usr/local/sbin:$PATH"
 alias ise="ionic serve"
 alias ira="ionic cordova run android"
 alias irar="ionic cordova run android --livereload"
+alias ws8000="ws -p 8000 --log.format stats"
 alias killremote="killall "Remote Desktop""
 
 ##alias creatersa="ssh-keygen -b 1024 -t rsa -f id_rsa -P """
