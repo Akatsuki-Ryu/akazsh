@@ -154,9 +154,9 @@ alias k="ls -atlr"
 alias o="xdg-open ."
 alias x="exit"
 alias zippwd="zip -e zip.zip"
-alias tmn="tmux new -s phone"
-alias tma="tmux attach -t phone"
-alias tmu="tmux kill-session -t phone"
+alias tmn="tmux new -s akaboxsession"
+alias tma="tmux attach -t akaboxsession"
+alias tmu="tmux kill-session -t akaboxsession"
 alias mc='LANG=en_EN.UTF-8 mc'
 alias h='htop'
 alias hs='sudo htop'
@@ -195,7 +195,7 @@ alias as="sudo apt search"
 alias aup="sudo apt-get update; sudo apt-get upgrade"
 alias au="sudo apt-get uninstall"
 alias aupfull="sudo apt-get dist-upgrade"
-
+alias aupcompl="apt-get update && apt-get upgrade && apt-get full-upgrade && apt-get dist-upgrade"
 
 
 ################################################### local navi
