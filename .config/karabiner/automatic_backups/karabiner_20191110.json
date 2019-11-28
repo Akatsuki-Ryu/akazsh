@@ -984,14 +984,6 @@
                     "to": {
                         "key_code": "return_or_enter"
                     }
-                },
-                {
-                    "from": {
-                        "key_code": "application"
-                    },
-                    "to": {
-                        "key_code": "caps_lock"
-                    }
                 }
             ],
             "virtual_hid_keyboard": {
