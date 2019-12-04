@@ -250,7 +250,14 @@ alias killremote="killall "Remote Desktop""
 
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
-export PATH=$PATH:/Users/akatsuki/Library/Android/sdk/platform-tools
+################################################### android development enviroments
+export ANDROID_SDK=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_SDK/emulator:$ANDROID_SDK/:$ANDROID_SDK/tools:$ANDROID_SDK/tools/bin
+export PATH=$PATH:$ANDROID_SDK/platform-tools
+##################################################
+
+
+
 export PATH=$PATH:/Library/Developer/CommandLineTools/usr/bin/codesign_allocate
 
 # Recursively delete `.DS_Store` files
