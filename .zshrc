@@ -243,14 +243,21 @@ export PATH="/usr/local/sbin:$PATH"
 alias ise="ionic serve"
 alias ira="ionic cordova run android"
 alias irar="ionic cordova run android --livereload"
-alias ws3000="ws -p 3000 --log.format stats"
+alias ws8000="ws -p 8000 --log.format stats"
 alias killremote="killall "Remote Desktop""
 
 ##alias creatersa="ssh-keygen -b 1024 -t rsa -f id_rsa -P """
 
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
-export PATH=$PATH:/Users/akatsuki/Library/Android/sdk/platform-tools
+################################################### android development enviroments
+export ANDROID_SDK=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_SDK/emulator:$ANDROID_SDK/:$ANDROID_SDK/tools:$ANDROID_SDK/tools/bin
+export PATH=$PATH:$ANDROID_SDK/platform-tools
+##################################################
+
+
+
 export PATH=$PATH:/Library/Developer/CommandLineTools/usr/bin/codesign_allocate
 
 # Recursively delete `.DS_Store` files
