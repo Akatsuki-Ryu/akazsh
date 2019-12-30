@@ -4,6 +4,7 @@ echo now we will UNinstall brew and reset. press N to skip
 read -p "ok? (y/N): " yn
 case "$yn" in [yY]*) /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
 	brew remove --force $(brew list) --ignore-dependencies  
+	brew cask remove --force $(brew cask list)
 
 ;; *) echo "skip." ; ;; esac
 
