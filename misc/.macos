@@ -889,4 +889,10 @@ done
 sudo pwpolicy setaccountpolicies passwdpolicy.xml
 
 
+###############################################################################
+# Gateway keeper                                                           #
+###############################################################################
+sudo spctl --master-disable
+
+
 echo "Done. Note that some of these changes require a logout/restart to take effect."
