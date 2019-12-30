@@ -877,4 +877,16 @@ for app in "Activity Monitor" \
 	"iCal"; do
 	killall "${app}" &> /dev/null
 done
+
+###############################################################################
+# Password Policy                                                            #
+###############################################################################
+#pwpolicy getaccountpolicies > passwdpolicy.xml
+#nano passwdpolicy.xml
+# remove text prior to first <xml tag and replace
+# <string>policyAttributePassword matches '^$|.{1,}+'</string>
+# run terminal 
+sudo pwpolicy setaccountpolicies passwdpolicy.xml
+
+
 echo "Done. Note that some of these changes require a logout/restart to take effect."
