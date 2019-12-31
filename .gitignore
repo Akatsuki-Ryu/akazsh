@@ -15,7 +15,6 @@ misc/jetbrains-agent/*
 /build
 
 # misc
-.DS_Store
 .env.local
 .env.development.local
 .env.test.local
@@ -88,3 +87,19 @@ fabric.properties
 
 #the fuck cache
 .config/thefuck/__pycache__/*
+
+
+# Compiled Python files
+*.pyc
+
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
