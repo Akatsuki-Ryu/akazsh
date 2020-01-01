@@ -8,6 +8,7 @@ brew tap homebrew/cask-versions
 brew cask install google-chrome
 brew cask install tor-browser
 brew cask install zeronet
+brew cask install firestorm
 
 
 # Development
@@ -29,20 +30,32 @@ brew cask install wireshark
 # brew cask install whatsapp
 brew cask install franz
 brew cask install slack
+brew cask install qq
+brew cask install discord
+
+
 
 
 
 # Cloud
 # brew cask install dropbox
 brew cask install google-backup-and-sync
+brew cask isntall free-download-manager
+brew cask install tunnelblick
+brew cask install shadowsocksx-ng
 
 # Productivity
 # brew cask install alfred
 brew cask install docker
+brew cask install dockstation
 brew cask install energybar
 brew cask install grammarly
 brew cask install kitematic
 brew cask install rescuetime
+brew cask install google-japanese-ime
+brew cask install sogouinput
+brew cask install microsoft-office
+brew cask install plistedit-pro
 
 
 
@@ -50,42 +63,28 @@ brew cask install rescuetime
 # Media
 brew cask install blender
 brew cask install soundflower
+brew cask install adobe-creative-cloud
+brew cask install handbrake
+
+
 
 
 # Mac OS Enhancements
 brew cask install the-unarchiver
 brew tap buo/cask-upgrade
+brew cask install zenmap
+brew cask install carbon-copy-cloner
+brew cask install karabiner-elements
+brew cask install wifispoof
 
 # Other
 brew cask install font-hack-nerd-font
+
 
 # Install Mac App Store apps
 # add Magnet install
 
 
 
-#!/bin/sh
-
-# brew cask install WhatsApp
-# brew cask install Itsycal
-# brew cask install Kindle
-# brew cask install OneDrive
-# brew cask install Rocket
-# brew cask install Transmission
-# brew cask install Alfred
-# brew cask install Google-Chrome
-# brew cask install iTerm2
-# brew cask install vs-code
-# brew cask install hyperswitch
-# brew cask install swinsian
-#brew cask install syncthing
-# brew cask install vlc
-# brew cask install iina
-# brew cask install GrandPerspective
-# brew cask install Pinta
-# brew cask install self-control
-# brew cask install the-unarchiver
 
 
-# disk management
-#brew cask install daisydisk
