@@ -7,6 +7,7 @@ case "$yn" in [yY]*) /usr/bin/ruby -e "$(curl -fsSL https://raw.githubuserconten
 	brew install sambadevi/powerlevel9k/powerlevel9k
 	sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 	./misc/brewinit.sh
+	./misc/caskinit.sh
 ;; *) echo "skip." ; ;; esac
 
 
