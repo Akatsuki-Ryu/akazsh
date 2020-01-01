@@ -116,6 +116,7 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 export GOPATH=$HOME/go
 alias zshconfig="subl ~/.zshrc"
 
+
 # Aliases
 source $HOME/akazsh/.aliases 
 

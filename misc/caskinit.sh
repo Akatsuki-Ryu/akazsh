@@ -1,10 +1,10 @@
 #!/bin/sh
 
 brew tap caskroom/cask
-brew tap caskroom/versions
+brew tap homebrew/cask-cask
+brew tap homebrew/cask-versions
 
 # Browsers
-brew cask install google-chrome-canary
 brew cask install google-chrome
 brew cask install tor-browser
 brew cask install zeronet
@@ -78,17 +78,14 @@ brew cask install font-hack-nerd-font
 # brew cask install vs-code
 # brew cask install hyperswitch
 # brew cask install swinsian
-brew cask install syncthing
+#brew cask install syncthing
 # brew cask install vlc
 # brew cask install iina
 # brew cask install GrandPerspective
 # brew cask install Pinta
-brew cask install Amphetamine
-brew cask install Djview
 # brew cask install self-control
 # brew cask install the-unarchiver
 
 
-# disk management 
-brew cask install daisydisk
-
+# disk management
+#brew cask install daisydisk
