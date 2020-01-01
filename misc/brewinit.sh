@@ -31,7 +31,7 @@ brew install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
+brew install gnu-sed
 # Install a modern version of Bash.
 # brew install bash
 # brew install bash-completion2
@@ -46,6 +46,7 @@ brew install gnu-sed --with-default-names
 brew install zsh
 brew install tree
 # brew install getantibody/tap/antibody
+brew install tmux
 
 
 
@@ -68,13 +69,13 @@ fi
 
 
 # Install `wget` with IRI support.
-brew install wget --with-iri
+brew install wget
 
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
 
 # Install more recent versions of some macOS tools.
-brew install vim --with-override-system-vi
+brew install vim 
 brew install grep
 brew install openssh
 # brew install screen
@@ -119,15 +120,16 @@ brew install xz
 brew install git
 brew install git-flow
 brew install git-lfs
-# brew install cdiff
+# brew install cdiffs
 brew install hub
+brew install tig
 
 # Install other useful binaries.
 #brew install ack
 #brew install exiv2
 
 #brew install gs
-brew install imagemagick --with-webp
+# brew install imagemagick --with-webp
 brew install lua
 brew install lynx
 brew install p7zip
