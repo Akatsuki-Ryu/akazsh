@@ -159,8 +159,9 @@ brew install source-highlight
 # font related (temp)
 brew cask install homebrew/cask-fonts/font-hack-nerd-font
 
-# cask updates manager
+# paackage manager
 brew tap buo/cask-upgrade
+brew tap beeftornado/rmtree
 
 
 # Other
