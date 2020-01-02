@@ -47,7 +47,7 @@ brew install zsh
 brew install tree
 # brew install getantibody/tap/antibody
 brew install tmux
-
+brew install mc
 
 
 # Check if zsh is in list of accepted shells
@@ -75,7 +75,7 @@ brew install wget
 brew install gnupg
 
 # Install more recent versions of some macOS tools.
-brew install vim 
+brew install vim
 brew install grep
 brew install openssh
 # brew install screen
@@ -146,6 +146,9 @@ brew install zopfli
 brew install python
 brew install python3
 brew install ruby
+brew install yarn
+brew install node
+
 
 # Highlighting
 brew install source-highlight
@@ -155,6 +158,9 @@ brew install source-highlight
 
 # font related (temp)
 brew cask install homebrew/cask-fonts/font-hack-nerd-font
+
+# cask updates manager
+brew tap buo/cask-upgrade
 
 
 # Other
