@@ -1,5 +1,11 @@
+# App Store applications
 # Other Cask applications
 # tap repositories and their packages
+appstore 1450504903 Night Eye (4.0.2)
+appstore 1480933944 Vimari (2.0.3)
+appstore 409907375 Remote Desktop (3.9.3)
+appstore 836500024 WeChat (2.3.29)
+appstore 937984704 Amphetamine (4.2)
 brew ack
 brew adns
 brew aircrack-ng
@@ -144,7 +150,6 @@ brew msgpack
 brew mysql-client
 brew ncdu
 brew ncurses
-brew neofetch
 brew neovim
 brew netpbm
 brew nettle
@@ -247,26 +252,41 @@ cask blender
 cask carbon-copy-cloner
 cask daisydisk
 cask discord
-cask djview
 cask docker
 cask dockstation
 cask energybar
 cask firestorm
 cask font-hack-nerd-font
 cask franz
+cask free-download-manager
 cask gitkraken
+cask google-backup-and-sync
+cask google-chrome
 cask google-japanese-ime
+cask grammarly
+cask handbrake
 cask intellij-idea
+cask iterm2
 cask java
+cask karabiner-elements
 cask kitematic
+cask microsoft-office
 cask plistedit-pro
+cask qq
 cask rescuetime
+cask shadowsocksx-ng
 cask slack
+cask sogouinput
 cask soundflower
+cask spotify
 cask sublime-text
+cask the-unarchiver
 cask tor-browser
+cask tunnelblick
 cask wifispoof
+cask wireshark
 cask zenmap
+cask zeronet
 tap beeftornado/rmtree
 tap bramstein/webfonttools
 tap buo/cask-upgrade
@@ -280,23 +300,6 @@ tap rcmdnk/file
 tap sambadevi/powerlevel9k
 tap v2ray/v2ray
 tap vitorgalvao/tiny-scripts
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
