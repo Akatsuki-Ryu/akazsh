@@ -6,6 +6,7 @@ appstore 1480933944 Vimari (2.0.3)
 appstore 409907375 Remote Desktop (3.9.3)
 appstore 836500024 WeChat (2.3.29)
 appstore 937984704 Amphetamine (4.2)
+brew ack
 brew adns
 brew aircrack-ng
 brew aom
@@ -16,6 +17,8 @@ brew aspell
 brew autoconf
 brew autojump
 brew baidupcs-go
+brew bash
+brew bash-completion@2
 brew bat
 brew bettercap
 brew bfg
@@ -54,6 +57,7 @@ brew gcc
 brew gdbm
 brew genact
 brew gettext
+brew ghostscript
 brew giflib
 brew git
 brew git-flow
@@ -78,6 +82,8 @@ brew hwloc
 brew hydra
 brew icu4c
 brew iftop
+brew ilmbase
+brew imagemagick
 brew isl
 brew jansson
 brew jasper
@@ -92,18 +98,21 @@ brew leptonica
 brew libass
 brew libassuan
 brew libbluray
+brew libde265
 brew libdnet
 brew libev
 brew libevent
 brew libffi
 brew libgcrypt
 brew libgpg-error
+brew libheif
 brew libidn
 brew libidn2
 brew libksba
 brew libmetalink
 brew libmpc
 brew libogg
+brew libomp
 brew libpcap
 brew libpng
 brew libpq
@@ -153,6 +162,7 @@ brew nspr
 brew nss
 brew oniguruma
 brew opencore-amr
+brew openexr
 brew openjpeg
 brew openldap
 brew openssh
@@ -187,9 +197,11 @@ brew ruby
 brew rust
 brew rustup-init
 brew s-lang
+brew screenresolution
 brew sdl2
 brew sfnt2woff
 brew sfnt2woff-zopfli
+brew shared-mime-info
 brew sl
 brew snappy
 brew socat
@@ -238,7 +250,6 @@ brew zsh-syntax-highlighting
 cask adobe-creative-cloud
 cask blender
 cask carbon-copy-cloner
-cask daisydisk
 cask discord
 cask docker
 cask dockstation
@@ -275,17 +286,20 @@ cask wifispoof
 cask wireshark
 cask zenmap
 cask zeronet
+tap beeftornado/rmtree
 tap bramstein/webfonttools
 tap buo/cask-upgrade
 tap drud/ddev
 tap homebrew/cask
 tap homebrew/cask-fonts
+tap homebrew/cask-versions
 tap homebrew/core
 tap iikira/baidupcs
 tap rcmdnk/file
 tap sambadevi/powerlevel9k
 tap v2ray/v2ray
 tap vitorgalvao/tiny-scripts
+
 
 
 
