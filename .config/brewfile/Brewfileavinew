@@ -1,0 +1,315 @@
+# Other Cask applications
+# tap repositories and their packages
+brew ack
+brew adns
+brew aircrack-ng
+brew aom
+brew apr
+brew apr-util
+brew argon2
+brew aspell
+brew autoconf
+brew autojump
+brew baidupcs-go
+brew bash
+brew bash-completion@2
+brew bat
+brew bettercap
+brew bfg
+brew binutils
+brew binwalk
+brew boost
+brew brew-file
+brew brotli
+brew c-ares
+brew cairo
+brew cask-repair
+brew cifer
+brew cmake
+brew cmatrix
+brew coreutils
+brew crunch
+brew curl-openssl
+brew ddev
+brew dex2jar
+brew diff-so-fancy
+brew dns2tcp
+brew docker
+brew fcrackzip
+brew fd
+brew ffmpeg
+brew findutils
+brew flac
+brew fontconfig
+brew foremost
+brew freetds
+brew freetype
+brew frei0r
+brew fribidi
+brew fzf
+brew gcc
+brew gdbm
+brew genact
+brew gettext
+brew ghostscript
+brew giflib
+brew git
+brew git-flow
+brew git-lfs
+brew glances
+brew glib
+brew gmp
+brew gnu-sed
+brew gnupg
+brew gnutls
+brew go
+brew gradle
+brew graphite2
+brew grep
+brew harfbuzz
+brew hashcat
+brew hashpump
+brew hr
+brew htop
+brew hub
+brew hwloc
+brew hydra
+brew icu4c
+brew iftop
+brew ilmbase
+brew imagemagick
+brew isl
+brew jansson
+brew jasper
+brew jemalloc
+brew john
+brew jpeg
+brew knock
+brew lame
+brew ldid
+brew ldns
+brew leptonica
+brew libass
+brew libassuan
+brew libbluray
+brew libde265
+brew libdnet
+brew libev
+brew libevent
+brew libffi
+brew libgcrypt
+brew libgpg-error
+brew libheif
+brew libidn
+brew libidn2
+brew libksba
+brew libmetalink
+brew libmpc
+brew libogg
+brew libomp
+brew libpcap
+brew libpng
+brew libpq
+brew libsamplerate
+brew libsndfile
+brew libsodium
+brew libsoxr
+brew libssh
+brew libssh2
+brew libtasn1
+brew libtermkey
+brew libtiff
+brew libtool
+brew libunistring
+brew libusb
+brew libuv
+brew libvidstab
+brew libvorbis
+brew libvpx
+brew libvterm
+brew libyaml
+brew libzip
+brew little-cms2
+brew lua
+brew luajit
+brew lynx
+brew lzo
+brew mas
+brew micro
+brew midnight-commander
+brew mkcert
+brew moreutils
+brew mpfr
+brew msgpack
+brew mysql-client
+brew ncdu
+brew ncurses
+brew neofetch
+brew neovim
+brew netpbm
+brew nettle
+brew nghttp2
+brew nikto
+brew nmap
+brew node
+brew npth
+brew nspr
+brew nss
+brew oniguruma
+brew opencore-amr
+brew openexr
+brew openjpeg
+brew openldap
+brew openssh
+brew openssl@1.1
+brew opus
+brew p11-kit
+brew p7zip
+brew packer
+brew pcre
+brew pcre2
+brew perl
+brew php
+brew pigz
+brew pinentry
+brew pixman
+brew pkg-config
+brew pngcheck
+brew powerlevel9k
+brew prettyping
+brew pv
+brew python
+brew python@2
+brew python@3.8
+brew qt
+brew readline
+brew reaver
+brew rename
+brew rlwrap
+brew rtmpdump
+brew rubberband
+brew ruby
+brew rust
+brew rustup-init
+brew s-lang
+brew screenresolution
+brew sdl2
+brew sfnt2woff
+brew sfnt2woff-zopfli
+brew shared-mime-info
+brew sl
+brew snappy
+brew socat
+brew source-highlight
+brew speex
+brew sqlite
+brew sqlmap
+brew ssdeep
+brew ssh-copy-id
+brew sshfs
+brew tcpdump
+brew tcpflow
+brew tcpreplay
+brew tcptrace
+brew tesseract
+brew thefuck
+brew theora
+brew tidy-html5
+brew tig
+brew tmux
+brew tree
+brew ucspi-tcp
+brew unbound
+brew unibilium
+brew unixodbc
+brew v2ray-core
+brew vagrant-completion
+brew vbindiff
+brew vim
+brew vitetris
+brew webp
+brew wget
+brew woff2
+brew x264
+brew x265
+brew xpdf
+brew xvid
+brew xz
+brew yarn
+brew youtube-dl
+brew zopfli
+brew zsh
+brew zsh-autosuggestions
+brew zsh-completions
+brew zsh-syntax-highlighting
+cask adobe-creative-cloud
+cask blender
+cask carbon-copy-cloner
+cask daisydisk
+cask discord
+cask djview
+cask docker
+cask dockstation
+cask energybar
+cask firestorm
+cask font-hack-nerd-font
+cask franz
+cask gitkraken
+cask google-japanese-ime
+cask intellij-idea
+cask java
+cask kitematic
+cask plistedit-pro
+cask rescuetime
+cask slack
+cask soundflower
+cask sublime-text
+cask tor-browser
+cask wifispoof
+cask zenmap
+tap beeftornado/rmtree
+tap bramstein/webfonttools
+tap buo/cask-upgrade
+tap drud/ddev
+tap homebrew/cask
+tap homebrew/cask-fonts
+tap homebrew/cask-versions
+tap homebrew/core
+tap iikira/baidupcs
+tap rcmdnk/file
+tap sambadevi/powerlevel9k
+tap v2ray/v2ray
+tap vitorgalvao/tiny-scripts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
