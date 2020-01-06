@@ -77,6 +77,7 @@ brew install gnupg
 # Install more recent versions of some macOS tools.
 brew install vim
 brew install grep
+brew install ack #better grep
 brew install openssh
 # brew install screen
 brew install php
@@ -125,21 +126,21 @@ brew install hub
 brew install tig
 
 # Install other useful binaries.
-#brew install ack
+
 #brew install exiv2
 
 #brew install gs
 # brew install imagemagick --with-webp
-brew install lua
-brew install lynx
+#brew install lua
+brew install lynx #text based web browswer
 brew install p7zip
 brew install pigz
-brew install pv
+brew install pv  # visual pipline progress bar
 brew install rename
-brew install rlwrap
+brew install rlwrap #adding visual line wrap
 brew install ssh-copy-id
 brew install vbindiff
-brew install zopfli
+brew install zopfli # this is a zlib compressor
 
 
 # Development
@@ -169,7 +170,7 @@ brew install mas
 brew install neovim
 brew install wget
 # brew install gdrive
-brew install micro
+brew install micro  #terminal text editor
 
 
 
