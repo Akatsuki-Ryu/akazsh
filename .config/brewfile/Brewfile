@@ -6,7 +6,6 @@ appstore 1480933944 Vimari (2.0.3)
 appstore 409907375 Remote Desktop (3.9.3)
 appstore 836500024 WeChat (2.3.29)
 appstore 937984704 Amphetamine (4.2)
-brew ack
 brew adns
 brew aircrack-ng
 brew aom
@@ -17,8 +16,6 @@ brew aspell
 brew autoconf
 brew autojump
 brew baidupcs-go
-brew bash
-brew bash-completion@2
 brew bat
 brew bettercap
 brew bfg
@@ -28,7 +25,6 @@ brew boost
 brew brew-file
 brew brotli
 brew c-ares
-brew cairo
 brew cask-repair
 brew cifer
 brew cmake
@@ -50,15 +46,11 @@ brew fontconfig
 brew foremost
 brew freetds
 brew freetype
-brew frei0r
-brew fribidi
 brew fzf
 brew gcc
 brew gdbm
 brew genact
 brew gettext
-brew ghostscript
-brew giflib
 brew git
 brew git-flow
 brew git-lfs
@@ -70,20 +62,15 @@ brew gnupg
 brew gnutls
 brew go
 brew gradle
-brew graphite2
 brew grep
-brew harfbuzz
 brew hashcat
 brew hashpump
 brew hr
 brew htop
 brew hub
-brew hwloc
 brew hydra
 brew icu4c
 brew iftop
-brew ilmbase
-brew imagemagick
 brew isl
 brew jansson
 brew jasper
@@ -92,34 +79,24 @@ brew john
 brew jpeg
 brew knock
 brew lame
-brew ldid
 brew ldns
-brew leptonica
-brew libass
 brew libassuan
-brew libbluray
-brew libde265
 brew libdnet
 brew libev
 brew libevent
 brew libffi
 brew libgcrypt
 brew libgpg-error
-brew libheif
 brew libidn
 brew libidn2
 brew libksba
 brew libmetalink
 brew libmpc
 brew libogg
-brew libomp
 brew libpcap
 brew libpng
 brew libpq
-brew libsamplerate
-brew libsndfile
 brew libsodium
-brew libsoxr
 brew libssh
 brew libssh2
 brew libtasn1
@@ -129,17 +106,12 @@ brew libtool
 brew libunistring
 brew libusb
 brew libuv
-brew libvidstab
-brew libvorbis
-brew libvpx
 brew libvterm
 brew libyaml
 brew libzip
-brew little-cms2
 brew lua
 brew luajit
 brew lynx
-brew lzo
 brew mas
 brew micro
 brew midnight-commander
@@ -158,16 +130,10 @@ brew nikto
 brew nmap
 brew node
 brew npth
-brew nspr
-brew nss
 brew oniguruma
-brew opencore-amr
-brew openexr
-brew openjpeg
 brew openldap
 brew openssh
 brew openssl@1.1
-brew opus
 brew p11-kit
 brew p7zip
 brew packer
@@ -177,8 +143,6 @@ brew perl
 brew php
 brew pigz
 brew pinentry
-brew pixman
-brew pkg-config
 brew pngcheck
 brew powerlevel9k
 brew prettyping
@@ -192,21 +156,15 @@ brew reaver
 brew rename
 brew rlwrap
 brew rtmpdump
-brew rubberband
 brew ruby
 brew rust
 brew rustup-init
 brew s-lang
-brew screenresolution
-brew sdl2
 brew sfnt2woff
 brew sfnt2woff-zopfli
-brew shared-mime-info
 brew sl
-brew snappy
 brew socat
 brew source-highlight
-brew speex
 brew sqlite
 brew sqlmap
 brew ssdeep
@@ -216,9 +174,7 @@ brew tcpdump
 brew tcpflow
 brew tcpreplay
 brew tcptrace
-brew tesseract
 brew thefuck
-brew theora
 brew tidy-html5
 brew tig
 brew tmux
@@ -231,14 +187,10 @@ brew v2ray-core
 brew vagrant-completion
 brew vbindiff
 brew vim
-brew vitetris
 brew webp
 brew wget
 brew woff2
-brew x264
-brew x265
 brew xpdf
-brew xvid
 brew xz
 brew yarn
 brew youtube-dl
@@ -289,7 +241,6 @@ cask zeronet
 tap beeftornado/rmtree
 tap bramstein/webfonttools
 tap buo/cask-upgrade
-tap drud/ddev
 tap homebrew/cask
 tap homebrew/cask-fonts
 tap homebrew/cask-versions
@@ -298,7 +249,6 @@ tap iikira/baidupcs
 tap rcmdnk/file
 tap sambadevi/powerlevel9k
 tap v2ray/v2ray
-tap vitorgalvao/tiny-scripts
 
 
 
