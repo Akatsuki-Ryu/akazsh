@@ -238,7 +238,6 @@ cask wifispoof
 cask wireshark
 cask zenmap
 cask zeronet
-tap beeftornado/rmtree
 tap bramstein/webfonttools
 tap buo/cask-upgrade
 tap homebrew/cask

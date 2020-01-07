@@ -217,8 +217,8 @@ brew install diff-so-fancy
 brew cask install homebrew/cask-fonts/font-hack-nerd-font
 
 # paackage manager
-brew tap buo/cask-upgrade
-brew tap beeftornado/rmtree
+brew tap buo/cask-upgrade #this is the b cu
+brew tap beeftornado/rmtree  #remove the whole dependency
 
 
 # Other
