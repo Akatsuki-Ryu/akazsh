@@ -83,6 +83,26 @@ brew install openssh
 brew install php
 brew install gmp
 brew install bat
+brew install htop
+brew install glances
+brew install iftop
+brew install ncdu
+brew install prettyping
+
+# navigation akabox
+brew install autojump
+brew install zsh-autosuggestions
+brew install zsh-completions
+brew install zsh-syntax-highlighting
+
+
+
+#fun stuff akabox
+brew install cmatrix #redpill
+brew install sl #a train
+brew install genact #what are you doing
+brew install hr #horizental line
+brew install thefuck
 
 # Install font tools.
 brew tap bramstein/webfonttools
@@ -116,6 +136,15 @@ brew install ucspi-tcp # `tcpserver` etc.
 brew install xpdf
 brew install xz
 
+# CTF akabox
+brew install bettercap
+brew install crunch #generate dictionary
+brew install hashcat
+brew install libpcap
+brew install mkcert
+brew install nikto
+brew install reaver
+brew install tcpdump
 
 # Git
 brew install git
@@ -125,10 +154,10 @@ brew install git-lfs
 brew install hub
 brew install tig
 
+
+
 # Install other useful binaries.
-
 #brew install exiv2
-
 #brew install gs
 # brew install imagemagick --with-webp
 #brew install lua
@@ -142,18 +171,45 @@ brew install ssh-copy-id
 brew install vbindiff
 brew install zopfli # this is a zlib compressor
 
+#application level stuff
+brew install baidupcs-go
+brew install docker
+brew install fd
+brew install fzf
+brew install packer
+brew install sshfs
+brew install v2ray-core
+brew install vagrant-completion
+brew install youtube-dl
+
+
+
+# media related
+brew install ffmpeg
+brew install flac
+brew install lame
+brew install libogg
+
 
 # Development
 brew install python
 brew install python3
+brew install python@2
+brew install python@3.8
 brew install ruby
 brew install yarn
 brew install node
+brew install cmake
+brew install go
+brew install gradle
+brew install rust
+brew install rustup-init
+
 
 
 # Highlighting
 brew install source-highlight
-
+brew install diff-so-fancy
 
 
 

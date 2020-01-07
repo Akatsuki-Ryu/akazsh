@@ -65,7 +65,7 @@ brew cask install blender
 brew cask install soundflower
 brew cask install adobe-creative-cloud
 brew cask install handbrake
-
+brew cask install spotify
 
 
 
@@ -83,6 +83,7 @@ brew cask install font-hack-nerd-font
 
 # Install Mac App Store apps
 # add Magnet install
+
 
 
 
