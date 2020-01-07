@@ -178,6 +178,7 @@ brew install fd
 brew install fzf
 brew install packer
 brew install sshfs
+brew tap v2ray/v2ray
 brew install v2ray-core
 brew install vagrant-completion
 brew install youtube-dl
