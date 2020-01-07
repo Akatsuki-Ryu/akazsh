@@ -118,7 +118,7 @@ alias zshconfig="subl ~/.zshrc"
 
 
 # Aliases
-source $HOME/akazsh/.aliases 
+source $HOME/akazsh/.aliases
 
 
 #######################################################################brew related
@@ -138,8 +138,9 @@ alias bkif="brew cask install --force"
 alias bku="brew cask uninstall"
 alias bkuf="brew cask uninstall --force"
 alias bkl="brew cask list"
-alias bdelall="brew list -1 | xargs brew rm "
-alias bkdelall="brew cask list -1 | xargs brew cask rm "
+alias brmall="brew list -1 | xargs brew rm "
+alias bkrmall="brew cask list -1 | xargs brew cask rm "
+alias bltree="brew deps --tree --installed"
 
 
 #########################system level
@@ -225,7 +226,7 @@ alias sshmountavi="sshfs -p 30022 akatsuki@62.78.181.155:/Users/akatsuki /Users/
 alias syncfromavi="rsync -av --rsh='ssh -p30022' akatsuki@62.78.181.155:~/0transfer /Users/akatsuki/"
 alias synctoavi="rsync -av /Users/akatsuki/0transfer  --rsh='ssh -p30022' akatsuki@62.78.181.155:~/ "
 
-######################################################remote mount 
+######################################################remote mount
 alias sshxiaomi="ssh root@192.168.31.1"
 
 
@@ -276,7 +277,7 @@ alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/C
 alias airscan='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -s'
 
 
-#code sign 
+#code sign
 alias codesign='codesign --force --deep --sign - '
 
 
