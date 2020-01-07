@@ -224,7 +224,6 @@ brew tap beeftornado/rmtree  #remove the whole dependency
 # Other
 brew install mas
 brew install neovim
-brew install wget
 # brew install gdrive
 brew install micro  #terminal text editor
 
