@@ -56,6 +56,7 @@ brew cask install google-japanese-ime
 brew cask install sogouinput
 brew cask install microsoft-office
 brew cask install plistedit-pro
+brew cask install forklift
 
 
 
