@@ -1,0 +1,12 @@
+ ################################################### android development enviroments
+ export ANDROID_HOME=/usr/local/opt/android-sdk
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
+# export ANDROID_SDK=$HOME/Library/Android/sdk
+export ANDROID_SDK=/usr/local/share/android-sdk
+export PATH=$PATH:$ANDROID_SDK/emulator:$ANDROID_SDK/tools
+export PATH=$PATH:$ANDROID_SDK/platform-tools
+##################################################
+
+#for brew enviroments
+export ANDROID_SDK_ROOT="/usr/local/share/android-sdk"

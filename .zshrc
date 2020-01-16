@@ -9,7 +9,6 @@ export ZSH=$HOME/.oh-my-zsh
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
-ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -63,7 +62,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git docker-compose)
 
 
 
@@ -98,14 +97,11 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-#take away powerlevel settings and autosuggestiinos and syntax highlight for linux 
-#source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
-# source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-# source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
+ source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-#  [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
-
-source /usr/share/autojump/autojump.sh
+  [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
 
@@ -118,8 +114,14 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 
 ################path for golang
 export GOPATH=$HOME/go
-alias zshconfig="gedit ~/.zshrc"
+alias zshconfig="subl ~/.zshrc"
 
+
+# Aliases source file
+source $HOME/akazsh/.aliases
+
+# android configure source file
+source $HOME/akazsh/androidconf
 
 
 #######################################################################brew related
@@ -131,6 +133,7 @@ alias bi="brew install"
 alias bu="brew uninstall"
 alias bs="brew search"
 alias bl="brew list"
+alias btree="brew deps --tree --installed"
 alias bk="brew cask"
 alias bks="brew cask search"
 alias bki="brew cask install"
@@ -138,8 +141,9 @@ alias bkif="brew cask install --force"
 alias bku="brew cask uninstall"
 alias bkuf="brew cask uninstall --force"
 alias bkl="brew cask list"
-alias bdelall="brew list -1 | xargs brew rm "
-alias bkdelall="brew cask list -1 | xargs brew cask rm "
+alias brmall="brew list -1 | xargs brew rm "
+alias bkrmall="brew cask list -1 | xargs brew cask rm "
+alias bltree="brew deps --tree --installed"
 
 
 #########################system level
@@ -159,6 +163,7 @@ alias tma="tmux attach -t akaboxsession"
 alias tmu="tmux kill-session -t akaboxsession"
 alias mc='LANG=en_EN.UTF-8 mc'
 alias h='htop'
+alias a='glances'
 alias hs='sudo htop'
 alias du='ncdu -2 -x --exclude .git'
 #alias cat='bat' # there is no bat in linux
@@ -172,13 +177,13 @@ alias kra='open -na "GitKraken" --args -p $(pwd)'
 
 
 ###############################docker
-#alias d="docker"
-#alias dps="docker ps -al"
-#alias di="docker image"
-#alias dirmall="docker rmi $(docker images -q)"
-#alias dkillall="docker kill $(docker ps -q)"
-#alias drmall="docker rm $(docker ps -a -q)"
-#alias dreset="docker kill $(docker ps -q); docker rm $(docker ps -a -q); docker rmi $(docker images -q)"
+alias d="docker"
+alias dps="docker ps -al"
+alias di="docker image"
+alias dirmall="docker rmi $(docker images -q)"
+alias dkillall="docker kill $(docker ps -q)"
+alias drmall="docker rm $(docker ps -a -q)"
+alias dreset="docker kill $(docker ps -q); docker rm $(docker ps -a -q); docker rmi $(docker images -q)"
 
 
 
@@ -219,23 +224,29 @@ alias sshmini="ssh dghelsinki@192.168.50.79"
 alias sshminiakabox="ssh dghelsinki@192.168.50.80"
 alias sshprez="ssh akatsuki@192.168.50.84"
 alias sshaws="ssh -i "akaboxcentos.pem.txt" centos@ec2-13-48-25-117.eu-north-1.compute.amazonaws.com"
+alias sshtunnel="ssh -i "akaboxtunnel.pem.txt" ubuntu@ec2-13-48-149-61.eu-north-1.compute.amazonaws.com"
 
 ##alias android="/Users/akatsuki/Library/Android/sdk/tools/android"
 alias sshmountavi="sshfs -p 30022 akatsuki@62.78.181.155:/Users/akatsuki /Users/akatsuki/mountavi"
+alias syncfromavi="rsync -av --rsh='ssh -p30022' akatsuki@62.78.181.155:~/0transfer /Users/akatsuki/"
+alias synctoavi="rsync -av /Users/akatsuki/0transfer  --rsh='ssh -p30022' akatsuki@62.78.181.155:~/ "
 
-
-
-######################################################remote mount 
-alias sshxiaomi="ssh root@82.130.43.175"
+######################################################remote mount
+alias sshxiaomi="ssh root@192.168.31.1"
 
 
 ################################### system navi
 
 alias sshaaltohtml="ssh -L 8080:wwwproxy.hut.fi:80 liux2@kosh.aalto.fi"
 alias sshaaltoall="ssh -D8080 liux2@kosh.aalto.fi"
-alias sshvpn="ssh -D8080 -p10022 akatsuki@62.78.181.155"
+alias sshvpn="networksetup -switchtolocation tunnel; ssh -D8080 -p10022 akatsuki@62.78.181.155"
 alias sshvpnixo="ssh -D8080 -p22 liuakat@10.100.5.11"
 alias shadowvpnserver="/Users/akatsuki/akazsh/shadowsocks/shadowsocks-server"
+alias v2rayvpnclient=" networksetup -switchtolocation tunnel; v2ray -config=/Users/akatsuki/akazsh/v2raybin/configclient.json;"
+alias v2rayvpnserver="v2ray -config=/Users/akatsuki/akazsh/v2raybin/configserver.json"
+alias netswauto="networksetup -switchtolocation automatic"
+alias netswtunnel="networksetup -switchtolocation tunnel"
+
 export PATH="/usr/local/sbin:$PATH"
 alias ise="ionic serve"
 alias ira="ionic cordova run android"
@@ -245,7 +256,11 @@ alias killremote="killall "Remote Desktop""
 
 ##alias creatersa="ssh-keygen -b 1024 -t rsa -f id_rsa -P """
 
-export PATH=$PATH:/Users/akatsuki/Library/Android/sdk/platform-tools
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+
+
+
+
 export PATH=$PATH:/Library/Developer/CommandLineTools/usr/bin/codesign_allocate
 
 # Recursively delete `.DS_Store` files
@@ -254,11 +269,16 @@ export PATH=$PATH:/Library/Developer/CommandLineTools/usr/bin/codesign_allocate
 # Finally, clear download history from quarantine. https://mths.be/bum
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete;sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl; sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'delete from LSQuarantineEvent';say data cleaning up complete"
 
+eval $(thefuck --alias)
+alias f="fuck"
 
 # Airport CLI alias
 alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport'
 alias airscan='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -s'
 
+
+#code sign
+alias codesign='codesign --force --deep --sign - '
 
 
 
@@ -427,3 +447,6 @@ POWERLEVEL9K_TIME_BACKGROUND="black"
 
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+
+

@@ -1095,6 +1095,25 @@
                     "type": "basic"
                 },
                 {
+                "from": {
+                    "key_code": "r",
+                    "modifiers": {
+                        "mandatory": [
+                            "right_command",
+                            "right_control",
+                            "right_shift",
+                            "right_option"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "shell_command": "open -a 'Reminders'"
+                    }
+                ],
+                "type": "basic"
+            },
+                {
                     "from": {
                         "key_code": "a",
                         "modifiers": {
@@ -1166,6 +1185,25 @@
                     "to": [
                         {
                             "shell_command": "open -a 'gitkraken'"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "from": {
+                        "key_code": "p",
+                        "modifiers": {
+                            "mandatory": [
+                                "right_command",
+                                "right_control",
+                                "right_shift",
+                                "right_option"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "shell_command": "open -a 'Parallels Desktop'"
                         }
                     ],
                     "type": "basic"
@@ -1269,6 +1307,26 @@
                 },
                 {
                     "from": {
+                        "key_code": "f",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_command",
+                                "right_command",
+                                "right_control",
+                                "right_shift",
+                                "right_option"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "shell_command": "open -a 'Firestorm-Releasex64'"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "from": {
                         "key_code": "t",
                         "modifiers": {
                             "mandatory": [
@@ -1291,7 +1349,6 @@
                         "key_code": "f",
                         "modifiers": {
                             "mandatory": [
-                                "left_command",
                                 "right_command",
                                 "right_control",
                                 "right_shift",

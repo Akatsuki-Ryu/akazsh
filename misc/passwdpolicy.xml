@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>policyCategoryPasswordContent</key>
+	<array>
+		<dict>
+			<key>policyContent</key>
+			<string>policyAttributePassword matches '^$|.{1,}+'</string>
+			<key>policyContentDescription</key>
+			<dict>
+				<key>Dutch</key>
+				<string>Voer een wachtwoord van vier of meer tekens in of laat het wachtwoordveld leeg.</string>
+				<key>English</key>
+				<string>Enter a password that is four characters or more or leave the password field blank.</string>
+				<key>French</key>
+				<string>Saisissez un mot de passe comportant au moins quatre caractères ou laissez le champ vide.</string>
+				<key>German</key>
+				<string>Gib ein Passwort ein, das aus mindestens vier Zeichen besteht, oder lass das Passwortfeld leer.</string>
+				<key>Italian</key>
+				<string>Inserisci una password di quattro o più caratteri o lascia vuoto il campo password.</string>
+				<key>Japanese</key>
+				<string>4文字以上のパスワードを入力するか、パスワードフィールドを空のままにしてください。</string>
+				<key>Spanish</key>
+				<string>Introduce una contraseña que tenga cuatro caracteres como mínimo o deja el campo de la contraseña en blanco.</string>
+				<key>ar</key>
+				<string>أدخل كلمة سر لا تقل عن أربعة أحرف أو رموز، أو اترك حقل كلمة السر فارغًا.</string>
+				<key>ca</key>
+				<string>Introdueix una contrasenya que tingui quatre caràcters o més, o deixa el camp de la contrasenya en blanc.</string>
+				<key>cs</key>
+				<string>Zadejte heslo o minimální délce čtyři znaky nebo nechte pole hesla prázdné.</string>
+				<key>da</key>
+				<string>Skriv en adgangskode på mindst fire tegn, eller lad adgangskodefeltet være tomt.</string>
+				<key>el</key>
+				<string>Εισαγάγετε ένα συνθηματικό που να αποτελείται από τέσσερις ή περισσότερους χαρακτήρες, ή αφήστε το πεδίο του συνθηματικού κενό.</string>
+				<key>en_AU</key>
+				<string>Enter a password that is four characters or more or leave the password field blank.</string>
+				<key>en_GB</key>
+				<string>Enter a password that is four characters or more or leave the password field blank.</string>
+				<key>es_419</key>
+				<string>Ingresa una contraseña de cuatro o más caracteres, o deja el campo de contraseña en blanco.</string>
+				<key>fi</key>
+				<string>Kirjoita salasana, jossa on vähintään neljä merkkiä, tai jätä salasanakenttä tyhjäksi.</string>
+				<key>fr_CA</key>
+				<string>Saisissez un mot de passe comportant au moins quatre caractères ou laissez le champ vide.</string>
+				<key>he</key>
+				<string>הקש/י סיסמה בת ארבעה תווים לפחות או השאר/י את שדה הסיסמה ריק.</string>
+				<key>hi</key>
+				<string>चार वर्ण या उससे बड़ा पासवर्ड दर्ज करें या पासवर्ड फ़ील्ड ख़ाली छोड़ दें।</string>
+				<key>hr</key>
+				<string>Unesite lozinku koja sadrži minimalno četiri znaka ili polje lozinke ostavite prazno.</string>
+				<key>hu</key>
+				<string>Adjon meg egy legalább négy karakterből álló jelszót, vagy hagyja üresen a jelszómezőt.</string>
+				<key>id</key>
+				<string>Masukkan kata sandi yang terdiri dari empat karakter atau lebih atau kosongkan bidang kata sandi.</string>
+				<key>ko</key>
+				<string>4자 이상의 암호를 입력하거나 암호 필드를 비워두십시오.</string>
+				<key>ms</key>
+				<string>Masukkan kata laluan sepanjang empat aksara atau lebih atau biarkan medan kata laluan kosong.</string>
+				<key>no</key>
+				<string>Angi et passord på minst fire tegn, eller la passordfeltet stå tomt.</string>
+				<key>pl</key>
+				<string>Podaj hasło składające się z co najmniej czterech znaków lub zostaw puste pole.</string>
+				<key>pt</key>
+				<string>Digite uma senha com ao menos quatro caracteres ou deixe o campo de senha em branco.</string>
+				<key>pt_PT</key>
+				<string>Digite uma palavra‑passe com pelo menos quatro caracteres, ou deixe o campo da palavra‑passe em branco.</string>
+				<key>ro</key>
+				<string>Introduceți o parolă de minimum patru caractere sau lăsați gol câmpul pentru parolă.</string>
+				<key>ru</key>
+				<string>Введите пароль, состоящий из четырех или более символов, либо оставьте поле пароля пустым.</string>
+				<key>sk</key>
+				<string>Zadajte heslo obsahujúce najmenej štyri znaky alebo nechajte pole pre heslo prázdne.</string>
+				<key>sv</key>
+				<string>Ange ett lösenord som är minst fyra tecken långt eller låt lösenordsfältet vara tomt.</string>
+				<key>th</key>
+				<string>ป้อนรหัสผ่านที่มีอักขระอย่างน้อยสี่ตัวหรือเว้นช่องรหัสผ่านไว้</string>
+				<key>tr</key>
+				<string>En az dört karakter uzunluğunda bir parola girin veya parola alanını boş bırakın.</string>
+				<key>uk</key>
+				<string>Введіть пароль зі щонайменше чотирьох символів або залиште поле пароля пустим.</string>
+				<key>vi</key>
+				<string>Nhập mật khẩu dài 4 ký tự trở lên hoặc để trống trường mật khẩu.</string>
+				<key>zh_CN</key>
+				<string>输入不少于 4 个字符的密码，或将密码栏留空。</string>
+				<key>zh_HK</key>
+				<string>輸入一個四位或更多字元的密碼，或留空密碼欄位。</string>
+				<key>zh_TW</key>
+				<string>輸入 4 個字元或更長的密碼，或將密碼欄位留空。</string>
+			</dict>
+			<key>policyIdentifier</key>
+			<string>com.apple.defaultpasswordpolicy</string>
+		</dict>
+	</array>
+</dict>
+</plist>
+
