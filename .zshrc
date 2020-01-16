@@ -154,8 +154,7 @@ alias zipsp150="zip -r -s 150m zip.zip "
 alias zipsp10="zip -r -s 10m zip.zip "
 alias p="pwd"
 alias k="ls -atlr"
-#alias o="open ." #no open command in linux , use xdg-open instead
-alias o="xdg-open ."
+alias o="open ."
 alias x="exit"
 alias zippwd="zip -e zip.zip"
 alias tmn="tmux new -s akaboxsession"
@@ -166,8 +165,8 @@ alias h='htop'
 alias a='glances'
 alias hs='sudo htop'
 alias du='ncdu -2 -x --exclude .git'
-#alias cat='bat' # there is no bat in linux
-#alias ping='prettyping'  # there is no pretty ping in linux 
+alias cat='bat'
+alias ping='prettyping'
 alias mksnapshot='tmutil snapshot'
 alias lssnapshot='tmutil listlocalsnapshots /Volumes'
 alias t='tig --all'
@@ -196,11 +195,10 @@ export PATH=/usr/local/bin:$PATH
 alias iftop="sudo /usr/local/Cellar/iftop/1.0pre4/sbin/./iftop"
 
 alias ai="sudo apt-get install"
-alias as="sudo apt search"
 alias aup="sudo apt-get update; sudo apt-get upgrade"
 alias au="sudo apt-get uninstall"
 alias aupfull="sudo apt-get dist-upgrade"
-alias aupcompl="apt-get update && apt-get upgrade && apt-get full-upgrade && apt-get dist-upgrade"
+
 
 
 ################################################### local navi
