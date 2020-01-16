@@ -117,8 +117,11 @@ export GOPATH=$HOME/go
 alias zshconfig="subl ~/.zshrc"
 
 
-# Aliases
+# Aliases source file
 source $HOME/akazsh/.aliases
+
+# android configure source file
+source $HOME/akazsh/androidconf
 
 
 #######################################################################brew related
@@ -253,11 +256,6 @@ alias killremote="killall "Remote Desktop""
 
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
-################################################### android development enviroments
-export ANDROID_SDK=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_SDK/emulator:$ANDROID_SDK/:$ANDROID_SDK/tools:$ANDROID_SDK/tools/bin
-export PATH=$PATH:$ANDROID_SDK/platform-tools
-##################################################
 
 
 
