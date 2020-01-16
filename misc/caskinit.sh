@@ -40,7 +40,7 @@ brew cask install --force  discord
 # Cloud
 # brew cask install --force  dropbox
 brew cask install --force  google-backup-and-sync
-brew cask isntall free-download-manager
+brew cask isntall --force  free-download-manager
 brew cask install --force  tunnelblick
 brew cask install --force  shadowsocksx-ng
 
@@ -56,7 +56,7 @@ brew cask install --force  google-japanese-ime
 brew cask install --force  sogouinput
 brew cask install --force  microsoft-office
 brew cask install --force  plistedit-pro
-brew cask install forklift
+brew cask install --force  forklift
 
 
 
