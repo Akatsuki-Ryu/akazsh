@@ -9,6 +9,7 @@ export ZSH=$HOME/.oh-my-zsh
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
+ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -62,7 +63,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker-compose)
+plugins=(git)
 
 
 
@@ -97,11 +98,14 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
- source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
- source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#take away powerlevel settings and autosuggestiinos and syntax highlight for linux
+#source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
+# source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-  [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+#  [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
+source /usr/share/autojump/autojump.sh
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
 
@@ -114,14 +118,13 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 
 ################path for golang
 export GOPATH=$HOME/go
-alias zshconfig="subl ~/.zshrc"
-
+alias zshconfig="gedit ~/.zshrc"
 
 # Aliases source file
-source $HOME/akazsh/.aliases
+# source $HOME/akazsh/.aliases
 
 # android configure source file
-source $HOME/akazsh/androidconf
+# source $HOME/akazsh/androidconf
 
 
 #######################################################################brew related
@@ -167,7 +170,7 @@ alias a='glances'
 alias hs='sudo htop'
 alias du='ncdu -2 -x --exclude .git'
 #alias cat='bat' # there is no bat in linux
-#alias ping='prettyping'  # there is no pretty ping in linux 
+#alias ping='prettyping'  # there is no pretty ping in linux
 alias mksnapshot='tmutil snapshot'
 alias lssnapshot='tmutil listlocalsnapshots /Volumes'
 alias t='tig --all'
@@ -239,7 +242,7 @@ alias sshxiaomi="ssh root@192.168.31.1"
 
 alias sshaaltohtml="ssh -L 8080:wwwproxy.hut.fi:80 liux2@kosh.aalto.fi"
 alias sshaaltoall="ssh -D8080 liux2@kosh.aalto.fi"
-alias sshvpn="networksetup -switchtolocation tunnel; ssh -D8080 -p10022 akatsuki@62.78.181.155"
+alias sshvpn="ssh -D8080 -p10022 akatsuki@62.78.181.155"
 alias sshvpnixo="ssh -D8080 -p22 liuakat@10.100.5.11"
 alias shadowvpnserver="/Users/akatsuki/akazsh/shadowsocks/shadowsocks-server"
 alias v2rayvpnclient=" networksetup -switchtolocation tunnel; v2ray -config=/Users/akatsuki/akazsh/v2raybin/configclient.json;"
@@ -256,11 +259,7 @@ alias killremote="killall "Remote Desktop""
 
 ##alias creatersa="ssh-keygen -b 1024 -t rsa -f id_rsa -P """
 
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
-
-
-
-
+export PATH=$PATH:/Users/akatsuki/Library/Android/sdk/platform-tools
 export PATH=$PATH:/Library/Developer/CommandLineTools/usr/bin/codesign_allocate
 
 # Recursively delete `.DS_Store` files
@@ -276,9 +275,6 @@ alias f="fuck"
 alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport'
 alias airscan='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -s'
 
-
-#code sign
-alias codesign='codesign --force --deep --sign - '
 
 
 
@@ -447,6 +443,3 @@ POWERLEVEL9K_TIME_BACKGROUND="black"
 
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-
-
-
