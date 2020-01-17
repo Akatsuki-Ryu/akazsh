@@ -30,7 +30,7 @@ sudo apt-get install terminator
 
 
 
-exit
+# exit
 
 cd ..
 echo this will overwrite the setting on this user ....
