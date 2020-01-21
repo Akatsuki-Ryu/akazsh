@@ -141,8 +141,8 @@ alias bkif="brew cask install --force"
 alias bku="brew cask uninstall"
 alias bkuf="brew cask uninstall --force"
 alias bkl="brew cask list"
-alias brmall="brew list -1 | xargs brew rm "
-alias bkrmall="brew cask list -1 | xargs brew cask rm "
+alias brmall="brew list -1 | xargs brew rm --force"
+alias bkrmall="brew cask list -1 | xargs brew cask rm --force"
 alias bltree="brew deps --tree --installed"
 
 
