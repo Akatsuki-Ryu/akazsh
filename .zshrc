@@ -161,7 +161,8 @@ alias tmn="tmux new -s akaboxsession"
 alias tma="tmux attach -t akaboxsession"
 alias tmu="tmux kill-session -t akaboxsession"
 alias mc='LANG=en_EN.UTF-8 mc'
-alias mi='micro'
+alias m='micro'
+alias s='subl'
 alias h='htop'
 alias a='glances'
 alias hs='sudo htop'
