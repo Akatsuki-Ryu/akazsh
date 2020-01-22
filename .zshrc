@@ -141,8 +141,8 @@ alias bkif="brew cask install --force"
 alias bku="brew cask uninstall"
 alias bkuf="brew cask uninstall --force"
 alias bkl="brew cask list"
-alias brmall="brew list -1 | xargs brew rm "
-alias bkrmall="brew cask list -1 | xargs brew cask rm "
+alias brmall="brew list -1 | xargs brew rm --force"
+alias bkrmall="brew cask list -1 | xargs brew cask rm --force"
 alias bltree="brew deps --tree --installed"
 
 
@@ -161,6 +161,8 @@ alias tmn="tmux new -s akaboxsession"
 alias tma="tmux attach -t akaboxsession"
 alias tmu="tmux kill-session -t akaboxsession"
 alias mc='LANG=en_EN.UTF-8 mc'
+alias m='micro'
+alias s='subl'
 alias h='htop'
 alias a='glances'
 alias hs='sudo htop'
