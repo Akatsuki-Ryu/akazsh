@@ -1,11 +1,12 @@
 # App Store applications
-# Other Cask applications
+# Other Homebrew packages
 # tap repositories and their packages
-appstore 1450504903 Night Eye (4.0.2)
+appstore 1450504903 Night Eye (4.0.5)
 appstore 1480933944 Vimari (2.0.3)
 appstore 409907375 Remote Desktop (3.9.3)
 appstore 836500024 WeChat (2.3.29)
-appstore 937984704 Amphetamine (4.2)
+appstore 937984704 Amphetamine (5.0)
+brew ack
 brew adns
 brew aircrack-ng
 brew aom
@@ -22,17 +23,15 @@ brew bfg
 brew binutils
 brew binwalk
 brew boost
-brew brew-file
 brew brotli
 brew c-ares
-brew cask-repair
+brew cairo
 brew cifer
 brew cmake
 brew cmatrix
 brew coreutils
 brew crunch
 brew curl-openssl
-brew ddev
 brew dex2jar
 brew diff-so-fancy
 brew dns2tcp
@@ -46,11 +45,14 @@ brew fontconfig
 brew foremost
 brew freetds
 brew freetype
+brew frei0r
+brew fribidi
 brew fzf
 brew gcc
 brew gdbm
 brew genact
 brew gettext
+brew giflib
 brew git
 brew git-flow
 brew git-lfs
@@ -62,7 +64,9 @@ brew gnupg
 brew gnutls
 brew go
 brew gradle
+brew graphite2
 brew grep
+brew harfbuzz
 brew hashcat
 brew hashpump
 brew hr
@@ -71,6 +75,8 @@ brew hub
 brew hydra
 brew icu4c
 brew iftop
+brew ilmbase
+brew imagemagick
 brew isl
 brew jansson
 brew jasper
@@ -80,23 +86,32 @@ brew jpeg
 brew knock
 brew lame
 brew ldns
+brew leptonica
+brew libass
 brew libassuan
+brew libbluray
+brew libde265
 brew libdnet
 brew libev
 brew libevent
 brew libffi
 brew libgcrypt
 brew libgpg-error
+brew libheif
 brew libidn
 brew libidn2
 brew libksba
 brew libmetalink
 brew libmpc
 brew libogg
+brew libomp
 brew libpcap
 brew libpng
 brew libpq
+brew libsamplerate
+brew libsndfile
 brew libsodium
+brew libsoxr
 brew libssh
 brew libssh2
 brew libtasn1
@@ -106,13 +121,19 @@ brew libtool
 brew libunistring
 brew libusb
 brew libuv
+brew libvidstab
+brew libvorbis
+brew libvpx
 brew libvterm
 brew libyaml
 brew libzip
+brew little-cms2
 brew lua
 brew luajit
 brew lynx
+brew lzo
 brew mas
+brew mbedtls
 brew micro
 brew midnight-commander
 brew mkcert
@@ -120,8 +141,10 @@ brew moreutils
 brew mpfr
 brew msgpack
 brew mysql-client
+brew nasm
 brew ncdu
 brew ncurses
+brew neofetch
 brew neovim
 brew netpbm
 brew nettle
@@ -131,9 +154,14 @@ brew nmap
 brew node
 brew npth
 brew oniguruma
+brew opencore-amr
+brew openexr
+brew openjdk
+brew openjpeg
 brew openldap
 brew openssh
 brew openssl@1.1
+brew opus
 brew p11-kit
 brew p7zip
 brew packer
@@ -143,6 +171,8 @@ brew perl
 brew php
 brew pigz
 brew pinentry
+brew pixman
+brew pkg-config
 brew pngcheck
 brew powerlevel9k
 brew prettyping
@@ -156,15 +186,22 @@ brew reaver
 brew rename
 brew rlwrap
 brew rtmpdump
+brew rubberband
 brew ruby
 brew rust
 brew rustup-init
 brew s-lang
+brew screenresolution
+brew sdl2
 brew sfnt2woff
 brew sfnt2woff-zopfli
+brew shadowsocks-libev
+brew shared-mime-info
 brew sl
+brew snappy
 brew socat
 brew source-highlight
+brew speex
 brew sqlite
 brew sqlmap
 brew ssdeep
@@ -174,7 +211,10 @@ brew tcpdump
 brew tcpflow
 brew tcpreplay
 brew tcptrace
+brew tesseract
+brew texi2html
 brew thefuck
+brew theora
 brew tidy-html5
 brew tig
 brew tmux
@@ -190,7 +230,10 @@ brew vim
 brew webp
 brew wget
 brew woff2
+brew x264
+brew x265
 brew xpdf
+brew xvid
 brew xz
 brew yarn
 brew youtube-dl
@@ -200,11 +243,12 @@ brew zsh-autosuggestions
 brew zsh-completions
 brew zsh-syntax-highlighting
 cask adobe-creative-cloud
+cask android-sdk
+cask android-studio
 cask blender
 cask carbon-copy-cloner
 cask discord
 cask docker
-cask dockstation
 cask energybar
 cask firestorm
 cask font-hack-nerd-font
@@ -213,6 +257,7 @@ cask free-download-manager
 cask gitkraken
 cask google-backup-and-sync
 cask google-chrome
+cask google-drive-file-stream
 cask google-japanese-ime
 cask grammarly
 cask handbrake
@@ -229,7 +274,9 @@ cask shadowsocksx-ng
 cask slack
 cask sogouinput
 cask soundflower
+cask spamsieve
 cask spotify
+cask sublime-merge
 cask sublime-text
 cask the-unarchiver
 cask tor-browser
@@ -238,18 +285,17 @@ cask wifispoof
 cask wireshark
 cask zenmap
 cask zeronet
+cask zoomus
+tap beeftornado/rmtree
 tap bramstein/webfonttools
 tap buo/cask-upgrade
 tap homebrew/cask
 tap homebrew/cask-fonts
 tap homebrew/cask-versions
 tap homebrew/core
-tap iikira/baidupcs
 tap rcmdnk/file
 tap sambadevi/powerlevel9k
 tap v2ray/v2ray
-
-
 
 
 
