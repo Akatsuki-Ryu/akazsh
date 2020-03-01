@@ -1,8 +1,13 @@
-shadowsocks:
-  image: shadowsocks/shadowsocks-libev
-  ports:
-    - "4869:8388"
-  environment:
-    - METHOD=aes-256-gcm
-    - PASSWORD=root
-  restart: always
+version: '3'
+services:
+  shadowsocks:
+    container_name: clientcontainer_debug
+    build:
+      context: ../misc/shadowsocks-libev/
+      dockerfile: Dockerfile
+    ports:
+      - "4869:8388"
+    environment:
+      - METHOD=aes-256-gcm
+      - PASSWORD=root
+    restart: always
