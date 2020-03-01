@@ -175,6 +175,7 @@ alias mksnapshot='tmutil snapshot'
 alias lssnapshot='tmutil listlocalsnapshots /Volumes'
 alias t='tig --all'
 alias gaac='git add --all; git commit -m'
+alias gsiu='git submodule init && git submodule update'
 
 alias kra='open -na "GitKraken" --args -p $(pwd)'
 
