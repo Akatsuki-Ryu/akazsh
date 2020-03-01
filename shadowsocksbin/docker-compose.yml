@@ -4,7 +4,7 @@ services:
     container_name: clientcontainer_debug
     build:
       context: ../misc/shadowsocks-libev/
-      dockerfile: Dockerfile
+      dockerfile: ./docker/alpine/Dockerfile
     ports:
       - "4869:8388"
     environment:
