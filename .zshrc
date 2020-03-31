@@ -155,6 +155,7 @@ alias cpr="sudo cp -r"
 alias mvr="sudo mv -r"
 alias zipsp150="zip -r -s 150m zip.zip "
 alias zipsp10="zip -r -s 10m zip.zip "
+alias zippwdsp="~/akazsh/misc/zip_split_passwd.sh"
 alias p="pwd"
 alias k="ls -atlr"
 #alias o="open ." #no open command in linux , use xdg-open instead
