@@ -228,6 +228,9 @@ alias sshminiakabox="ssh dghelsinki@192.168.50.80"
 alias sshprez="ssh akatsuki@192.168.50.84"
 alias sshaws="ssh -i "akaboxcentos.pem.txt" centos@ec2-13-48-25-117.eu-north-1.compute.amazonaws.com"
 alias sshtunnel="ssh -i "akaboxtunnel.pem.txt" ubuntu@ec2-13-48-149-61.eu-north-1.compute.amazonaws.com"
+alias sshtokyo="ssh -i "tokyokeypair.pem" ubuntu@ec2-13-113-175-125.ap-northeast-1.compute.amazonaws.com"
+alias sshhongkong="ssh -i "akaboxhongkong.pem" ubuntu@ec2-18-162-124-93.ap-east-1.compute.amazonaws.com"
+
 
 ##alias android="/Users/akatsuki/Library/Android/sdk/tools/android"
 alias sshmountavi="sshfs -p 30022 akatsuki@62.78.181.155:/Users/akatsuki /Users/akatsuki/mountavi"
