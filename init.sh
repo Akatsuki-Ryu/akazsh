@@ -4,6 +4,11 @@ echo now we will install basic apps , N to skip
 read -p "ok? (y/N): " yn
 case "$yn" in [yY]*) #this is the condition yes
 
+#install basic system components
+sudo apt-get install git
+sudo apt-get install curl
+
+
 #installing oh my zsh and powerlevel9k
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
@@ -15,6 +20,7 @@ sudo apt-get install fonts-powerline
 sudo apt-get install autojump
 sudo apt-get install tig
 sudo apt-get install terminator
+sudo apt-get install mc
 
 # linking diff_highlight to system . git should be from brew . this needs to be confirmed
 	sudo ln -s /usr/local/share/git-core/contrib/diff-highlight/diff-highlight /usr/local/bin/diff-highlight
