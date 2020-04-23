@@ -1,4 +1,4 @@
-# remove the old installations 
+# remove the old installations
 apt-get remove docker docker-engine docker.io
 
 # install packages
@@ -9,10 +9,10 @@ apt install \
     gnupg-agent \
     software-properties-common
 
-# install gpg key 
+# install gpg key
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key  add -
 
-#depository 
+#depository
 add-apt-repository \
     "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
     $(lsb_release -cs) \
@@ -25,11 +25,17 @@ deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable
 apt-cache madison docker-ce
 
 
- apt install docker-ce    
+ apt install docker-ce
 
 # ユーザをdockerグループに追加すると，sudoなしでdockerコマンドを実行できるので追加します．
  sudo usermod -aG docker $USER
 
 # dockerを起動し，常時起動するようにします
 sudo systemctl enable docker
+
+#install the docker composer
+sudo curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+#docker compose permission
+sudo chmod +x /usr/local/bin/docker-compose
 
