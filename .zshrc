@@ -205,7 +205,7 @@ alias as="sudo apt search"
 alias aup="sudo apt-get update; sudo apt-get upgrade"
 alias au="sudo apt-get uninstall"
 alias aupfull="sudo apt-get dist-upgrade"
-alias aupcompl="apt-get update && apt-get upgrade && apt-get full-upgrade && apt-get dist-upgrade"
+alias aupcompl="sudo apt-get update; sudo apt-get upgrade; sudo apt-get full-upgrade; sudo apt-get dist-upgrade"
 
 
 ################################################### local navi
