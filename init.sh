@@ -5,7 +5,7 @@ read -p "ok? (y/N): " yn
 case "$yn" in [yY]*) #this is the condition yes
 
 #install basic system components
-sudo apt-get install git
+sudo apt-get install zsh
 sudo apt-get install curl
 
 
