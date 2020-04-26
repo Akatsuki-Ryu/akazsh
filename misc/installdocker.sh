@@ -1,5 +1,6 @@
+#!/usr/bin/env bash
 # remove the old installations
-apt-get remove docker docker-engine docker.io
+sudo apt-get remove docker docker-engine docker.io containerd runc
 
 # install packages
 apt install \
@@ -8,6 +9,8 @@ apt install \
     curl \
     gnupg-agent \
     software-properties-common
+
+
 
 # install gpg key
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key  add -
@@ -25,7 +28,7 @@ deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable
 apt-cache madison docker-ce
 
 
- apt install docker-ce
+ apt install docker-ce docker-ce-cli containerd.io
 
 # ユーザをdockerグループに追加すると，sudoなしでdockerコマンドを実行できるので追加します．
  sudo usermod -aG docker $USER
@@ -38,4 +41,10 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-
 
 #docker compose permission
 sudo chmod +x /usr/local/bin/docker-compose
+
+
+#permissions for deamon
+sudo groupadd docker
+sudo usermod -aG docker ${USER}
+sudo rm -r ~/.docker/
 
