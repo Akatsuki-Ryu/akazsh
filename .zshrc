@@ -185,6 +185,7 @@ alias kra='open -na "GitKraken" --args -p $(pwd)'
 alias d="docker"
 alias dps="docker ps -al"
 alias di="docker image"
+alias direset="docker system prune"
 alias dirmall="docker rmi $(docker images -q)"
 alias dkillall="docker kill $(docker ps -q)"
 alias drmall="docker rm $(docker ps -a -q)"
@@ -259,6 +260,7 @@ alias irar="ionic cordova run android --livereload"
 alias ws8000="ws -p 8000 --log.format stats"
 alias ws3000="ws -p 3000 --log.format stats"
 alias killremote="killall "Remote Desktop""
+alias killntk="killall "NTKDaemon""
 
 ##alias creatersa="ssh-keygen -b 1024 -t rsa -f id_rsa -P """
 
