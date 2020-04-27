@@ -201,10 +201,10 @@ alias ns="npm start"
 export PATH=/usr/local/bin:$PATH
 alias iftop="sudo /usr/local/Cellar/iftop/1.0pre4/sbin/./iftop"
 
-alias ai="sudo apt-get install"
+alias ai="sudo apt-get install -y"
 alias as="sudo apt search"
 alias aup="sudo apt-get update; sudo apt-get upgrade"
-alias au="sudo apt-get uninstall"
+alias au="sudo apt-get uninstall -y"
 alias aupfull="sudo apt-get dist-upgrade"
 alias aupcompl="sudo apt-get update; sudo apt-get upgrade; sudo apt-get full-upgrade; sudo apt-get dist-upgrade"
 
