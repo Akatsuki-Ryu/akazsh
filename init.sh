@@ -21,6 +21,7 @@ sudo apt-get install autojump
 sudo apt-get install tig
 sudo apt-get install terminator
 sudo apt-get install mc
+sudo apt-get install ncdu
 
 # linking diff_highlight to system . git should be from brew . this needs to be confirmed
 	sudo ln -s /usr/local/share/git-core/contrib/diff-highlight/diff-highlight /usr/local/bin/diff-highlight
