@@ -166,12 +166,13 @@ alias tmn="tmux new -s akaboxsession"
 alias tma="tmux attach -t akaboxsession"
 alias tmu="tmux kill-session -t akaboxsession"
 alias mc='LANG=en_EN.UTF-8 mc'
+alias m='micro'
 alias h='htop'
 alias a='glances'
 alias hs='sudo htop'
 alias du='ncdu -2 -x --exclude .git'
-#alias cat='bat' # there is no bat in linux
-#alias ping='prettyping'  # there is no pretty ping in linux
+alias cat='bat'
+alias ping='prettyping'
 alias mksnapshot='tmutil snapshot'
 alias lssnapshot='tmutil listlocalsnapshots /Volumes'
 alias t='tig --all'
