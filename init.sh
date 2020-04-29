@@ -5,8 +5,8 @@ read -p "ok? (y/N): " yn
 case "$yn" in [yY]*) #this is the condition yes
 
 #install basic system components
-sudo apt-get install zsh
-sudo apt-get install curl
+sudo apt-get install -y zsh
+sudo apt-get install -y curl
 
 
 #installing oh my zsh and powerlevel9k
@@ -14,13 +14,14 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 
 #install font for powerlevel
-sudo apt-get install fonts-powerline
+sudo apt-get install -y fonts-powerline
 
 #install some basic features
-sudo apt-get install autojump
-sudo apt-get install tig
-sudo apt-get install terminator
-sudo apt-get install mc
+sudo apt-get install -y autojump
+sudo apt-get install -y tig
+sudo apt-get install -y terminator
+sudo apt-get install -y mc
+sudo apt-get install -y ncdu
 
 # linking diff_highlight to system . git should be from brew . this needs to be confirmed
 	sudo ln -s /usr/local/share/git-core/contrib/diff-highlight/diff-highlight /usr/local/bin/diff-highlight

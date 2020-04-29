@@ -185,8 +185,8 @@ alias kra='open -na "GitKraken" --args -p $(pwd)'
 alias d="docker"
 alias dps="docker ps -al"
 alias di="docker image"
-alias direset="docker system prune"
-alias dirmall="docker rmi $(docker images -q)"
+alias dirmall="docker rmi -f $(docker images -a -q)"
+alias direset="docker system prune -f"
 alias dkillall="docker kill $(docker ps -q)"
 alias drmall="docker rm $(docker ps -a -q)"
 alias dreset="docker kill $(docker ps -q); docker rm $(docker ps -a -q); docker rmi $(docker images -q)"
@@ -201,10 +201,10 @@ alias ns="npm start"
 export PATH=/usr/local/bin:$PATH
 alias iftop="sudo /usr/local/Cellar/iftop/1.0pre4/sbin/./iftop"
 
-alias ai="sudo apt-get install"
+alias ai="sudo apt-get install -y"
 alias as="sudo apt search"
 alias aup="sudo apt-get update; sudo apt-get upgrade"
-alias au="sudo apt-get uninstall"
+alias au="sudo apt-get uninstall -y"
 alias aupfull="sudo apt-get dist-upgrade"
 alias aupcompl="sudo apt-get update; sudo apt-get upgrade; sudo apt-get full-upgrade; sudo apt-get dist-upgrade"
 
