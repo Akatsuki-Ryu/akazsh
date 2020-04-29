@@ -24,10 +24,13 @@ sudo apt-get install -y mc
 sudo apt-get install -y ncdu
 sudo apt-get install -y micro
 sudo apt-get install -y prettyping
-sudo apt-get install -y bat
+#sudo apt-get install -y bat
 
-#install sublime text
-
+#install docker
+sudo apt install docker-compose
+sudo groupadd docker
+sudo gpasswd -a $USER docker
+newgrp docker
 
 
 # linking diff_highlight to system . git should be from brew . this needs to be confirmed
