@@ -27,7 +27,7 @@ sudo apt-get install -y prettyping
 #sudo apt-get install -y bat
 
 #install docker
-sudo apt install docker-compose
+sudo apt install docker-compose -y
 sudo groupadd docker
 sudo gpasswd -a $USER docker
 newgrp docker
