@@ -19,7 +19,7 @@ sudo apt-get install -y fonts-powerline
 #install some basic features
 sudo apt-get install -y autojump
 sudo apt-get install -y tig
-sudo apt-get install -y terminator
+# sudo apt-get install -y terminator
 sudo apt-get install -y mc
 sudo apt-get install -y ncdu
 sudo apt-get install -y micro
