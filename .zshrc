@@ -185,11 +185,11 @@ alias kra='open -na "GitKraken" --args -p $(pwd)'
 alias d="docker"
 alias dps="docker ps -al"
 alias di="docker image"
-alias dirmall="docker rmi -f $(docker images -a -q) || $(docker images -a -q)"
-alias direset="docker system prune -f"
-alias dkillall="docker kill $(docker ps -q)"
-alias drmall="docker rm $(docker ps -a -q)"
-alias dreset="docker kill $(docker ps -q); docker rm $(docker ps -a -q); docker rmi $(docker images -q)"
+# alias dirmall="docker rmi -f $(docker images -a -q) || $(docker images -a -q)"
+alias dirmall="~/akazsh/misc/dockercommands/dirmall.sh"
+# alias direset="docker system prune -f"
+alias drmall="~/akazsh/misc/dockercommands/drmall.sh"
+alias dreset="~/akazsh/misc/dockercommands/dreset.sh"
 
 
 
