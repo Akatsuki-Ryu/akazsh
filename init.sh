@@ -25,6 +25,7 @@ sudo apt-get install -y ncdu
 sudo apt-get install -y micro
 sudo apt-get install -y prettyping
 #sudo apt-get install -y bat
+sudo apt-get install -y ncdu
 
 #install docker
 sudo apt install docker-compose -y
