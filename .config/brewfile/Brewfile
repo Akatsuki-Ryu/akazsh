@@ -1,11 +1,13 @@
 # App Store applications
 # Other Homebrew packages
 # tap repositories and their packages
-appstore 1450504903 Night Eye (4.0.5)
+appstore 1295203466 Microsoft Remote Desktop (10.3.10)
+appstore 1450504903 Night Eye (4.1.6)
 appstore 1480933944 Vimari (2.0.3)
+appstore 1482920575 DuckDuckGo Privacy Essentials (1.3.0)
 appstore 409907375 Remote Desktop (3.9.3)
-appstore 836500024 WeChat (2.3.29)
-appstore 937984704 Amphetamine (5.0)
+appstore 836500024 WeChat (2.3.31)
+appstore 937984704 Amphetamine (5.0.2)
 brew ack
 brew adns
 brew aircrack-ng
@@ -23,6 +25,7 @@ brew bfg
 brew binutils
 brew binwalk
 brew boost
+brew brew-file
 brew brotli
 brew c-ares
 brew cairo
@@ -133,7 +136,6 @@ brew luajit
 brew lynx
 brew lzo
 brew mas
-brew mbedtls
 brew micro
 brew midnight-commander
 brew mkcert
@@ -141,7 +143,6 @@ brew moreutils
 brew mpfr
 brew msgpack
 brew mysql-client
-brew nasm
 brew ncdu
 brew ncurses
 brew neofetch
@@ -195,7 +196,6 @@ brew screenresolution
 brew sdl2
 brew sfnt2woff
 brew sfnt2woff-zopfli
-brew shadowsocks-libev
 brew shared-mime-info
 brew sl
 brew snappy
@@ -212,7 +212,6 @@ brew tcpflow
 brew tcpreplay
 brew tcptrace
 brew tesseract
-brew texi2html
 brew thefuck
 brew theora
 brew tidy-html5
@@ -244,23 +243,23 @@ brew zsh-completions
 brew zsh-syntax-highlighting
 cask adobe-creative-cloud
 cask android-sdk
-cask android-studio
 cask blender
 cask carbon-copy-cloner
 cask discord
 cask docker
+cask dockstation
 cask energybar
 cask firestorm
 cask font-hack-nerd-font
 cask franz
 cask free-download-manager
 cask gitkraken
-cask google-backup-and-sync
 cask google-chrome
 cask google-drive-file-stream
 cask google-japanese-ime
 cask grammarly
 cask handbrake
+cask intel-power-gadget
 cask intellij-idea
 cask iterm2
 cask java
@@ -271,6 +270,7 @@ cask plistedit-pro
 cask qq
 cask rescuetime
 cask shadowsocksx-ng
+cask skype
 cask slack
 cask sogouinput
 cask soundflower
@@ -278,6 +278,7 @@ cask spamsieve
 cask spotify
 cask sublime-merge
 cask sublime-text
+cask teamviewer
 cask the-unarchiver
 cask tor-browser
 cask tunnelblick
@@ -293,6 +294,7 @@ tap homebrew/cask
 tap homebrew/cask-fonts
 tap homebrew/cask-versions
 tap homebrew/core
+tap iikira/baidupcs
 tap rcmdnk/file
 tap sambadevi/powerlevel9k
 tap v2ray/v2ray
