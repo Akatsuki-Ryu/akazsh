@@ -3,11 +3,15 @@ echo now we will install brew . press N to skip
 
 read -p "ok? (y/N): " yn
 case "$yn" in [yY]*) /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
 	brew install rcmdnk/file/brew-file
 	brew install sambadevi/powerlevel9k/powerlevel9k
 	sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-	./misc/brewinit.sh
-	./misc/caskinit.sh
+	read -p "install brew apps and cask apps ,ok? (y/N): " yn
+	case "$yn" in [yY]*) /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	 ./misc/brewinit.sh
+	 ./misc/caskinit.sh
+;; *) echo "skip." ; ;; esac
 ;; *) echo "skip." ; ;; esac
 
 
