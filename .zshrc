@@ -261,6 +261,8 @@ alias ira="ionic cordova run android"
 alias irar="ionic cordova run android --livereload"
 alias ws8000="ws -p 8000 --log.format logstalgia"
 alias ws3000="ws -p 3000 --log.format logstalgia"
+alias wspwd3000mima="ws -p 3000 --log.format logstalgia --auth.user akabox --auth.pass zheshiyigemima "
+alias wspwd3000pass="ws -p 3000 --log.format logstalgia --auth.user akabox --auth.pass thisisapassword "
 alias killremote="killall "Remote Desktop""
 alias killntk="killall "NTKDaemon""
 
