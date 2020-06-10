@@ -1,16 +1,17 @@
 # App Store applications
 # Other Homebrew packages
 # tap repositories and their packages
-appstore 1295203466 Microsoft Remote Desktop (10.3.10)
+appstore 1295203466 Microsoft Remote Desktop (10.3.11)
 appstore 1450504903 Night Eye (4.1.6)
 appstore 1480933944 Vimari (2.0.3)
 appstore 1482920575 DuckDuckGo Privacy Essentials (1.4.0)
 appstore 409907375 Remote Desktop (3.9.3)
-appstore 836500024 WeChat (2.3.31)
+appstore 836500024 WeChat (2.4.1)
 appstore 937984704 Amphetamine (5.0.2)
 brew ack
 brew adns
 brew aircrack-ng
+brew annie
 brew aom
 brew apr
 brew apr-util
@@ -29,15 +30,20 @@ brew brew-file
 brew brotli
 brew c-ares
 brew cairo
+brew cask-repair
 brew cifer
 brew cmake
 brew cmatrix
 brew coreutils
 brew crunch
 brew curl-openssl
+brew dav1d
+brew ddev
 brew dex2jar
 brew diff-so-fancy
 brew dns2tcp
+brew docbook
+brew docbook-xsl
 brew docker
 brew fcrackzip
 brew fd
@@ -55,6 +61,7 @@ brew gcc
 brew gdbm
 brew genact
 brew gettext
+brew ghostscript
 brew giflib
 brew git
 brew git-flow
@@ -62,6 +69,7 @@ brew git-lfs
 brew glances
 brew glib
 brew gmp
+brew gnu-getopt
 brew gnu-sed
 brew gnupg
 brew gnutls
@@ -75,6 +83,7 @@ brew hashpump
 brew hr
 brew htop
 brew hub
+brew hwloc
 brew hydra
 brew icu4c
 brew iftop
@@ -87,17 +96,21 @@ brew jemalloc
 brew john
 brew jpeg
 brew knock
+brew krb5
 brew lame
+brew ldid
 brew ldns
 brew leptonica
 brew libass
 brew libassuan
 brew libbluray
+brew libcbor
 brew libde265
 brew libdnet
 brew libev
 brew libevent
 brew libffi
+brew libfido2
 brew libgcrypt
 brew libgpg-error
 brew libheif
@@ -154,6 +167,8 @@ brew nikto
 brew nmap
 brew node
 brew npth
+brew nspr
+brew nss
 brew oniguruma
 brew opencore-amr
 brew openexr
@@ -204,6 +219,7 @@ brew source-highlight
 brew speex
 brew sqlite
 brew sqlmap
+brew srt
 brew ssdeep
 brew ssh-copy-id
 brew sshfs
@@ -222,6 +238,7 @@ brew ucspi-tcp
 brew unbound
 brew unibilium
 brew unixodbc
+brew utf8proc
 brew v2ray-core
 brew vagrant-completion
 brew vbindiff
@@ -231,6 +248,7 @@ brew wget
 brew woff2
 brew x264
 brew x265
+brew xmlto
 brew xpdf
 brew xvid
 brew xz
@@ -257,7 +275,6 @@ cask gitkraken
 cask google-chrome
 cask google-drive-file-stream
 cask google-japanese-ime
-cask grammarly
 cask handbrake
 cask intel-power-gadget
 cask intellij-idea
@@ -276,7 +293,6 @@ cask sogouinput
 cask soundflower
 cask spamsieve
 cask spotify
-cask sublime-merge
 cask sublime-text
 cask teamviewer
 cask the-unarchiver
@@ -285,11 +301,12 @@ cask tunnelblick
 cask wifispoof
 cask wireshark
 cask zenmap
-cask zeronet
 cask zoomus
 tap beeftornado/rmtree
 tap bramstein/webfonttools
 tap buo/cask-upgrade
+tap drud/ddev
+tap homebrew/bundle
 tap homebrew/cask
 tap homebrew/cask-fonts
 tap homebrew/cask-versions
@@ -298,17 +315,4 @@ tap iikira/baidupcs
 tap rcmdnk/file
 tap sambadevi/powerlevel9k
 tap v2ray/v2ray
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+tap vitorgalvao/tiny-scripts
