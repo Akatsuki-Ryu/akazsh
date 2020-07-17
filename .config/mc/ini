@@ -88,17 +88,17 @@ skin=modarin256root-defbg
 filepos_max_saved_entries=1024
 
 [Layout]
-message_visible=0
-keybar_visible=1
-xterm_title=1
+message_visible=false
+keybar_visible=true
+xterm_title=true
 output_lines=0
-command_prompt=0
-menubar_visible=1
-free_space=1
-horizontal_split=0
-vertical_equal=0
+command_prompt=false
+menubar_visible=true
+free_space=true
+horizontal_split=false
+vertical_equal=false
 left_panel_size=80
-horizontal_equal=1
+horizontal_equal=true
 top_panel_size=34
 
 [Misc]
