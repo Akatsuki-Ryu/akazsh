@@ -2,7 +2,7 @@
 echo now we will install brew . press N to skip
 
 read -p "ok? (y/N): " yn
-case "$yn" in [yY]*) /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+case "$yn" in [yY]*) /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 	brew install rcmdnk/file/brew-file
 	brew install sambadevi/powerlevel9k/powerlevel9k
