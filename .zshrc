@@ -461,6 +461,6 @@ POWERLEVEL9K_TIME_BACKGROUND="black"
 
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-
+ export PATH="$(pyenv root)/shims:$HOME/local/bin:$PATH"
 
 
