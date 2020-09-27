@@ -126,8 +126,8 @@ source $HOME/akazsh/androidconf
 
 #######################################################################brew related
 
-alias bup="sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; brew cask update; brew cask upgrade; say data update mission complete"
-alias bupfull="sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; brew cask update; brew cask upgrade; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup; say full data update mission complete"
+alias bup="sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; brew upgrade --cask; say data update mission complete"
+alias bupfull="sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; brew upgrade --cask; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup; say full data update mission complete"
 alias bcu="b cu -af"
 alias b="brew"
 alias bi="brew install"
