@@ -179,7 +179,7 @@ alias t='tig --all'
 alias gaac='git add --all; git commit -m'
 alias gsiu='git submodule init && git submodule update'
 
-alias kra='open -na "GitKraken" --args -p $(pwd)'
+alias kra='open -na "GitKraken" --args -p $(pwd) $(pwd)'
 alias changename="~/akazsh/misc/changename.sh"
 
 ###############################docker

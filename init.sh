@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 echo now we will install brew . press N to skip
 
-read -p "ok? (y/N): " yn
+read -rp "ok? (y/N): " yn
 case "$yn" in [yY]*) /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 	brew install rcmdnk/file/brew-file
 	brew install sambadevi/powerlevel9k/powerlevel9k
 	sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-	read -p "install brew apps and cask apps ,ok? (y/N): " yn
+	read -rp "install brew apps and cask apps ,ok? (y/N): " yn
 	case "$yn" in [yY]*) /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	 ./misc/brewinit.sh
 	 ./misc/caskinit.sh
@@ -24,7 +24,7 @@ case "$yn" in [yY]*) /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.co
 cd ..
 echo this will overwrite the setting on this user ....
 
-read -p "ok? (y/N): " yn
+read -rp "ok? (y/N): " yn
 case "$yn" in [yY]*) ;; *) echo "abort." ; exit ;; esac
 
 # linking diff_highlight to system . git should be from brew . this needs to be confirmed
