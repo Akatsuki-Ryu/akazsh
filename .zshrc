@@ -114,7 +114,7 @@ PATH=${PATH}:/Users/akatsuki/libmobiledevice/
 ################path for golang
 export GOPATH=$HOME/go
 alias zshconfig="subl ~/.zshrc"
-
+alias aliasconfig="subl ~/akazsh/.aliases"
 
 # Aliases source file
 source $HOME/akazsh/.aliases
