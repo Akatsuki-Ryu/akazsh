@@ -120,7 +120,7 @@ export GOPATH=$HOME/go
 alias zshconfig="gedit ~/.zshrc"
 
 # Aliases source file
-# source $HOME/akazsh/.aliases
+source $HOME/akazsh/.aliases
 
 # android configure source file
 # source $HOME/akazsh/androidconf
