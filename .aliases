@@ -79,7 +79,7 @@ alias au="sudo apt-get uninstall"
 alias aupfull="sudo apt-get dist-upgrade"
 
 ################################################### local navi
-alias do="cd ~/Documents"
+alias doc="cd ~/Documents"
 alias dd="cd ~/Desktop"
 alias dl="cd ~/Downloads"
 
