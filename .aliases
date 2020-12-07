@@ -56,7 +56,7 @@ alias gsiu='git submodule init && git submodule update'
 alias kra='open -na "GitKraken" --args -p $(pwd) $(pwd)'
 alias changename="~/akazsh/misc/changename.sh"
 
-###############################docker
+############################### docker
 alias d="docker"
 alias dps="docker ps -al"
 alias di="docker image"
@@ -72,10 +72,11 @@ alias ni="npm install"
 alias ncl="find . -name "node_modules" -type d -prune -exec rm -rf '{}' +"
 alias ns="npm start"
 alias iftop="sudo /usr/local/Cellar/iftop/1.0pre4/sbin/./iftop"
+alias parallels="sudo -b /Applications/Parallels\ Desktop.app/Contents/MacOS/prl_client_app"
 
 alias ai="sudo apt-get install"
 alias aup="sudo apt-get update; sudo apt-get upgrade"
-alias au="sudo apt-get uninstall"
+alias au="sudo apt-get remove"
 alias aupfull="sudo apt-get dist-upgrade"
 
 ################################################### local navi
