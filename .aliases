@@ -2,7 +2,7 @@
 
 alias bup="sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; brew upgrade --cask; bcl; say data update mission complete"
 alias bupfull="sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; brew upgrade --cask; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; bcl; sudo gem cleanup; say full data update mission complete"
-alias bcu="b cu -af"
+alias bcu="b cu -a"
 alias b="brew"
 alias bi="brew install"
 alias bu="brew uninstall --zap"
@@ -124,8 +124,11 @@ alias netswauto="networksetup -switchtolocation automatic"
 alias netswtunnel="networksetup -switchtolocation tunnel"
 
 alias ise="ionic serve"
-alias ira="ionic cordova run android"
-alias irar="ionic cordova run android --livereload"
+alias ira="ionic capacitor run android -l --external"
+alias iba="ionic capacitor build android"
+alias ibfull="npm install;ionic build;ionic capacitor build android"
+alias icl="find . -name "node_modules" -type d -prune -exec rm -rf '{}' +;rm -rf android;rm -rf www"
+
 alias ws8000="ws -p 8000 --log.format logstalgia"
 alias ws3000="ws -p 3000 --log.format logstalgia"
 alias wspwd3000z="ws -p 3000 --log.format logstalgia --auth.user z --auth.pass z "
