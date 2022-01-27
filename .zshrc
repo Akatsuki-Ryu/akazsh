@@ -127,7 +127,7 @@ source $HOME/akazsh/androidconf
 
 
 
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+export JAVA_HOME=`/usr/libexec/java_home -v 11`
 export PATH="/usr/local/sbin:$PATH"
 
 
