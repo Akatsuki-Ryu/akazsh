@@ -87,6 +87,8 @@ skin=modarin256root-defbg
 
 filepos_max_saved_entries=1024
 
+shadows=true
+
 [Layout]
 message_visible=false
 keybar_visible=true

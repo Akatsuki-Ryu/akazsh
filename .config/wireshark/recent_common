@@ -1,6 +1,7 @@
-# Recent settings file for Wireshark 3.0.1.
+# Common recent settings file for Wireshark 3.6.1.
 #
-# This file is regenerated each time Wireshark is quit.
+# This file is regenerated each time Wireshark is quit
+# and when changing configuration profile.
 # So be careful, if you want to make manual changes here.
 
 ######## Recent capture files (latest last), cannot be altered through command line ########
@@ -18,14 +19,18 @@ recent.display_filter: http
 
 # Main window geometry.
 # Decimal numbers.
-gui.geometry_main_x: 0
-gui.geometry_main_y: 23
-gui.geometry_main_width: 1248
-gui.geometry_main_height: 1155
+gui.geometry_main_x: 50
+gui.geometry_main_y: 50
+gui.geometry_main_width: 1236
+gui.geometry_main_height: 1193
 
 # Main window maximized.
 # TRUE or FALSE (case-insensitive).
 gui.geometry_main_maximized: FALSE
+
+# Leftalign Action Buttons.
+# TRUE or FALSE (case-insensitive).
+gui.geometry_leftalign_actions: FALSE
 
 # Statusbar left pane size.
 # Decimal number.
@@ -46,18 +51,25 @@ gui.geometry_status_wlan_stats_pane: 200
 # TRUE or FALSE (case-insensitive).
 privs.warn_if_elevated: TRUE
 
-# Warn if npf.sys isn't loaded on Windows >= 6.0.
+# Warn if Wireshark is unable to capture.
 # TRUE or FALSE (case-insensitive).
-privs.warn_if_no_npf: TRUE
+sys.warn_if_no_capture: TRUE
 
-# Geometry and maximized state of PacketCommentDialog window.
-# Decimal integers.
-gui.geom.PacketCommentDialog.x: 617
-gui.geom.PacketCommentDialog.y: 571
-gui.geom.PacketCommentDialog.width: 400
-gui.geom.PacketCommentDialog.height: 300
+# Find packet search in.
+# One of: PACKET_LIST, PACKET_DETAILS, PACKET_BYTES
+gui.search_in: PACKET_LIST
+
+# Find packet character set.
+# One of: NARROW_AND_WIDE, NARROW, WIDE
+gui.search_char_set: NARROW_AND_WIDE
+
+# Find packet case sensitive search.
 # TRUE or FALSE (case-insensitive).
-gui.geom.PacketCommentDialog.maximized: FALSE
+gui.search_case_sensitive: FALSE
+
+# Find packet search type.
+# One of: DISPLAY_FILTER, HEX_VALUE, STRING, REGEX
+gui.search_type: DISPLAY_FILTER
 
 # Geometry and maximized state of PacketDialog window.
 # Decimal integers.
@@ -67,6 +79,15 @@ gui.geom.PacketDialog.width: 1306
 gui.geom.PacketDialog.height: 1116
 # TRUE or FALSE (case-insensitive).
 gui.geom.PacketDialog.maximized: FALSE
+
+# Geometry and maximized state of PacketCommentDialog window.
+# Decimal integers.
+gui.geom.PacketCommentDialog.x: 617
+gui.geom.PacketCommentDialog.y: 571
+gui.geom.PacketCommentDialog.width: 400
+gui.geom.PacketCommentDialog.height: 300
+# TRUE or FALSE (case-insensitive).
+gui.geom.PacketCommentDialog.maximized: FALSE
 
 # Geometry and maximized state of FollowStreamDialog window.
 # Decimal integers.

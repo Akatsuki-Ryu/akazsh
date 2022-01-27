@@ -1,4 +1,4 @@
-# Recent settings file for Wireshark 3.0.1.
+# Recent settings file for Wireshark 3.6.1.
 #
 # This file is regenerated each time Wireshark is quit
 # and when changing configuration profile.
@@ -28,6 +28,10 @@ gui.tree_view_show: TRUE
 # Byte view show (hide).
 # TRUE or FALSE (case-insensitive).
 gui.byte_view_show: TRUE
+
+# Packet diagram show (hide).
+# TRUE or FALSE (case-insensitive).
+gui.packet_diagram_show: TRUE
 
 # Statusbar show (hide).
 # TRUE or FALSE (case-insensitive).
@@ -60,6 +64,14 @@ gui.bytes_view: HEX
 # Bytes view text encoding.
 # One of: FROM_PACKET, ASCII, EBCDIC
 gui.bytes_encoding: FROM_PACKET
+
+# Packet diagram field values show (hide).
+# TRUE or FALSE (case-insensitive).
+gui.packet_diagram_field_values: FALSE
+
+# Allow hover selection in byte view.
+# TRUE or FALSE (case-insensitive).
+gui.allow_hover_selection: TRUE
 
 # Main window upper (or leftmost) pane size.
 # Decimal number.
