@@ -127,7 +127,7 @@ alias ise="ionic serve"
 alias ira="ionic capacitor run android -l --external"
 alias iba="ionic capacitor build android"
 alias ibfull="npm install;ionic build;ionic capacitor build android"
-alias icl="find . -name "node_modules" -type d -prune -exec rm -rf '{}' +;rm -rf android;rm -rf www"
+alias icl="find . -name "node_modules" -type d -prune -exec rm -rf '{}' +;rm -rf android;rm -rf www;rm -rf package-lock.json"
 
 alias ws8000="ws -p 8000 --log.format logstalgia"
 alias ws3000="ws -p 3000 --log.format logstalgia"
