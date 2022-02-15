@@ -82,12 +82,14 @@ brew install openssh
 # brew install screen
 brew install php
 brew install gmp
-brew install bat
-brew install htop
-brew install glances
+brew install bat	#better cat
+brew install htop     #better top 
+brew install glances  #better top 
 brew install iftop
 brew install ncdu
+brew install duf	#better df
 brew install prettyping
+brew install exa #better ls
 
 # navigation akabox
 brew install autojump
