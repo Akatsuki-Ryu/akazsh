@@ -5,21 +5,20 @@ brew tap homebrew/cask-cask
 brew tap homebrew/cask-versions
 
 # Browsers
-brew cask install --force  google-chrome
-brew cask install --force  tor-browser
-brew cask install --force  zeronet
-brew cask install --force  firestorm
+brew install --cask --force  google-chrome
+brew install --cask --force  tor-browser
+brew install --cask --force  zeronet
+brew install --cask --force  firestorm
 
 
 # Development
-# brew cask install --force  visual-studio-code
-brew cask install --force  iterm2
-brew cask install --force  gitkraken
-brew cask install --force  intellij-idea
-brew cask install --force  java
-brew cask install --force  plistedit-pro
-brew cask install --force  sublime-text
-brew cask install --force  wireshark
+# brew install --cask --force  visual-studio-code
+brew install --cask --force  iterm2
+brew install --cask --force  gitkraken
+brew install --cask --force  intellij-idea
+brew install --cask --force  java
+brew install --cask --force  sublime-text
+brew install --cask --force  wireshark
 
 
 
@@ -27,59 +26,55 @@ brew cask install --force  wireshark
 
 
 # Communication
-# brew cask install --force  whatsapp
-brew cask install --force  franz
-brew cask install --force  slack
-brew cask install --force  qq
-brew cask install --force  discord
+# brew install --cask --force  whatsapp
+brew install --cask --force  franz
+brew install --cask --force  slack
+brew install --cask --force  qq
+brew install --cask --force  discord
 
 
 
 
 
 # Cloud
-# brew cask install --force  dropbox
-brew cask install --force  google-backup-and-sync
+# brew install --cask --force  dropbox
 brew cask isntall --force  free-download-manager
-brew cask install --force  tunnelblick
-brew cask install --force  shadowsocksx-ng
+brew install --cask --force  tunnelblick
+brew install --cask --force  shadowsocksx-ng
 
 # Productivity
-# brew cask install --force  alfred
-brew cask install --force  docker
-brew cask install --force  dockstation
-brew cask install --force  energybar
-brew cask install --force  grammarly
-brew cask install --force  kitematic
-brew cask install --force  rescuetime
-brew cask install --force  google-japanese-ime
-brew cask install --force  sogouinput
-brew cask install --force  microsoft-office
-brew cask install --force  plistedit-pro
-brew cask install --force  forklift
+# brew install --cask --force  alfred
+brew install --cask --force  docker
+brew install --cask --force  grammarly
+brew install --cask --force  kitematic
+brew install --cask --force  rescuetime
+brew install --cask --force  google-japanese-ime
+brew install --cask --force  sogouinput
+brew install --cask --force  microsoft-office
+brew install --cask --force  forklift
 
 
 
 
 # Media
-brew cask install --force  blender
-brew cask install --force  soundflower
-brew cask install --force  adobe-creative-cloud
-brew cask install --force  handbrake
-brew cask install --force  spotify
+brew install --cask --force  blender
+brew install --cask --force  soundflower
+brew install --cask --force  adobe-creative-cloud
+brew install --cask --force  handbrake
+brew install --cask --force  spotify
 
 
 
 # Mac OS Enhancements
-brew cask install --force  the-unarchiver
+brew install --cask --force  the-unarchiver
 brew tap buo/cask-upgrade
-brew cask install --force  zenmap
-brew cask install --force  carbon-copy-cloner
-brew cask install --force  karabiner-elements
-brew cask install --force  wifispoof
+brew install --cask --force  zenmap
+brew install --cask --force  carbon-copy-cloner
+brew install --cask --force  karabiner-elements
+brew install --cask --force  wifispoof
 
 # Other
-brew cask install --force  font-hack-nerd-font
+brew install --cask --force  font-hack-nerd-font
 
 
 # Install Mac App Store apps
