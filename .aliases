@@ -35,8 +35,12 @@ alias o="open ."
 alias x="exit"
 alias zippwd="zip -e zip.zip"
 alias tmn="tmux new -s akaboxsession"
+alias tmn1="tmux new -s akaboxsession1"
 alias tma="tmux attach -t akaboxsession"
+alias tma1="tmux attach -t akaboxsession1"
 alias tmu="tmux kill-session -t akaboxsession"
+alias tmu1="tmux kill-session -t akaboxsession1"
+alias tmls="tmux list-session"
 alias mc='LANG=en_EN.UTF-8 mc'
 alias m='micro'
 alias s='subl'
