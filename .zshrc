@@ -108,7 +108,7 @@ source $ZSH/oh-my-zsh.sh
 
 #take away powerlevel settings and autosuggestiinos and syntax highlight for linux
 #source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
-source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
+source ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
 # source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
