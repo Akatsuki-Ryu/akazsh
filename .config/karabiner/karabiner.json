@@ -488,7 +488,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a 'potato'"
+                                        "shell_command": "open -a 'postman'"
                                     }
                                 ],
                                 "type": "basic"
