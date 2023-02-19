@@ -113,6 +113,9 @@ alias sshhongkong="ssh -i "akaboxhongkong.pem" ubuntu@ec2-18-162-124-93.ap-east-
 alias sshrev_to_avcstripe="ssh -R 4869:localhost:22 avcstripe"
 alias sshrev_connect="ssh akatsuki@localhost -p 4869"
 
+alias proxy='export ALL_PROXY=socks5://127.0.0.1:8080'
+alias unproxy='unset ALL_PROXY'
+
 ##alias android="/Users/akatsuki/Library/Android/sdk/tools/android"
 alias sshmountavi="sshfs -p 30022 akatsuki@62.78.181.155:/Users/akatsuki /Users/akatsuki/mountavi"
 alias syncfromavi="rsync -av --rsh='ssh -p30022' akatsuki@62.78.181.155:~/0transfer /Users/akatsuki/"
