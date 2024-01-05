@@ -43,6 +43,8 @@ newgrp docker
 #install nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 
+#install tailscale
+curl -fsSL https://tailscale.com/install.sh | sh
 
 
 # linking diff_highlight to system . git should be from brew . this needs to be confirmed
