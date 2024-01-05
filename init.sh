@@ -40,6 +40,10 @@ sudo groupadd docker
 sudo gpasswd -a $USER docker
 newgrp docker
 
+#install nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+
+
 
 # linking diff_highlight to system . git should be from brew . this needs to be confirmed
 	sudo ln -s /usr/local/share/git-core/contrib/diff-highlight/diff-highlight /usr/local/bin/diff-highlight
