@@ -33,6 +33,7 @@ sudo apt-get install -y prettyping
 sudo apt-get install -y ncdu
 sudo apt-get install -y duf	 #better df
 sudo apt-get install -y exa	#better ls
+sudo apt-get install htop
 
 #install docker
 sudo apt install docker-compose -y
