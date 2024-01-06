@@ -41,6 +41,7 @@ brew install --cask --force  discord
 brew cask isntall --force  free-download-manager
 brew install --cask --force  tunnelblick
 brew install --cask --force  shadowsocksx-ng
+brew install --cask --force tailscale
 
 # Productivity
 # brew install --cask --force  alfred
