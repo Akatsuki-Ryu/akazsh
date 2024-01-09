@@ -40,6 +40,10 @@ sudo groupadd docker
 sudo gpasswd -a $USER docker
 newgrp docker
 
+#install dry ( docker manager in terminal)
+curl -sSf https://moncho.github.io/dry/dryup.sh | sudo sh
+sudo chmod 755 /usr/local/bin/dry
+
 #install nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 
