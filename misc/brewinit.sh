@@ -230,6 +230,10 @@ brew install neovim
 # brew install gdrive
 brew install micro  #terminal text editor
 
+#docker manager
+brew tap moncho/dry
+brew install dry
+
 
 
 
