@@ -60,6 +60,8 @@ alias gsiu='git submodule init && git submodule update'
 alias kra='open -na "GitKraken" --args -p $(pwd) $(pwd)'
 alias changename="~/akazsh/misc/changename.sh"
 
+alias chx='sudo chmod +x'
+
 ############################### docker
 alias d="docker"
 alias dps="docker ps -al"
