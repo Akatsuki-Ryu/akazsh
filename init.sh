@@ -50,6 +50,11 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 #install tailscale
 curl -fsSL https://tailscale.com/install.sh | sh
 
+#network related
+sudo apt-get install -y samba
+sudo apt-get install -y netatalk
+sudo cp misc/afp.conf /etc/netatalk/afp.conf
+
 
 # linking diff_highlight to system . git should be from brew . this needs to be confirmed
 	sudo ln -s /usr/local/share/git-core/contrib/diff-highlight/diff-highlight /usr/local/bin/diff-highlight
