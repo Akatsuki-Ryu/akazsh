@@ -8,7 +8,7 @@ case "$yn" in [yY]*) /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.co
 	# brew install sambadevi/powerlevel9k/powerlevel9k
 	brew install powerlevel10k
 	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $HOME/.oh-my-zsh/custom/themes/powerlevel10k
-	sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 	read -rp "install brew apps and cask apps ,ok? (y/N): " yn
 	case "$yn" in [yY]*) /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	 ./misc/brewinit.sh
