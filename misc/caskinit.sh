@@ -50,7 +50,7 @@ brew install --cask --force  grammarly
 brew install --cask --force  kitematic
 brew install --cask --force  rescuetime
 brew install --cask --force  google-japanese-ime
-brew install --cask --force  sogouinput
+#brew install --cask --force  sogouinput #this is not available anymore
 brew install --cask --force  microsoft-office
 brew install --cask --force  forklift
 
