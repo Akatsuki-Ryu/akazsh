@@ -53,6 +53,7 @@ brew install --cask --force  google-japanese-ime
 #brew install --cask --force  sogouinput #this is not available anymore
 brew install --cask --force  microsoft-office
 brew install --cask --force  forklift
+brew install --cask --force microsoft-remote-desktop
 
 
 
