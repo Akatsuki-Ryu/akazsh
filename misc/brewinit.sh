@@ -217,7 +217,9 @@ brew install diff-so-fancy
 
 
 # font related (temp)
-brew cask install homebrew/cask-fonts/font-hack-nerd-font
+brew tap homebrew/cask-fonts
+brew install font-hack-nerd-font
+
 
 # paackage manager
 brew tap buo/cask-upgrade #this is the b cu
