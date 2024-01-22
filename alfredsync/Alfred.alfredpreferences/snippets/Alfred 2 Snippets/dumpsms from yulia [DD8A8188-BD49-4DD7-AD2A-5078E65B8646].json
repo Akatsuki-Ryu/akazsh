@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "scp -r root@10.100.0.231:\/var\/mobile\/Library\/SMS\/sms.db ~\/hacking",
+    "dontautoexpand" : true,
+    "uid" : "DD8A8188-BD49-4DD7-AD2A-5078E65B8646",
+    "name" : "dumpsms from yulia",
+    "keyword" : "dumpsmsyulia"
+  }
+}

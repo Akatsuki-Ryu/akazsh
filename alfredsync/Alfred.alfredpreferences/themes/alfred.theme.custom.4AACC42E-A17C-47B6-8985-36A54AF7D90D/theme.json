@@ -1,0 +1,61 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 6,
+      "subtext" : {
+        "size" : 9,
+        "colorSelected" : "#D1D9E2FF",
+        "font" : "System Light",
+        "color" : "#D1D9E2FF"
+      },
+      "shortcut" : {
+        "size" : 16,
+        "colorSelected" : "#639BB9FF",
+        "font" : "System Light",
+        "color" : "#639BB9FF"
+      },
+      "backgroundSelected" : "#3E604BE6",
+      "text" : {
+        "size" : 16,
+        "colorSelected" : "#D1D9E2FF",
+        "font" : "System Light",
+        "color" : "#639BB9FF"
+      },
+      "iconPaddingHorizontal" : 5,
+      "paddingVertical" : 9,
+      "iconSize" : 40
+    },
+    "search" : {
+      "paddingVertical" : 0,
+      "background" : "#1D3440E5",
+      "spacing" : 10,
+      "text" : {
+        "size" : 32,
+        "colorSelected" : "#000000FF",
+        "font" : "System Light",
+        "color" : "#C5CEDBFF"
+      },
+      "backgroundSelected" : "#FFBAB8FF"
+    },
+    "window" : {
+      "color" : "#132523E5",
+      "paddingHorizontal" : 10,
+      "width" : 620,
+      "borderPadding" : 10,
+      "borderColor" : "#00000000",
+      "blur" : 40,
+      "roundness" : 20,
+      "paddingVertical" : 10
+    },
+    "credit" : "Matt Gordon",
+    "separator" : {
+      "color" : "#00000000",
+      "thickness" : 1
+    },
+    "scrollbar" : {
+      "color" : "#00000019",
+      "thickness" : 2
+    },
+    "name" : "Norway Theme (v2)"
+  }
+}

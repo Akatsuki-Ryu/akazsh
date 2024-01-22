@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.robertwdempsey.flux</string>
+	<key>connections</key>
+	<dict>
+		<key>264A09D9-DE34-403A-9524-C67F6525811D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5D63B48E-04E2-4C1E-A274-6F5DF84DD18F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>51E9FF48-E3EB-41A7-808F-553FA01420CB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9247AD69-BD59-43D7-85D1-FD61C9F3BCE3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>52B16A78-ED64-43C2-B0F0-E771A12AEC10</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A107FFF8-972C-4BE3-A323-962EE06008FB</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>AFA07893-A132-418A-8D92-34DBDC990C1B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4A139199-D548-4D72-BB89-327D75C961DC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Robert Dempsey</string>
+	<key>description</key>
+	<string>Control F.lux</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>F.lux</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>flux movie mode</string>
+				<key>text</key>
+				<string>Activate F.lux movie mode</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>264A09D9-DE34-403A-9524-C67F6525811D</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>ignoring application responses	tell application "System Events" to tell process "Flux"		click menu bar item 1 of menu bar 2	end tellend ignoringdo shell script "killall System\\ Events"delay 0.1tell application "System Events" to tell process "Flux"	tell menu bar item 1 of menu bar 2		click		click menu item "Color Effects" of menu 1		tell menu item 6 of menu 1			click menu item "Movie mode" of menu 1		end tell	end tellend tell</string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>5D63B48E-04E2-4C1E-A274-6F5DF84DD18F</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>ignoring application responses	tell application "System Events" to tell process "Flux"		click menu bar item 1 of menu bar 2	end tellend ignoringdo shell script "killall System\\ Events"delay 0.1tell application "System Events" to tell process "Flux"	tell menu bar item 1 of menu bar 2		click		click menu item "Color Effects" of menu 1		tell menu item 6 of menu 1			click menu item "Darkroom" of menu 1		end tell	end tellend tell</string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>4A139199-D548-4D72-BB89-327D75C961DC</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>flux darkroom</string>
+				<key>text</key>
+				<string>Activate F.lux darkroom</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>AFA07893-A132-418A-8D92-34DBDC990C1B</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>flux one hour</string>
+				<key>text</key>
+				<string>Disable F.lux for one hour</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>51E9FF48-E3EB-41A7-808F-553FA01420CB</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>ignoring application responses	tell application "System Events" to tell process "Flux"		click menu bar item 1 of menu bar 2	end tellend ignoringdo shell script "killall System\\ Events"delay 0.1tell application "System Events" to tell process "Flux"	tell menu bar item 1 of menu bar 2		click		click menu item "Disable" of menu 1		tell menu item 7 of menu 1			click menu item "for an hour" of menu 1		end tell	end tellend tell</string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>9247AD69-BD59-43D7-85D1-FD61C9F3BCE3</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>flux sunrise</string>
+				<key>text</key>
+				<string>Disable F.lux until sunrise</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>52B16A78-ED64-43C2-B0F0-E771A12AEC10</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>ignoring application responses	tell application "System Events" to tell process "Flux"		click menu bar item 1 of menu bar 2	end tellend ignoringdo shell script "killall System\\ Events"delay 0.1tell application "System Events" to tell process "Flux"	tell menu bar item 1 of menu bar 2		click		click menu item "Disable" of menu 1		tell menu item 7 of menu 1			click menu item "until sunrise" of menu 1		end tell	end tellend tell</string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>A107FFF8-972C-4BE3-A323-962EE06008FB</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>In order to use this workflow, you’ll need to allow Alfred to “control your computer” by going to: System Preferences -&gt; Security &amp; Privacy -&gt; Accessibility, and selecting Alfred 2.</string>
+	<key>uidata</key>
+	<dict>
+		<key>264A09D9-DE34-403A-9524-C67F6525811D</key>
+		<dict>
+			<key>ypos</key>
+			<real>60</real>
+		</dict>
+		<key>4A139199-D548-4D72-BB89-327D75C961DC</key>
+		<dict>
+			<key>ypos</key>
+			<real>180</real>
+		</dict>
+		<key>51E9FF48-E3EB-41A7-808F-553FA01420CB</key>
+		<dict>
+			<key>ypos</key>
+			<real>310</real>
+		</dict>
+		<key>52B16A78-ED64-43C2-B0F0-E771A12AEC10</key>
+		<dict>
+			<key>ypos</key>
+			<real>430</real>
+		</dict>
+		<key>5D63B48E-04E2-4C1E-A274-6F5DF84DD18F</key>
+		<dict>
+			<key>ypos</key>
+			<real>60</real>
+		</dict>
+		<key>9247AD69-BD59-43D7-85D1-FD61C9F3BCE3</key>
+		<dict>
+			<key>ypos</key>
+			<real>310</real>
+		</dict>
+		<key>A107FFF8-972C-4BE3-A323-962EE06008FB</key>
+		<dict>
+			<key>ypos</key>
+			<real>430</real>
+		</dict>
+		<key>AFA07893-A132-418A-8D92-34DBDC990C1B</key>
+		<dict>
+			<key>ypos</key>
+			<real>180</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://robertwdempsey.com</string>
+</dict>
+</plist>

@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "scp -r root@10.100.0.231:\/User\/Media\/DCIM\/100APPLE ~\/hacking",
+    "dontautoexpand" : true,
+    "uid" : "EA4F617E-9724-4EB3-A9EA-0BEFB94C868A",
+    "name" : "picture from yulia",
+    "keyword" : "dump pic"
+  }
+}

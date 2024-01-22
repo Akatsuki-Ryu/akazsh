@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "ssh Aleksi@10.100.11.120",
+    "dontautoexpand" : true,
+    "uid" : "9F5F0167-4BD1-43E3-8983-04E10410864C",
+    "name" : "sshal",
+    "keyword" : "sshal"
+  }
+}

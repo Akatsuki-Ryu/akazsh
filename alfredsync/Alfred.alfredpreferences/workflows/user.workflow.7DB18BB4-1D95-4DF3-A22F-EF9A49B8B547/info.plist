@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.robbrazier.purge</string>
+	<key>connections</key>
+	<dict>
+		<key>60E5A6C9-EAE1-4012-8353-A848952AAAC4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FCC90282-99A4-4C45-B988-280B4D654A01</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>FCC90282-99A4-4C45-B988-280B4D654A01</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2038CEA8-8CB4-46DE-9B6D-BE1600D2D9AF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Rob Brazier</string>
+	<key>description</key>
+	<string>Purge all Inactive RAM</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Purge</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>purge</string>
+				<key>subtext</key>
+				<string>Purge inactive Memory</string>
+				<key>text</key>
+				<string>Purge</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>60E5A6C9-EAE1-4012-8353-A848952AAAC4</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>63</integer>
+				<key>script</key>
+				<string>def getInactiveMemory()
+  vm_stat = `vm_stat`
+  vm_nl = vm_stat.split("\n")
+
+  vm_nl.each {
+    |memory| 
+      if memory.match(/^Pages inactive:/)
+        inactive = memory.gsub("Pages inactive:", "")
+        inactive = inactive.gsub!(/\s+/, "")
+        inactive.gsub!(".", "")
+        inactive = ((inactive.to_i * 4096)/1024/1024)
+        return inactive
+      end
+  }
+end
+
+before = getInactiveMemory
+`sudo purge`
+after = getInactiveMemory
+
+puts (before - after).to_s+" MB Purged"</string>
+				<key>type</key>
+				<integer>2</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>FCC90282-99A4-4C45-B988-280B4D654A01</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Purge</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>2038CEA8-8CB4-46DE-9B6D-BE1600D2D9AF</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>2038CEA8-8CB4-46DE-9B6D-BE1600D2D9AF</key>
+		<dict>
+			<key>ypos</key>
+			<real>40</real>
+		</dict>
+		<key>60E5A6C9-EAE1-4012-8353-A848952AAAC4</key>
+		<dict>
+			<key>ypos</key>
+			<real>40</real>
+		</dict>
+		<key>FCC90282-99A4-4C45-B988-280B4D654A01</key>
+		<dict>
+			<key>ypos</key>
+			<real>40</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://robbrazier.com</string>
+</dict>
+</plist>
