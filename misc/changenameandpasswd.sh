@@ -8,3 +8,5 @@ sudo scutil --set HostName "$computername"
 echo change password policy
 sudo pwpolicy setaccountpolicies passwdpolicy.xml
 passwd
+echo also change the keychain password
+security set-keychain-password
