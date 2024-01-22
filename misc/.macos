@@ -971,7 +971,7 @@ done
 # remove text prior to first <xml tag and replace
 # <string>policyAttributePassword matches '^$|.{1,}+'</string>
 # run terminal 
-sudo pwpolicy setaccountpolicies passwdpolicy.xml
+#sudo pwpolicy setaccountpolicies passwdpolicy.xml
 
 
 ###############################################################################
