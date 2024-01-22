@@ -35,7 +35,7 @@ to
         <false/>
 ````
 
-### Restart Computer again
+### Restart Computer again.
 
 So that the changes take effect
 

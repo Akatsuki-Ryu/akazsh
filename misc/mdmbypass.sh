@@ -17,9 +17,7 @@ echo "setting enrollment to false"
 plist_file="/System/Library/LaunchDaemons/com.apple.ManagedClient.enroll.plist"
 
 # Use sudo to get necessary permissions and sed to replace the line
-sudo sed -i '' 's|<key>com.apple.ManagedClient.enroll</key>\
-        <true/>|<key>com.apple.ManagedClient.enroll</key>\
-        <false/>|' "$plist_file"
+sudo sed -i '' 's|<key>com.apple.ManagedClient.enroll</key>\<true/>|<key>com.apple.ManagedClient.enroll</key>\<false/>|' "$plist_file"
 
 # remove the enrollment record
 echo  "removing enrollment record"
