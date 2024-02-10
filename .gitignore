@@ -173,3 +173,9 @@ obj/
 /build
 /captures
 .externalNativeBuild
+
+
+
+
+# for this repo ========================================================
+./.config/github-copilot/*
