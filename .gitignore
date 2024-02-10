@@ -178,4 +178,4 @@ obj/
 
 
 # for this repo ========================================================
-./.config/github-copilot/*
+.config/github-copilot/*
