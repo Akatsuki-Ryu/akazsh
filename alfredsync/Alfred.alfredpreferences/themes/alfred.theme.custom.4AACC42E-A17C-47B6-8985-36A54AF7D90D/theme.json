@@ -22,12 +22,13 @@
         "color" : "#639BB9FF"
       },
       "iconPaddingHorizontal" : 5,
+      "roundness" : 0,
       "paddingVertical" : 9,
       "iconSize" : 40
     },
     "search" : {
-      "paddingVertical" : 0,
-      "background" : "#1D3440E5",
+      "backgroundSelected" : "#FFBAB8FF",
+      "paddingHorizontal" : 8,
       "spacing" : 10,
       "text" : {
         "size" : 32,
@@ -35,19 +36,22 @@
         "font" : "System Light",
         "color" : "#C5CEDBFF"
       },
-      "backgroundSelected" : "#FFBAB8FF"
+      "background" : "#1D3440E5",
+      "roundness" : 0,
+      "paddingVertical" : 0
     },
     "window" : {
       "color" : "#132523E5",
       "paddingHorizontal" : 10,
       "width" : 620,
-      "borderPadding" : 10,
+      "borderPadding" : 0,
       "borderColor" : "#00000000",
-      "blur" : 40,
+      "blur" : 0,
       "roundness" : 20,
       "paddingVertical" : 10
     },
     "credit" : "Matt Gordon",
+    "visualEffectMode" : 2,
     "separator" : {
       "color" : "#00000000",
       "thickness" : 1
