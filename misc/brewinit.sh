@@ -90,6 +90,7 @@ brew install ncdu
 brew install duf	#better df
 brew install prettyping
 brew install exa #better ls
+brew install rg # better grep
 
 # navigation akabox
 brew install autojump
