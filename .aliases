@@ -33,6 +33,7 @@ alias k="exa --long --tree -abghHS -s modified --icons --color always --color-sc
 alias l="exa --long -abghHS -s modified --icons --color always --color-scale"
 alias o="open ."
 alias x="exit"
+alias v="nvim"
 alias zippwd="zip -e zip.zip"
 alias tmn="tmux new -s akaboxsession"
 alias tmn1="tmux new -s akaboxbgservice"
