@@ -91,6 +91,7 @@ brew install duf	#better df
 brew install prettyping
 brew install eza #better ls
 brew install rg # better grep
+brew install fzf
 
 # navigation akabox
 brew install autojump
