@@ -134,13 +134,14 @@ source $HOME/akazsh/androidconf
 
 
 
-
+##################### path for java
 export JAVA_HOME=`/usr/libexec/java_home -v 11`
 export PATH="/usr/local/sbin:$PATH"
 
 
 
 export PATH=$PATH:/Library/Developer/CommandLineTools/usr/bin/codesign_allocate
+export PATH="/opt/homebrew/sbin:$PATH"
 
 
 
@@ -326,4 +327,5 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
+
 
