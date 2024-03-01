@@ -31,7 +31,8 @@ sudo apt-get install -y micro
 sudo apt-get install -y prettyping
 #sudo apt-get install -y bat
 sudo apt-get install -y duf	 #better df
-sudo apt-get install -y exa	#better ls
+#sudo apt-get install -y exa	#better ls , this is deprecated
+./misc/installeza.sh
 sudo apt-get install htop
 sudo apt-get install ripgrep
 
