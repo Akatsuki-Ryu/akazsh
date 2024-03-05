@@ -1,9 +1,7 @@
 # akazsh
-wakao
 
-quickly adding my profile to the command line 
+this is akabox's dotfile and setups for macos and linux 
 
-branch
-and i am doing some random things here to see how it works
+check the files before use , do not coyp and paste
 
-this is master merge branch 
+
