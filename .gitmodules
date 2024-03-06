@@ -8,4 +8,5 @@
 	path = misc/shadowsocks-libev
 	url = https://github.com/shadowsocks/shadowsocks-libev
 [submodule ".config/nvim"]
+	path = .config/nvim
 	url = https://github.com/NvChad/NvChad
