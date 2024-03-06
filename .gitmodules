@@ -7,3 +7,5 @@
 [submodule "misc/shadowsocks-libev"]
 	path = misc/shadowsocks-libev
 	url = https://github.com/shadowsocks/shadowsocks-libev
+[submodule ".config/nvim"]
+	url = https://github.com/NvChad/NvChad
