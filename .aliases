@@ -21,8 +21,8 @@ alias bcl="brew cleanup --prune 10; brew cleanup "
 
 #########################system level
 alias rmr="sudo rm -r"
-alias cpr="sudo cp -r"
-alias mvr="sudo mv -r"
+alias cpr="cp -r"
+alias mvr="mv -r"
 alias zipsp150="zip -r -s 150m zip.zip "
 alias zipsp10="zip -r -s 10m zip.zip "
 alias zippwdsp="~/akazsh/misc/zip_split_passwd.sh"
