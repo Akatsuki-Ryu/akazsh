@@ -8,6 +8,9 @@ sudo apt-get install -y tig
 sudo apt-get install -y mc
 sudo apt-get install -y ncdu
 sudo apt-get install -y micro
+sudo apt-get install -y fzf
+sudo apt-get install -y ripgrep
+sudo apt-get install -y neovim
 sudo apt-get install -y prettyping
 #sudo apt-get install -y bat
 sudo apt-get install -y duf #better df
