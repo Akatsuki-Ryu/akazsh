@@ -4,6 +4,10 @@ echo now we will install basic apps , N to skip
 read -p "ok? (y/N): " yn
 case "$yn" in [yY]*) #this is the condition yes
 
+  sudo apt-get update
+  sudo apt-get upgrade -y
+  sudo apt-get install -y git
+
 	#install basic system components
 	sudo apt-get install -y zsh
 	sudo apt-get install -y curl
@@ -17,44 +21,7 @@ case "$yn" in [yY]*) #this is the condition yes
 	git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 	git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/plugins/zsh-syntax-highlighting
 
-	#install font for powerlevel
-	sudo apt-get install -y fonts-powerline
 
-	#install some basic features
-	sudo apt-get install -y autojump
-	sudo apt-get install -y tig
-	# sudo apt-get install -y terminator
-	sudo apt-get install -y mc
-	sudo apt-get install -y ncdu
-	sudo apt-get install -y micro
-	sudo apt-get install -y prettyping
-	#sudo apt-get install -y bat
-	sudo apt-get install -y duf #better df
-	#sudo apt-get install -y exa	#better ls , this is deprecated
-	./misc/installeza.sh
-	sudo apt-get install htop
-	sudo apt-get install ripgrep
-
-	#install docker
-	sudo apt install docker-compose -y
-	sudo groupadd docker
-	sudo gpasswd -a $USER docker
-	newgrp docker
-
-	#install dry ( docker manager in terminal)
-	curl -sSf https://moncho.github.io/dry/dryup.sh | sudo sh
-	sudo chmod 755 /usr/local/bin/dry
-
-	#install nvm
-	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-
-	#install tailscale
-	curl -fsSL https://tailscale.com/install.sh | sh
-
-	#network related
-	sudo apt-get install -y samba
-	sudo apt-get install -y netatalk
-	sudo cp misc/afp.conf /etc/netatalk/afp.conf
 
 	# linking diff_highlight to system . git should be from brew . this needs to be confirmed
 	sudo ln -s /usr/local/share/git-core/contrib/diff-highlight/diff-highlight /usr/local/bin/diff-highlight
