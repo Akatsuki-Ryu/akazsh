@@ -19,7 +19,7 @@ sudo apt-get install -y prettyping
 #sudo apt-get install -y bat
 sudo apt-get install -y duf #better df
 #sudo apt-get install -y exa	#better ls , this is deprecated
-./installezalinux.sh
+./misc/installezalinux.sh
 sudo apt-get install htop
 
 #install docker
@@ -45,4 +45,3 @@ curl -fsSL https://tailscale.com/install.sh | sh
 sudo apt-get install -y samba
 sudo apt-get install -y netatalk
 sudo cp misc/afplinux.conf /etc/netatalk/afp.conf
-
