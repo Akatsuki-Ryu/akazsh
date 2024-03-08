@@ -9,6 +9,7 @@ sudo apt-get install -y mc
 sudo apt-get install -y ncdu
 sudo apt-get install -y micro
 sudo apt-get install -y fzf
+sudo apt-get install -y fd-find
 sudo apt-get install -y ripgrep
 
 # install neovim from snap
