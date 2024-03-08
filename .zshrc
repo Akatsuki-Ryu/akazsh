@@ -10,6 +10,7 @@ fi
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
+source $ZSH/oh-my-zsh.sh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -76,7 +77,7 @@ plugins=(git docker-compose autojump terraform brew zsh-autosuggestions zsh-synt
 
 
 
-source $ZSH/oh-my-zsh.sh
+
 
 # User configuration
 
@@ -128,15 +129,15 @@ source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 fi
 
 
-
-
-# if running in linux run the following , mac might also need these 
+# if running in linux
+if [[ $platform == "Linux" ]]; then
+    echo "Linux"
 #take away powerlevel settings and autosuggestiinos and syntax highlight for linux
 #source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
 source ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
 # source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
+fi
 
 
 
@@ -377,6 +378,8 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 
-#for linux
+if [[ $platform == "Linux" ]]; then
+    echo "Linux"
 # add linux snap command line launcher , for example for intellij
 export PATH=$PATH:/snap/bin
+fi
