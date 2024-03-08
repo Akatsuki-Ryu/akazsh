@@ -22,6 +22,9 @@ sudo groupadd docker
 sudo gpasswd -a $USER docker
 newgrp docker
 
+#install tmux
+sudo apt-get install -y tmux
+
 #install dry ( docker manager in terminal)
 curl -sSf https://moncho.github.io/dry/dryup.sh | sudo sh
 sudo chmod 755 /usr/local/bin/dry
