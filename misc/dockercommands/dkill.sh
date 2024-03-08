@@ -1,1 +1,3 @@
-osascript -e 'quit app "Docker"'; open -a Docker
+osascript -e 'quit app "Docker"'
+open -a Docker
+

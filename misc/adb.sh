@@ -1,5 +1,5 @@
 sudo pkill -f Adobe*
-sudo pkill -f CCX* 
+sudo pkill -f CCX*
 sudo pkill -f CCL*
 sudo pkill -f CCF*
 
@@ -14,5 +14,3 @@ cd /Library/Caches/
 rm -r .*
 cd ~/Library/Preferences/Adobe
 rm -r .*
-
-
