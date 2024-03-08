@@ -6,8 +6,6 @@ case "$yn" in [yY]*) #this is the condition yes
 
   sudo apt-get update
   sudo apt-get upgrade -y
-  sudo apt-get install -y git
-
   #install basic system components
   sudo apt-get install -y zsh
   sudo apt-get install -y curl
@@ -25,6 +23,8 @@ case "$yn" in [yY]*) #this is the condition yes
 
   # linking diff_highlight to system . git should be from brew . this needs to be confirmed
   sudo ln -s /usr/local/share/git-core/contrib/diff-highlight/diff-highlight /usr/local/bin/diff-highlight
+
+  ./misc/aptinit.sh
 
   ;;
 *) #this is the condition no
