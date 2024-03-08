@@ -18,6 +18,7 @@ alias bkl="brew list --cask"
 alias brmall="brew list -1 | xargs brew rm --force"
 alias bkrmall="brew cask list -1 | xargs brew cask rm --force"
 alias bcl="brew cleanup --prune 10; brew cleanup "
+alias bltree="brew deps --tree --installed"
 
 #########################system level
 alias rmr="sudo rm -r"
