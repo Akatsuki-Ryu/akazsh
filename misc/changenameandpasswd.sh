@@ -1,4 +1,4 @@
-echo input the computer name 
+echo input the computer name
 read computername
 
 sudo scutil --set ComputerName "$computername"
@@ -10,3 +10,4 @@ sudo pwpolicy setaccountpolicies passwdpolicy.xml
 passwd
 echo also change the keychain password
 security set-keychain-password
+

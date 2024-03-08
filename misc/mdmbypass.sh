@@ -5,10 +5,10 @@
 output=$(csrutil status)
 
 if [[ $output == *"enabled"* ]]; then
-  echo "System Integrity Protection is enabled. need to disable it first"
-  exit 1
+	echo "System Integrity Protection is enabled. need to disable it first"
+	exit 1
 else
-  echo "System Integrity Protection is not enabled. continue."
+	echo "System Integrity Protection is not enabled. continue."
 fi
 
 # set the enrollment to false
@@ -20,7 +20,7 @@ plist_file="/System/Library/LaunchDaemons/com.apple.ManagedClient.enroll.plist"
 sudo sed -i '' 's|<key>com.apple.ManagedClient.enroll</key>\<true/>|<key>com.apple.ManagedClient.enroll</key>\<false/>|' "$plist_file"
 
 # remove the enrollment record
-echo  "removing enrollment record"
+echo "removing enrollment record"
 sudo rm /var/db/ConfigurationProfiles/Settings/.cloudConfigProfileInstalled
 sudo rm /var/db/ConfigurationProfiles/Settings/.cloudConfigHasActivationRecord
 

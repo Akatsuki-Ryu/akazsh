@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # first:
-lsbom -f -l -s -pf /var/db/receipts/org.nodejs.pkg.bom | while read f; do  sudo rm /usr/local/${f}; done
+lsbom -f -l -s -pf /var/db/receipts/org.nodejs.pkg.bom | while read f; do sudo rm /usr/local/${f}; done
 sudo rm -rf /usr/local/lib/node /usr/local/lib/node_modules /var/db/receipts/org.nodejs.*
 
 # To recap, the best way (I've found) to completely uninstall node + npm is to do the following:
@@ -27,4 +27,3 @@ ls -las
 sudo rm -rf /usr/local/share/man/man1/node.1
 sudo rm -rf /usr/local/lib/dtrace/node.d
 sudo rm -rf ~/.npm
-

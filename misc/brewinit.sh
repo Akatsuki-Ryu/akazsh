@@ -3,14 +3,12 @@
 
 # Install command-line tools using Homebrew.
 
-
 which -s brew
-if [[ $? != 0 ]] ; then
-  yes | /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+if [[ $? != 0 ]]; then
+	yes | /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 else
-  echo "Homebrew already installed ..."
+	echo "Homebrew already installed ..."
 fi
-
 
 # Make sure we’re using the latest Homebrew.
 brew update
@@ -49,24 +47,22 @@ brew install tree
 brew install tmux
 brew install mc
 
-
 # Check if zsh is in list of accepted shells
-if grep -Fxq "/usr/local/bin/zsh" /etc/shells > /dev/null 2>&1; then
-  echo "zsh is already in the list of accepted shells ..."
+if grep -Fxq "/usr/local/bin/zsh" /etc/shells >/dev/null 2>&1; then
+	echo "zsh is already in the list of accepted shells ..."
 else
-  # If not found
-  echo "Adding zsh to list of accepted shells ..."
-  sudo sh -c 'echo "/usr/local/bin/zsh" >> /etc/shells'
+	# If not found
+	echo "Adding zsh to list of accepted shells ..."
+	sudo sh -c 'echo "/usr/local/bin/zsh" >> /etc/shells'
 fi
 
 # Check if zsh is default shell
-if echo $SHELL | grep /bin/bash > /dev/null 2>&1; then
-  echo "Setting zsh as default shell ..."
-  chsh -s /usr/local/bin/zsh
+if echo $SHELL | grep /bin/bash >/dev/null 2>&1; then
+	echo "Setting zsh as default shell ..."
+	chsh -s /usr/local/bin/zsh
 else
-  echo "zsh is already the default shell ..."
+	echo "zsh is already the default shell ..."
 fi
-
 
 # Install `wget` with IRI support.
 brew install wget
@@ -82,15 +78,15 @@ brew install openssh
 # brew install screen
 brew install php
 brew install gmp
-brew install bat	#better cat
-brew install htop     #better top 
-brew install glances  #better top 
+brew install bat     #better cat
+brew install htop    #better top
+brew install glances #better top
 brew install iftop
 brew install ncdu
-brew install duf	#better df
+brew install duf #better df
 brew install prettyping
 brew install eza #better ls
-brew install rg # better grep
+brew install rg  # better grep
 brew install fzf
 
 # navigation akabox
@@ -99,13 +95,11 @@ brew install zsh-autosuggestions
 brew install zsh-completions
 brew install zsh-syntax-highlighting
 
-
-
 #fun stuff akabox
 brew install cmatrix #redpill
-brew install sl #a train
-brew install genact #what are you doing
-brew install hr #horizental line
+brew install sl      #a train
+brew install genact  #what are you doing
+brew install hr      #horizental line
 brew install thefuck
 
 # Install font tools.
@@ -158,8 +152,6 @@ brew install git-lfs
 brew install hub
 brew install tig
 
-
-
 # Install other useful binaries.
 #brew install exiv2
 #brew install gs
@@ -168,7 +160,7 @@ brew install tig
 brew install lynx #text based web browswer
 brew install p7zip
 brew install pigz
-brew install pv  # visual pipline progress bar
+brew install pv # visual pipline progress bar
 brew install rename
 brew install rlwrap #adding visual line wrap
 brew install ssh-copy-id
@@ -187,14 +179,11 @@ brew install v2ray-core
 brew install vagrant-completion
 brew install youtube-dl
 
-
-
 # media related
 brew install ffmpeg
 brew install flac
 brew install lame
 brew install libogg
-
 
 # Development
 brew install python
@@ -210,36 +199,27 @@ brew install gradle
 brew install rust
 brew install rustup-init
 
-
-
 # Highlighting
 brew install source-highlight
 brew install diff-so-fancy
-
-
 
 # font related (temp)
 brew tap homebrew/cask-fonts
 brew install font-hack-nerd-font
 
-
 # paackage manager
-brew tap buo/cask-upgrade #this is the b cu
-brew tap beeftornado/rmtree  #remove the whole dependency
-
+brew tap buo/cask-upgrade   #this is the b cu
+brew tap beeftornado/rmtree #remove the whole dependency
 
 # Other
 brew install mas
 brew install neovim
 # brew install gdrive
-brew install micro  #terminal text editor
+brew install micro #terminal text editor
 
 #docker manager
 brew tap moncho/dry
 brew install dry
-
-
-
 
 # Remove outdated versions from the cellar.
 brew cleanup

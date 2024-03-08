@@ -2,7 +2,8 @@
 echo now we will install brew . press N to skip
 
 read -rp "ok? (y/N): " yn
-case "$yn" in [yY]*) /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+case "$yn" in [yY]*)
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 	brew install rcmdnk/file/brew-file
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -11,24 +12,24 @@ case "$yn" in [yY]*) /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.co
 	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $HOME/.oh-my-zsh/custom/themes/powerlevel10k
 
 	read -rp "install brew apps and cask apps ,ok? (y/N): " yn
-	case "$yn" in [yY]*) /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-	 ./misc/brewinit.sh
-	 ./misc/caskinit.sh
-;; *) echo "skip." ; ;; esac
-;; *) echo "skip." ; ;; esac
-
-
-
-
-
-
-
+	case "$yn" in [yY]*)
+		/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+		./misc/brewinit.sh
+		./misc/caskinit.sh
+		;;
+	*) echo "skip." ;; esac
+	;;
+*) echo "skip." ;; esac
 
 cd ..
 echo this will overwrite the setting on this user ....
 
 read -rp "ok? (y/N): " yn
-case "$yn" in [yY]*) ;; *) echo "abort." ; exit ;; esac
+case "$yn" in [yY]*) ;; *)
+	echo "abort."
+	exit
+	;;
+esac
 
 # linking diff_highlight to system . git should be from brew . this needs to be confirmed
 sudo ln -s /usr/local/share/git-core/contrib/diff-highlight/diff-highlight /usr/local/bin/diff-highlight
@@ -50,5 +51,3 @@ ln -s akazsh/mytmux/.tmux.conf .tmux.conf
 ln -s akazsh/.zshrc .zshrc
 ln -s akazsh/.tigrc .tigrc
 ln -s akazsh/.p10k.zsh .p10k.zsh
-
-
