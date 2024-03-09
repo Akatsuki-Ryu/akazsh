@@ -3,9 +3,9 @@
 # mv ~/.config/nvim{,.bak}
 
 # delete the bak folders
-rm -r ~/.local/share/nvim.bak
-rm -r ~/.local/state/nvim.bak
-rm -r ~/.cache/nvim.bak
+rm -r ~/.local/share/nvim
+rm -r ~/.local/state/nvim
+rm -r ~/.cache/nvim
 
 # optional but recommended
 mv ~/.local/share/nvim{,.bak}
