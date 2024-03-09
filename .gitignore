@@ -181,4 +181,4 @@ obj/
 .config/github-copilot/*
 .config/micro/buffers/*
 .config/iterm2/*
-
+.config/gh/*
