@@ -150,7 +150,7 @@ brew install git-flow
 brew install git-lfs
 # brew install cdiffs
 brew install hub
-brew install tig
+brew install lazygit
 
 # Install other useful binaries.
 #brew install exiv2

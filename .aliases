@@ -55,7 +55,7 @@ alias c='bat'
 alias ping='prettyping'
 alias mksnapshot='tmutil snapshot'
 alias lssnapshot='tmutil listlocalsnapshots /Volumes'
-alias t='tig --all'
+alias t='lazygit'
 alias gaac='git add --all; git commit -m'
 alias gsiu='git submodule init && git submodule update'
 

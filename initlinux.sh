@@ -45,7 +45,6 @@ case "$yn" in [yY]*) #this is condition for yes
 	rm -r .tmux.conf
 	rm -r .tmux.conf.local
 	rm -r .zshrc
-	rm -r .tigrc
 	rm -r .p10k.zsh
 
 	#ln -s akazsh/.gitconfig .gitconfig
@@ -54,7 +53,6 @@ case "$yn" in [yY]*) #this is condition for yes
 	ln -s akazsh/mytmux/.tmux.conf.local .tmux.conf.local
 	ln -s akazsh/mytmux/.tmux.conf .tmux.conf
 	ln -s akazsh/.zshrc .zshrc
-	ln -s akazsh/.tigrc .tigrc
 	ln -s akazsh/.p10k.zsh .p10k.zsh
 
 	;;
