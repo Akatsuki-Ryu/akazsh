@@ -1,6 +1,6 @@
 # required , move the old nvim folder to nvim.bak
-rm -r ~/.config/nvim.bak
-mv ~/.config/nvim{,.bak}
+# rm -r ~/.config/nvim.bak
+# mv ~/.config/nvim{,.bak}
 
 # delete the bak folders
 rm -r ~/.local/share/nvim.bak
