@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 echo now we will install basic apps , N to skip
 
-read -p "ok? (y/N): " yn
+read -rp "ok? (y/N): " yn
 case "$yn" in [yY]*) #this is the condition yes
 
 	sudo apt-get update
@@ -34,7 +34,7 @@ esac
 cd ..
 echo this will overwrite the setting on this user ....
 
-read -p "ok? (y/N): " yn
+read -rp "ok? (y/N): " yn
 case "$yn" in [yY]*) #this is condition for yes
 
 	# taking gitconfig to seperate machines.
