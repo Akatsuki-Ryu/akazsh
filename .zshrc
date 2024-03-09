@@ -131,7 +131,6 @@ fi
 
 # if running in linux
 if [[ $platform == "Linux" ]]; then
-    echo "Linux"
 #take away powerlevel settings and autosuggestiinos and syntax highlight for linux
 #source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
 source ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
@@ -379,7 +378,6 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 
 if [[ $platform == "Linux" ]]; then
-    echo "Linux"
 # add linux snap command line launcher , for example for intellij
 export PATH=$PATH:/snap/bin
 fi
