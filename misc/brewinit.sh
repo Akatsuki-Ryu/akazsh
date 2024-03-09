@@ -151,6 +151,7 @@ brew install git-lfs
 # brew install cdiffs
 brew install hub
 brew install lazygit
+brew install gh
 
 # Install other useful binaries.
 #brew install exiv2
