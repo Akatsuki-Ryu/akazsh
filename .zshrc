@@ -73,7 +73,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # this is for mac, to leave the brew or not require a test
 # plugins=(git docker-compose autojump terraform brew)
-plugins=(git docker-compose autojump terraform brew zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git docker-compose autojump terraform brew zsh-autosuggestions zsh-syntax-highlighting zsh-completions)
 
 
 source $ZSH/oh-my-zsh.sh

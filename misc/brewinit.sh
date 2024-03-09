@@ -91,9 +91,9 @@ brew install fzf
 
 # navigation akabox
 brew install autojump
-brew install zsh-autosuggestions
+#brew install zsh-autosuggestions
 brew install zsh-completions
-brew install zsh-syntax-highlighting
+#brew install zsh-syntax-highlighting
 
 #fun stuff akabox
 brew install cmatrix #redpill
