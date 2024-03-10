@@ -1,9 +1,0 @@
-this is the backup and restore for brew made by aka 
-
-run the brewbackup as sudo sh brewbackup to back up all the packages list . 
-then the brewrestore file will be created. 
-run the brewrestore to restore into the new machine . 
-the script file is for running the brewbackup . 
-
-
-akatsuki 

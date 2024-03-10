@@ -1,1 +1,0 @@
-linux/ssserver -c config.json

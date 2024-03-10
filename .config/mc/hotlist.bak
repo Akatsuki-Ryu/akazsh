@@ -1,5 +1,0 @@
-ENTRY "local" URL "/Users/akatsuki"
-ENTRY "sshhome" URL "/sh://akatsuki@89.27.83.105:10022/Users/akatsuki"
-ENTRY "sshdigi" URL "/sh://akatsuki@89.27.83.105:20022/Users/akatsuki"
-ENTRY "sshavi" URL "/sh://akatsuki@89.27.83.105:30022/Users/akatsuki"
-ENTRY "sshprez" URL "/sh://akatsuki@192.168.50.84/Users/akatsuki"
