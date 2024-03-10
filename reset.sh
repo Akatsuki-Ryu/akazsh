@@ -3,12 +3,22 @@ echo now we will UNinstall brew and reset. press N to skip
 
 read -rp "ok? (y/N): " yn
 case "$yn" in [yY]*)
-	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
-	brew remove --force "${brew list}" --ignore-dependencies
-	brew cask remove --force "${brew cask list}"
 
-  # remove oh-my-zsh
-  rm -rf ~/.oh-my-zsh
+  # if running on mac
+  if [[ $(uname) == "Darwin" ]]; then
+    echo "running on mac"
+    # remove brew
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
+    brew remove --force "${brew list}" --ignore-dependencies
+    brew cask remove --force "${brew cask list}"
+  fi
+
+  # remove brew on linux
+  if [[ $(uname) == "Linux" ]]; then
+    echo "running on linux"
+  # remove oh my zsh
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/uninstall.sh)"
+  fi
 
 	;;
 *) echo "skip." ;; esac
