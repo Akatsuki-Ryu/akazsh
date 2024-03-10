@@ -57,7 +57,7 @@ else
 fi
 
 # Check if zsh is default shell
-if echo $SHELL | grep /bin/bash >/dev/null 2>&1; then
+if echo "$SHELL" | grep /bin/bash >/dev/null 2>&1; then
 	echo "Setting zsh as default shell ..."
 	chsh -s /usr/local/bin/zsh
 else
