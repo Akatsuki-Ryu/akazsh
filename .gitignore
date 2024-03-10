@@ -197,4 +197,7 @@ obj/
 .config/xdg*
 .config/monitor*
 .config/user-dirs*
+.config/google*
+
+
 
