@@ -11,6 +11,7 @@ fi
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -69,11 +70,14 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker-compose autojump terraform brew)
 
+# this is for mac, to leave the brew or not require a test
+# plugins=(git docker-compose autojump terraform brew)
+plugins=(git docker-compose autojump terraform brew zsh-autosuggestions zsh-syntax-highlighting zsh-completions)
 
 
 source $ZSH/oh-my-zsh.sh
+
 
 # User configuration
 
@@ -104,12 +108,45 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
+# detect the os platform
+platform=$(uname)
+
+if [[ $platform == "Darwin" ]]; then
+    echo "Mac OS X"
+elif [[ $platform == "Linux" ]]; then
+    echo "Linux"
+elif [[ $platform == "Windows" ]]; then
+    echo "Windows"
+else
+    echo "Unknown platform: $platform"
+fi
+
+# if running in mac
+if [[ $platform == "Darwin" ]]; then
 source $(brew --prefix)/opt/powerlevel10k/share/powerlevel10k/powerlevel10k.zsh-theme
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
 
-  [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
+# if running in linux
+if [[ $platform == "Linux" ]]; then
+#take away powerlevel settings and autosuggestiinos and syntax highlight for linux
+#source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
+source ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
+# source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
+
+
+
+
+
+#  [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
+
+# i am commenting this out , it was for linux, if not working , comment it back
+# source /usr/share/autojump/autojump.sh
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
 
@@ -121,20 +158,20 @@ PATH=${PATH}:/Users/akatsuki/libmobiledevice/
 
 ################path for golang
 export GOPATH=$HOME/go
-alias zshconfig="subl ~/.zshrc"
-alias aliasconfig="subl ~/akazsh/.aliases"
+alias zshconfig="micro ~/.zshrc"
+alias aliasconfig="micro ~/akazsh/.aliases"
 
 # Aliases source file
 source $HOME/akazsh/.aliases
 
 # android configure source file
-source $HOME/akazsh/androidconf
+# source $HOME/akazsh/androidconf
 
 
 
 
 
-##################### path for java
+# path for java
 export JAVA_HOME=`/usr/libexec/java_home -v 11`
 export PATH="/usr/local/sbin:$PATH"
 
@@ -312,6 +349,8 @@ POWERLEVEL9K_TIME_BACKGROUND="black"
 
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+
  export PATH="$(pyenv root)/shims:$HOME/local/bin:$PATH"
 
 
@@ -328,7 +367,17 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
 
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+#nvm related
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 
-export PATH=/opt/homebrew/bin:$PATH
-
+if [[ $platform == "Linux" ]]; then
+# add linux snap command line launcher , for example for intellij
+export PATH=$PATH:/snap/bin
+fi

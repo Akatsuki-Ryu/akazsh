@@ -91,9 +91,9 @@ brew install fzf
 
 # navigation akabox
 brew install autojump
-brew install zsh-autosuggestions
+#brew install zsh-autosuggestions
 brew install zsh-completions
-brew install zsh-syntax-highlighting
+#brew install zsh-syntax-highlighting
 
 #fun stuff akabox
 brew install cmatrix #redpill
@@ -150,7 +150,8 @@ brew install git-flow
 brew install git-lfs
 # brew install cdiffs
 brew install hub
-brew install tig
+brew install lazygit
+brew install gh
 
 # Install other useful binaries.
 #brew install exiv2
