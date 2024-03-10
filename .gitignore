@@ -198,6 +198,6 @@ obj/
 .config/monitor*
 .config/user-dirs*
 .config/google*
-
-
+.config/.gsd-keyboard.settings-ported
+.config/mimeapps.list
 
