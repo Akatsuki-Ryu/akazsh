@@ -193,6 +193,7 @@ obj/
 .config/nextjs*
 .config/systemd*
 .config/gnome*
+.config/GNOME*
 .config/xdg*
 .config/monitor*
 .config/user-dirs*
