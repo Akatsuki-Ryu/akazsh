@@ -185,3 +185,15 @@ obj/
 .config/GitKraken/*
 .config/dconf/*
 .config/pulse/*
+.config/evolution/*
+.config/gtk*
+.config/ibus*
+.config/lazygit/*
+.config/nautilus/*
+.config/nextjs*
+.config/systemd*
+.config/gnome*
+.config/xdg*
+.config/monitor*
+.config/user-dirs*
+
