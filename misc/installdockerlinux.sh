@@ -31,6 +31,9 @@ sudo apt update
 
 sudo apt install -y docker-ce
 
+# start the service, but still might require reboot
+sudo systemctl enable docker
+
 # cat /etc/apt/sources.list | grep docker
 # deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable
 # # deb-src [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable
