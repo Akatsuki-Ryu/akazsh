@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 echo now we will UNinstall brew and reset. press N to skip
 
-read -p "ok? (y/N): " yn
+read -rp "ok? (y/N): " yn
 case "$yn" in [yY]*)
 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
-	brew remove --force $(brew list) --ignore-dependencies
-	brew cask remove --force $(brew cask list)
+	brew remove --force "${brew list}" --ignore-dependencies
+	brew cask remove --force "${brew cask list}"
 
   # remove oh-my-zsh
   rm -rf ~/.oh-my-zsh
@@ -16,7 +16,7 @@ case "$yn" in [yY]*)
 cd ..
 echo this will overwrite the setting on this user ....
 
-read -p "ok? (y/N): " yn
+read -rp "ok? (y/N): " yn
 case "$yn" in [yY]*) ;; *)
 	echo "abort."
 	exit
