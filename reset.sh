@@ -16,8 +16,8 @@ case "$yn" in [yY]*)
   # remove brew on linux
   if [[ $(uname) == "Linux" ]]; then
     echo "running on linux"
-  # remove oh my zsh
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/uninstall.sh)"
+    # remove oh my zsh
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/uninstall.sh)"
   fi
 
 	;;
