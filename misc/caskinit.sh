@@ -29,7 +29,6 @@ brew install --cask --force discord
 # Cloud
 # brew install --cask --force  dropbox
 brew cask isntall --force free-download-manager
-brew install --cask --force tunnelblick
 brew install --cask --force shadowsocksx-ng
 brew install --cask --force tailscale
 
@@ -37,7 +36,6 @@ brew install --cask --force tailscale
 # brew install --cask --force  alfred
 brew install --cask --force docker
 brew install --cask --force grammarly
-brew install --cask --force kitematic
 brew install --cask --force rescuetime
 brew install --cask --force google-japanese-ime
 #brew install --cask --force  sogouinput #this is not available anymore
@@ -47,7 +45,7 @@ brew install --cask --force microsoft-remote-desktop
 
 # Media
 brew install --cask --force blender
-brew install --cask --force soundflower
+# brew install --cask --force soundflower
 brew install --cask --force adobe-creative-cloud
 brew install --cask --force handbrake
 brew install --cask --force spotify
