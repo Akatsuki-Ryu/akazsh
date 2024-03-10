@@ -7,6 +7,9 @@ case "$yn" in [yY]*)
 	brew remove --force $(brew list) --ignore-dependencies
 	brew cask remove --force $(brew cask list)
 
+  # remove oh-my-zsh
+  rm -rf ~/.oh-my-zsh
+
 	;;
 *) echo "skip." ;; esac
 
