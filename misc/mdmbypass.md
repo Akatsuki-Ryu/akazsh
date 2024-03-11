@@ -3,7 +3,7 @@ update 2024-03-11
 use this url to bypass mdm
 https://skipmdm.com
 
-there is a code also in this folder you can run.
+there is a code also in this folder you can run. find in mdmbypass2.sh
 
 reference
 
