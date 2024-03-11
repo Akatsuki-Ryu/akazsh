@@ -4,6 +4,7 @@ echo now we will install brew . press N to skip
 read -rp "ok? (y/N): " yn
 case "$yn" in [yY]*)
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+	export PATH="/opt/homebrew/sbin:$PATH"
 
 	brew install rcmdnk/file/brew-file
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
