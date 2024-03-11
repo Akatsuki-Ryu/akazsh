@@ -1,4 +1,12 @@
+update 2024-03-11
+
+use this url to bypass mdm
+https://skipmdm.com
+
+there is a code also in this folder you can run.
+
 reference
+
 https://gist.github.com/sghiassy/a3927405cf4ffe81242f4ecb01c382ac?permalink_comment_id=4591775
 
 # Disable Device Enrollment Notification on Mac.md
@@ -60,4 +68,3 @@ sudo touch /var/db/ConfigurationProfiles/Settings/.cloudConfigRecordNotFound
 ```
 
 (3) you're all set. enjoy this boring upgrade
-
