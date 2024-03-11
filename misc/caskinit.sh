@@ -28,7 +28,7 @@ brew install --cask --force discord
 
 # Cloud
 # brew install --cask --force  dropbox
-brew cask isntall --force free-download-manager
+brew isntall --cask --force free-download-manager
 brew install --cask --force shadowsocksx-ng
 brew install --cask --force tailscale
 
