@@ -11,16 +11,13 @@ sudo apt-get install -y micro
 sudo apt-get install -y fzf
 sudo apt-get install -y fd-find
 sudo apt-get install -y ripgrep
-sudo apt-get install gh
+sudo apt-get install -y gh
 
 #install lazygit
 LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
 curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
 tar xf lazygit.tar.gz lazygit
 sudo install lazygit /usr/local/bin
-
-# install neovim from snap
-sudo snap install --beta nvim --classic
 
 sudo apt-get install -y prettyping
 #sudo apt-get install -y bat
@@ -30,10 +27,11 @@ sudo apt-get install -y duf #better df
 sudo apt-get install htop
 
 #install docker
-sudo apt install docker-compose -y
-sudo groupadd docker
-sudo gpasswd -a "$USER" docker
-newgrp docker
+./misc/installdockerlinux.sh
+#sudo apt install docker-compose -y
+#sudo groupadd docker
+#sudo gpasswd -a "$USER" docker
+#newgrp docker
 
 #install tmux
 sudo apt-get install -y tmux
@@ -52,3 +50,11 @@ curl -fsSL https://tailscale.com/install.sh | sh
 sudo apt-get install -y samba
 sudo apt-get install -y netatalk
 sudo cp misc/afplinux.conf /etc/netatalk/afp.conf
+
+# install neovim from snap
+sudo snap install --beta nvim --classic
+sudo snap install --beta discord --classic
+sudo snap install --beta gtk-common-themes --classic
+sudo snap install --beta slack --classic
+sudo snap install --beta sublime-text --classic
+
