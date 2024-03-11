@@ -9,11 +9,12 @@ case "$yn" in [yY]*)
 	brew install rcmdnk/file/brew-file
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-	# brew install sambadevi/powerlevel9k/powerlevel9k
-	brew install powerlevel10k
-
 	#clean up the powerlevel10k folder if exists
 	rm -rf "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}"/themes/powerlevel10k
+
+	# brew install sambadevi/powerlevel9k/powerlevel9k
+	brew install powerlevel10k
+	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 	#clean zsh plugins if folder exists
 	rm -rf ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
