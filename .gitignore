@@ -201,4 +201,4 @@ obj/
 .config/.gsd-keyboard.settings-ported
 .config/mimeapps.list
 .config/JetBrains/*
-
+.config/plasma*
