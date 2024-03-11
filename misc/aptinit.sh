@@ -29,9 +29,9 @@ sudo apt-get install htop
 #install docker
 ./misc/installdockerlinux.sh
 #sudo apt install docker-compose -y
-#sudo groupadd docker
-#sudo gpasswd -a "$USER" docker
-#newgrp docker
+sudo groupadd docker
+sudo gpasswd -a "$USER" docker
+newgrp docker
 
 #install tmux
 sudo apt-get install -y tmux
@@ -57,4 +57,3 @@ sudo snap install --beta discord --classic
 sudo snap install --beta gtk-common-themes --classic
 sudo snap install --beta slack --classic
 sudo snap install --beta sublime-text --classic
-
