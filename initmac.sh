@@ -45,6 +45,9 @@ case "$yn" in [yY]*) ;; *)
 	;;
 esac
 
+# install rosetta2 for apple silicon macs
+softwareupdate --install-rosetta --agree-to-license
+
 # linking diff_highlight to system . git should be from brew . this needs to be confirmed
 sudo ln -s /usr/local/share/git-core/contrib/diff-highlight/diff-highlight /usr/local/bin/diff-highlight
 
