@@ -1,4 +1,0 @@
--- this is not in use, we are using the copilot.lua instead. i am still testing this out
--- return {
---   "github/copilot.vim",
--- }
