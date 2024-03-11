@@ -28,7 +28,7 @@ sudo apt-get install htop
 
 #install docker
 ./misc/installdockerlinux.sh
-#sudo apt install docker-compose -y
+# allow normal user to use docker, without sudo
 sudo groupadd docker
 sudo gpasswd -a "$USER" docker
 newgrp docker
