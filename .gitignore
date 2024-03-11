@@ -200,4 +200,5 @@ obj/
 .config/google*
 .config/.gsd-keyboard.settings-ported
 .config/mimeapps.list
+.config/JetBrains/*
 
