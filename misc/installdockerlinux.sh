@@ -54,7 +54,8 @@ sudo systemctl enable docker
 # #docker compose permission
 # sudo chmod +x /usr/local/bin/docker-compose
 #
-# #permissions for deamon
-# sudo groupadd docker
-# sudo usermod -aG docker ${USER}
-# sudo rm -r ~/.docker/
+
+#permissions for deamon
+sudo groupadd docker
+sudo usermod -aG docker "${USER}"
+sudo rm -r ~/.docker/
