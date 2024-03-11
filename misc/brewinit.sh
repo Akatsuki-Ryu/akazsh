@@ -200,8 +200,6 @@ brew install gradle
 brew install rust
 brew install rustup-init
 
-
-
 # Highlighting
 brew install source-highlight
 brew install diff-so-fancy
