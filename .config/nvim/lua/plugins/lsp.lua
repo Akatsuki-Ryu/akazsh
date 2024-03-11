@@ -13,6 +13,7 @@ return {
         "beautysh",
         "shellharden",
         "shfmt",
+        "snyk",
         -- "tailwindcss-language-server",
         "typescript-language-server",
         "css-lsp",
