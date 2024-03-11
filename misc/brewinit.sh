@@ -172,7 +172,6 @@ brew install zopfli # this is a zlib compressor
 brew install baidupcs-go
 brew install docker
 brew install fd
-brew install fzf
 brew install packer
 brew install sshfs
 brew tap v2ray/v2ray
@@ -194,11 +193,14 @@ brew install python@3.8
 brew install ruby
 brew install yarn
 brew install node
+brew install nvm
 brew install cmake
 brew install go
 brew install gradle
 brew install rust
 brew install rustup-init
+
+
 
 # Highlighting
 brew install source-highlight
