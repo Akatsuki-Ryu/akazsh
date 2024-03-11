@@ -10,6 +10,8 @@ else
 	echo "Homebrew already installed ..."
 fi
 
+export PATH="/opt/homebrew/sbin:$PATH"
+
 # Make sure we’re using the latest Homebrew.
 brew update
 
