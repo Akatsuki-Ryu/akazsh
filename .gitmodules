@@ -1,9 +1,6 @@
 [submodule "misc/shadowsocks-rust"]
 	path = misc/shadowsocks-rust
 	url = https://github.com/shadowsocks/shadowsocks-rust
-[submodule ".tmux"]
-	path = .tmux
-	url = https://github.com/gpakosz/.tmux
 [submodule "misc/shadowsocks-libev"]
 	path = misc/shadowsocks-libev
 	url = https://github.com/shadowsocks/shadowsocks-libev
