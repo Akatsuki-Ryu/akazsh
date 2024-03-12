@@ -121,12 +121,12 @@ else
     echo "Unknown platform: $platform"
 fi
 
-# if running in mac
-if [[ $platform == "Darwin" ]]; then
-source $(brew --prefix)/opt/powerlevel10k/share/powerlevel10k/powerlevel10k.zsh-theme
-source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-fi
+# if running in mac , need to source the powerlevel10k and autosuggestions and syntax highlight, but this is installed from ohmyzsh alraedy , no need to install it again
+# if [[ $platform == "Darwin" ]]; then
+# source $(brew --prefix)/opt/powerlevel10k/share/powerlevel10k/powerlevel10k.zsh-theme
+# source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# fi
 
 
 # if running in linux
@@ -172,8 +172,11 @@ source $HOME/akazsh/.aliases
 
 
 # path for java
-export JAVA_HOME=`/usr/libexec/java_home -v 11`
-export PATH="/usr/local/sbin:$PATH"
+# export JAVA_HOME=`/usr/libexec/java_home -v 11`
+# export PATH="/usr/local/sbin:$PATH"
+
+# path for python
+#  export PATH="$(pyenv root)/shims:$HOME/local/bin:$PATH"
 
 
 
@@ -351,7 +354,7 @@ POWERLEVEL9K_TIME_BACKGROUND="black"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 
- export PATH="$(pyenv root)/shims:$HOME/local/bin:$PATH"
+
 
 
 

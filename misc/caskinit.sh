@@ -1,7 +1,6 @@
 #!/bin/sh
 
 #brew tap caskroom/cask
-brew tap homebrew/cask-cask
 brew tap homebrew/cask-versions
 
 # Browsers

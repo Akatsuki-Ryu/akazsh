@@ -93,8 +93,8 @@ brew install fzf
 
 # navigation akabox
 brew install autojump
-#brew install zsh-autosuggestions
-brew install zsh-completions
+#brew install zsh-autosuggestions #use ohmyzsh to install , so we dont install them from here 
+#brew install zsh-completions
 #brew install zsh-syntax-highlighting
 
 #fun stuff akabox
