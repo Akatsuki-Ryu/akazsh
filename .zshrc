@@ -121,12 +121,12 @@ else
     echo "Unknown platform: $platform"
 fi
 
-# if running in mac
-if [[ $platform == "Darwin" ]]; then
-source $(brew --prefix)/opt/powerlevel10k/share/powerlevel10k/powerlevel10k.zsh-theme
-source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-fi
+# if running in mac , need to source the powerlevel10k and autosuggestions and syntax highlight, but this is installed from ohmyzsh alraedy , no need to install it again
+# if [[ $platform == "Darwin" ]]; then
+# source $(brew --prefix)/opt/powerlevel10k/share/powerlevel10k/powerlevel10k.zsh-theme
+# source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# fi
 
 
 # if running in linux
