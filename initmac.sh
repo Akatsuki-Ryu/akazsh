@@ -28,7 +28,6 @@ case "$yn" in [yY]*)
 
 	read -rp "install brew apps and cask apps ,ok? (y/N): " yn
 	case "$yn" in [yY]*)
-		/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 		./misc/brewinit.sh
 		./misc/caskinit.sh
 		;;
