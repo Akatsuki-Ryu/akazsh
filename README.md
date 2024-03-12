@@ -20,3 +20,4 @@ so you need to quit the current session to make it continue by typing `exit` and
 when all the setups are done , you will also see the command has been finished and standby, you can safely type `exit` and press enter to quit the session.
 restart to zsh to start use the enhanced shell.
 
+this is a test
