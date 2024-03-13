@@ -14,7 +14,8 @@ brew install --cask --force firestorm
 brew install --cask --force iterm2
 brew install --cask --force gitkraken
 brew install --cask --force intellij-idea
-brew install --cask --force java
+# brew install --cask --force java
+brew install --cask --force temurin # this is openjdk
 brew install --cask --force sublime-text
 brew install --cask --force wireshark
 
