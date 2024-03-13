@@ -30,11 +30,30 @@ case "$yn" in [yY]*) #this is the condition yes
 	# linking diff_highlight to system . git should be from brew . this needs to be confirmed
 	sudo ln -s /usr/local/share/git-core/contrib/diff-highlight/diff-highlight /usr/local/bin/diff-highlight
 
-	./misc/aptinit.sh
+	#ask user if they want to instal the additional apps
+	read -rp "install additional apps? (y/N): " yn
+	case "$yn" in [yY]*) #this is the condition yes
+		#installing additional apps
+		./misc/aptinit.sh
+
+		#ask user if they want to install snap apps
+		read -rp "install snap apps? (y/N): " yn
+		case "$yn" in [yY]*) #this is the condition yes
+			#installing snap apps
+			./misc/snapinit.sh
+			;;
+		*) #this is the condition no
+			echo "skip the snap packages" ;;
+		esac
+
+		;;
+	*) #this is the condition no
+		echo "skip the packages" ;;
+	esac
 
 	;;
 *) #this is the condition no
-	echo "skip." ;;
+	echo "skip the basic apps" ;;
 esac
 
 # exit

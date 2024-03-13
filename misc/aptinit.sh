@@ -50,10 +50,3 @@ curl -fsSL https://tailscale.com/install.sh | sh
 sudo apt-get install -y samba
 sudo apt-get install -y netatalk
 sudo cp misc/afplinux.conf /etc/netatalk/afp.conf
-
-# install neovim from snap
-sudo snap install --beta nvim --classic
-sudo snap install --beta discord --classic
-sudo snap install --beta gtk-common-themes --classic
-sudo snap install --beta slack --classic
-sudo snap install --beta sublime-text --classic
