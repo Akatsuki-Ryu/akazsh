@@ -14,6 +14,7 @@ return {
         "shellharden",
         "shfmt",
         "snyk",
+        "snyk-ls",
         -- "tailwindcss-language-server",
         "typescript-language-server",
         "css-lsp",
