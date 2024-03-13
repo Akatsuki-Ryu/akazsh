@@ -202,3 +202,5 @@ obj/
 .config/mimeapps.list
 .config/JetBrains/*
 .config/plasma*
+
+.config/configstore/
