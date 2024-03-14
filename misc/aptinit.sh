@@ -26,6 +26,9 @@ sudo apt-get install -y duf #better df
 ./misc/installezalinux.sh
 sudo apt-get install htop
 
+#install sshd
+sudo apt-get install -y openssh-server
+
 #install docker
 ./misc/installdockerlinux.sh
 # allow normal user to use docker, without sudo
