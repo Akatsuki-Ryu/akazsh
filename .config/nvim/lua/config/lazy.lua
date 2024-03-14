@@ -31,6 +31,13 @@ require("lazy").setup({
       priority = 1000,
       opts = {},
     },
+    {
+      "edluffy/specs.nvim",
+        lazy = false,
+        priority = 1000,
+        opts = {},
+    },
+
     -- import any extras modules here
     -- { import = "lazyvim.plugins.extras.linting.eslint" },
     { import = "lazyvim.plugins.extras.formatting.prettier" },
