@@ -47,7 +47,7 @@ alias tmls="tmux list-session"
 alias mc='LANG=en_EN.UTF-8 mc'
 alias m='micro'
 alias s='subl'
-alias h='htop'
+alias h='btop'
 alias a='glances'
 alias hs='sudo htop'
 alias du='ncdu -2 -x -e --exclude .git --color dark'

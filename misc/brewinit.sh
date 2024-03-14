@@ -82,6 +82,7 @@ brew install php
 brew install gmp
 brew install bat     #better cat
 brew install htop    #better top
+brew install btop    #even better top
 brew install glances #better top
 brew install iftop
 brew install ncdu
@@ -93,7 +94,7 @@ brew install fzf
 
 # navigation akabox
 brew install autojump
-#brew install zsh-autosuggestions #use ohmyzsh to install , so we dont install them from here 
+#brew install zsh-autosuggestions #use ohmyzsh to install , so we dont install them from here
 #brew install zsh-completions
 #brew install zsh-syntax-highlighting
 
