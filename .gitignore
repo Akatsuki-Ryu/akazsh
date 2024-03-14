@@ -204,3 +204,7 @@ obj/
 .config/plasma*
 
 .config/configstore/
+
+.config/btop/btop.conf
+
+.config/btop/
