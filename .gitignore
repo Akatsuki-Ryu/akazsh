@@ -208,3 +208,4 @@ obj/
 .config/btop/btop.conf
 
 .config/btop/
+.config/flutter
