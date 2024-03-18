@@ -15,7 +15,7 @@ return {
                 "shfmt",
                 "snyk",
                 "snyk-ls",
-                -- "tailwindcss-language-server",
+                "tailwindcss-language-server",
                 "typescript-language-server",
                 "css-lsp",
             })
