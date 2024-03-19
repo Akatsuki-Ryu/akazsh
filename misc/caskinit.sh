@@ -14,6 +14,26 @@ brew install --cask --force firestorm
 brew install --cask --force iterm2
 brew install --cask --force gitkraken
 brew install --cask --force intellij-idea
+
+# install intellij-idea command line launcher for macos
+
+idea_launcher="/usr/local/bin/idea"
+
+# Check if the file /usr/local/bin/idea already exists
+if [ -f "$idea_launcher" ]; then
+	rm "$idea_launcher"
+	echo "Existing IntelliJ IDEA command line launcher removed."
+fi
+
+# Create the file /usr/local/bin/idea
+echo '#!/bin/sh' >"$idea_launcher"
+echo 'open -na "IntelliJ IDEA.app" --args "$@"' >>"$idea_launcher"
+
+# Make the script executable
+chmod +x "$idea_launcher"
+
+# echo "IntelliJ IDEA command line launcher installed successfully."
+
 # brew install --cask --force java
 brew install --cask --force temurin # this is java openjdk
 brew install --cask --force sublime-text
