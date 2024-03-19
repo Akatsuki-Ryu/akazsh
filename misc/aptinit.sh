@@ -54,3 +54,7 @@ curl -fsSL https://tailscale.com/install.sh | sh
 sudo apt-get install -y samba
 sudo apt-get install -y netatalk
 sudo cp misc/afplinux.conf /etc/netatalk/afp.conf
+
+# install python
+sudo apt-get install -y python3
+sudo apt-get install -y python3-pip
