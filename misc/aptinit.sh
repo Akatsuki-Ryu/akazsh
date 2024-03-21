@@ -20,8 +20,9 @@ tar xf lazygit.tar.gz lazygit
 sudo install lazygit /usr/local/bin
 
 sudo apt-get install -y prettyping
-#sudo apt-get install -y bat
-sudo apt-get install -y duf #better df
+sudo apt-get install -y bat
+sudo mv /usr/bin/batcat /usr/bin/bat # rename batcat to bat if there is no other conflict
+sudo apt-get install -y duf          #better df
 #sudo apt-get install -y exa	#better ls , this is deprecated
 ./misc/installezalinux.sh
 sudo apt-get install -y htop
