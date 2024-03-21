@@ -80,10 +80,9 @@ brew install openssh
 # brew install screen
 brew install php
 brew install gmp
-brew install bat     #better cat
-brew install htop    #better top
-brew install btop    #even better top
-brew install glances #better top
+brew install bat  #better cat
+brew install htop #better top
+brew install btop #even better top
 brew install iftop
 brew install ncdu
 brew install duf #better df
