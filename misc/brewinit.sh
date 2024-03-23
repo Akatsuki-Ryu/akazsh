@@ -188,10 +188,8 @@ brew install lame
 brew install libogg
 
 # Development
-brew install python
-brew install python3
-brew install python@2
-brew install python@3.8
+brew install python@3.11
+brew install miniiconda
 brew install ruby
 brew install yarn
 brew install node
