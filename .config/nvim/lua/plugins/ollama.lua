@@ -28,7 +28,8 @@ return {
     ---@type Ollama.Config
     opts = {
         model = "mistral",
-        url = "http://127.0.0.1:11434",
+        -- url = "http://127.0.0.1:11434",
+        url = "http://akaboxpc:11434", -- this is my own setup , change to your endpoint
         serve = {
             on_start = false,
             command = "ollama",
