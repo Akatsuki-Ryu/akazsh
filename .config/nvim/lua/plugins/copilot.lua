@@ -4,7 +4,7 @@ return {
     "zbirenbaum/copilot.lua",
 
     opts = {
-        suggestion = { enabled = true, auto_trigger = true, keymap = { accept = "<C-j>" } },
+        suggestion = { enabled = true, auto_trigger = true, keymap = { accept = "<leader><Tab>" } },
         panel = {
             enabled = true,
             auto_refresh = false,
