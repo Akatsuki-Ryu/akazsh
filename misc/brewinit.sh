@@ -189,7 +189,7 @@ brew install libogg
 
 # Development
 brew install python@3.11
-brew install miniiconda
+brew install miniconda
 brew install ruby
 brew install yarn
 brew install node
