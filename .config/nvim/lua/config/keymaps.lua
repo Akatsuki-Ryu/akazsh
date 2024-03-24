@@ -90,3 +90,6 @@ vim.api.nvim_set_keymap(
 -- for Gen
 vim.keymap.set({ "n", "v" }, "<leader>oi", ":Gen<CR>")
 vim.keymap.set("v", "<leader>oe", ":Gen Enhance_Grammar_Spelling<CR>")
+
+-- mapping ; to :
+vim.keymap.set("n", ";", ":", { noremap = true })
