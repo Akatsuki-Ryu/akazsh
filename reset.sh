@@ -1,50 +1,37 @@
 #!/usr/bin/env bash
-echo now we will UNinstall brew and reset. press N to skip
 
-read -rp "ok? (y/N): " yn
-case "$yn" in [yY]*)
+echo "Are you sure you want to uninstall Homebrew and some configuration files? (y/N)"
+read yn
+[ -z "$yn" ] || {
+	if [[ "$yn" == [yY] ]]; then
+		case $(uname) in
+		Darwin)
+			echo "Uninstalling Homebrew on Mac..."
+			/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
+			brew list | xargs brew remove --force --ignore-dependencies
+			brew cask list | xargs brew cask remove --force
+			;;
+		Linux)
+			echo "Uninstalling ohmyzsh on Linux..."
+			sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/uninstall.sh)"
+			;;
+		*)
+			echo "Unsupported operating system."
+			exit 1
+			;;
+		esac
+	fi
+}
 
-  # if running on mac
-  if [[ $(uname) == "Darwin" ]]; then
-    echo "running on mac"
-    # remove brew
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
-    brew remove --force "${brew list}" --ignore-dependencies
-    brew cask remove --force "${brew cask list}"
-  fi
-
-  # remove brew on linux
-  if [[ $(uname) == "Linux" ]]; then
-    echo "running on linux"
-    # remove oh my zsh
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/uninstall.sh)"
-  fi
-
-	;;
-*) echo "skip." ;; esac
-
-cd ..
-echo this will overwrite the setting on this user ....
-
-read -rp "ok? (y/N): " yn
-case "$yn" in [yY]*) ;; *)
-	echo "abort."
-	exit
-	;;
-esac
-
-# taking gitconfig to seperate machines.
-rm -r .gitconfig
-rm -r .config
-rm -r .tmux.conf
-rm -r .tmux.conf.local
-rm -r .zshrc
-rm -r .tigrc
-
-#ln -s akazsh/.gitconfig .gitconfig
-cp akazsh/.gitconfig .gitconfig
-ln -s akazsh/.config .config
-ln -s akazsh/mytmux/.tmux.conf.local .tmux.conf.local
-ln -s akazsh/mytmux/.tmux.conf .tmux.conf
-ln -s akazsh/.zshrc .zshrc
-ln -s akazsh/.tigrc .tigrc
+echo "Are you sure you want to overwrite the configuration files? (y/N)"
+read yn
+[ -z "$yn" ] || {
+	if [[ "$yn" == [yY] ]]; then
+		rm -r .gitconfig .config .tmux.conf .tmux.conf.local .zshrc .tigrc
+		cp akazsh/.gitconfig .gitconfig
+		ln -s akazsh/mytmux/.tmux.conf.local .tmux.conf.local
+		ln -s akazsh/mytmux/.tmux.conf .tmux.conf
+		ln -s akazsh/.zshrc .zshrc
+		ln -s akazsh/.tigrc .tigrc
+	fi
+}
