@@ -80,7 +80,7 @@ alias dkill="~/akazsh/misc/dockercommands/dkill.sh"
 ################################## ollama
 alias olserve="sudo systemctl stop ollama.service;env OLLAMA_HOST=0.0.0.0:11434 ollama serve"
 alias olup="sudo systemctl start ollama.service;ollama run mistral"
-alias oldn="sudo systemctl stop ollama.service"
+alias oldn="sudo systemctl stop ollama.service;osascript -e 'tell app \"Ollama\" to quit'"
 
 ######################################### terraform 
 alias tfaf="terraform apply -auto-approve"
