@@ -38,7 +38,7 @@ require("lazy").setup({
             opts = {},
         },
 
-        -- Minimal configuration for local ai plugins , but we will use ollama
+        -- Minimal configuration for local ai plugins , but we will use both for now
         { "David-Kunz/gen.nvim" },
 
         -- import any extras modules here
