@@ -39,7 +39,7 @@ require("lazy").setup({
         },
 
         -- Minimal configuration for local ai plugins , but we will use ollama
-        -- { "David-Kunz/gen.nvim" },
+        { "David-Kunz/gen.nvim" },
 
         -- import any extras modules here
         -- { import = "lazyvim.plugins.extras.linting.eslint" },
