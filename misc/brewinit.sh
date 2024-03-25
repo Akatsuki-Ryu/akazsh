@@ -92,7 +92,8 @@ brew install rg  # better grep
 brew install fzf
 
 # navigation akabox
-brew install autojump
+# brew install autojump
+brew install zoxide #replacing the autojump for now
 #brew install zsh-autosuggestions #use ohmyzsh to install , so we dont install them from here
 #brew install zsh-completions
 #brew install zsh-syntax-highlighting
