@@ -43,8 +43,15 @@ return {
             Sample_Prompt = {
                 prompt = "This is a sample prompt that receives $input and $sel(ection), among others.",
                 input_label = "> ",
-                model = "mistral",
+                model = "deepseek-coder:6.7b-instruct",
                 action = "display",
+            },
+            enhance_code_akabox = {
+                prompt = "Enhance the following $ftype code so that it is both easier to read and understand. Optimise the code for performance and maintainability. here is the code snippet:$sel(ection),response_format:\n\n```$ftype\n$sel```",
+                -- .. response_format
+                -- .. "\n\n```$ftype\n$sel```",
+                model = "deepseek-coder:6.7b-instruct",
+                action = "replace",
             },
         }, -- your configuration overrides
     },
