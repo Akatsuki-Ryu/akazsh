@@ -9,6 +9,9 @@ brew install --cask --force tor-browser
 brew install --cask --force zeronet
 brew install --cask --force firestorm
 
+# password manager
+brew install --cask --force bitwarden
+
 # Development
 # brew install --cask --force  visual-studio-code
 brew install --cask --force iterm2
