@@ -7,3 +7,5 @@
 [submodule "misc/.tmux"]
   path = misc/.tmux
 	url = https://github.com/gpakosz/.tmux
+[submodule "misc/dotfiles-public"]
+	url = https://github.com/craftzdog/dotfiles-public
