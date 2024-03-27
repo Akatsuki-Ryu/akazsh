@@ -81,7 +81,7 @@ alias dkill="~/akazsh/misc/dockercommands/dkill.sh"
 ################################## ollama
 alias olserve="sudo systemctl stop ollama.service;env OLLAMA_HOST=0.0.0.0:11434 ollama serve"
 # alias olup="sudo systemctl start ollama.service;ollama run mistral"
-alias olup="unameOut=\"\$(uname -s)\"; if [ \"\${unameOut:0:5}\" = Linux ]; then sudo systemctl start ollama.service; ollama run mistral; elif [ \"\${unameOut:0:6}\" = Darwin ]; then ollama run mistral; fi"
+alias olup="unameOut=\"\$(uname -s)\"; if [ \"\${unameOut:0:5}\" = Linux ]; then sudo systemctl start ollama.service; ollama run openhermes; elif [ \"\${unameOut:0:6}\" = Darwin ]; then ollama run openhermes; fi"
 alias oldn="unameOut=\"\$(uname -s)\"; if [ \"\${unameOut:0:5}\" = Linux ]; then sudo systemctl stop ollama.service; elif [ \"\${unameOut:0:6}\" = Darwin ]; then osascript -e 'tell app \"Ollama\" to quit';  fi"
 
 ######################################### terraform 
