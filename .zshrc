@@ -175,10 +175,12 @@ source $HOME/akazsh/.aliases
 # export JAVA_HOME=`/usr/libexec/java_home -v 11`
 # export PATH="/usr/local/sbin:$PATH"
 
+
+if [[ $platform == "Darwin" ]]; then
 # path for python
  # export PATH="$(pyenv root)/shims:$HOME/local/bin:$PATH"
 export PATH="$(brew --prefix)/opt/python@3.11/libexec/bin:$PATH"
-
+fi
 
 export PATH=$PATH:/Library/Developer/CommandLineTools/usr/bin/codesign_allocate
 export PATH="/opt/homebrew/sbin:$PATH"
