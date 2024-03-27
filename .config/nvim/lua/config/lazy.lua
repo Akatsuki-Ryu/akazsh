@@ -45,7 +45,7 @@ require("lazy").setup({
         {
             "David-Kunz/gen.nvim",
             opts = {
-                -- model = "deepseek-coder:6.7b-instruct",
+                model = "deepseek-coder:6.7b-instruct",
                 host = "akaboxpc",
                 display_mode = "split", -- The display mode. Can be "float" or "split".
                 -- show_prompt = true, -- Shows the prompt submitted to Ollama.
@@ -143,3 +143,4 @@ require("lazy").setup({
     },
     debug = false,
 })
+-- something here also
