@@ -83,6 +83,7 @@ require("lazy").setup({
             --     debug = false, -- Prints errors and the command which is run.
             -- },
         },
+        { "AndreM222/copilot-lualine" },
         -- import any extras modules here
         -- { import = "lazyvim.plugins.extras.linting.eslint" },
         { import = "lazyvim.plugins.extras.formatting.prettier" },
