@@ -92,7 +92,6 @@ vim.keymap.set({ "n", "v" }, "<leader>oi", ":Gen<CR>")
 vim.keymap.set("v", "<leader>oe", ":Gen Enhance_Grammar_Spelling<CR>")
 
 -- for chatgpt
-vim.keymap.set("n", "<leader>cg", "j", { desc = "My" })
 vim.keymap.set("n", "<leader>cgg", ":ChatGPT<CR>")
 vim.keymap.set("n", "<leader>cgr", ":ChatGPTRun ")
 vim.keymap.set("v", "<leader>cge", ":ChatGPTEditWithInstructions<CR>")
