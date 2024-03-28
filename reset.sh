@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 echo "Are you sure you want to uninstall Homebrew and some configuration files? (y/N)"
-read yn
+read -r yn
 [ -z "$yn" ] || {
 	if [[ "$yn" == [yY] ]]; then
 		case $(uname) in
@@ -24,7 +24,7 @@ read yn
 }
 
 echo "Are you sure you want to overwrite the configuration files? (y/N)"
-read yn
+read -r yn
 [ -z "$yn" ] || {
 	if [[ "$yn" == [yY] ]]; then
 		rm -r .gitconfig .config .tmux.conf .tmux.conf.local .zshrc .tigrc
