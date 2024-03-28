@@ -93,3 +93,4 @@ vim.keymap.set("v", "<leader>oe", ":Gen Enhance_Grammar_Spelling<CR>")
 
 -- mapping ; to :
 vim.keymap.set("n", ";", ":", { noremap = true })
+vim.keymap.set("v", ";", ":", { noremap = true })
