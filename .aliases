@@ -78,6 +78,15 @@ alias drmall="~/akazsh/misc/dockercommands/drmall.sh"
 alias dreset="~/akazsh/misc/dockercommands/dreset.sh"
 alias dkill="~/akazsh/misc/dockercommands/dkill.sh"
 
+############################################## conda
+alias con="conda"
+alias conup="conda activate"
+alias condn="conda deactivate"
+alias conls="conda env list"
+alias conrm="conda remove --all -y --name"
+alias concr="conda create -y python=3.11 --name"
+alias conupdate="conda update --all -y"
+
 ################################## ollama
 alias olserve="sudo systemctl stop ollama.service;env OLLAMA_HOST=0.0.0.0:11434 ollama serve"
 # alias olup="sudo systemctl start ollama.service;ollama run mistral"
