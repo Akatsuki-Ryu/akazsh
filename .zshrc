@@ -188,21 +188,38 @@ export PATH="/opt/homebrew/sbin:$PATH"
 
 #setup for conda
 
-
+if [[ $platform == "Darwin" ]]; then
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/opt/homebrew/Caskroom/miniconda/base/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/akatsuki/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/opt/homebrew/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
-        . "/opt/homebrew/Caskroom/miniconda/base/etc/profile.d/conda.sh"
+    if [ -f "/home/akatsuki/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/akatsuki/miniconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/opt/homebrew/Caskroom/miniconda/base/bin:$PATH"
+        export PATH="/home/akatsuki/miniconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+elif [[ $platform == "Linux" ]]; then
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/akatsuki/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/akatsuki/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/akatsuki/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/akatsuki/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+fi
+
 
 eval "$(zoxide init zsh)"
 
