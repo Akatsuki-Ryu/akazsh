@@ -186,6 +186,7 @@ export PATH=$PATH:/Library/Developer/CommandLineTools/usr/bin/codesign_allocate
 export PATH="/opt/homebrew/sbin:$PATH"
 
 
+
 #setup for conda
 
 if [[ $platform == "Darwin" ]]; then
@@ -421,4 +422,6 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 if [[ $platform == "Linux" ]]; then
 # add linux snap command line launcher , for example for intellij
 export PATH=$PATH:/snap/bin
+# path for poetry
+export PATH="$HOME/.local/bin:$PATH"
 fi
