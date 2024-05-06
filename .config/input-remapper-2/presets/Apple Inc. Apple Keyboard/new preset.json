@@ -8,7 +8,7 @@
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "KP_Enter",
+        "output_symbol": "KEY_ENTER",
         "mapping_type": "key_macro"
     },
     {
@@ -20,7 +20,7 @@
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "KP_Enter",
+        "output_symbol": "KEY_ENTER",
         "mapping_type": "key_macro"
     }
 ]
