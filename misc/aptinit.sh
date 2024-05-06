@@ -27,7 +27,7 @@ sudo apt-get install -y duf          #better df
 #sudo apt-get install -y exa	#better ls , this is deprecated
 ./misc/installezalinux.sh
 sudo apt-get install -y htop
-sudo apt-get install -y btop
+# sudo apt-get install -y btop
 
 #install sshd
 sudo apt-get install -y openssh-server
