@@ -8,4 +8,4 @@ sudo snap install --beta sublime-text --classic
 #
 
 # install btop from local btopbin
-sudo cp btopbin/btop /usr/bin/btop
+sudo cp misc/btopbin/btop /usr/bin/btop
