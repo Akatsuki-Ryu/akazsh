@@ -9,3 +9,5 @@
 	url = https://github.com/gpakosz/.tmux
 [submodule "misc/dotfiles-public"]
 	url = https://github.com/craftzdog/dotfiles-public
+[submodule "misc/btop"]
+	url = https://github.com/aristocratos/btop
