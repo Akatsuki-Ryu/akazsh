@@ -31,12 +31,12 @@ require("lazy").setup({
             priority = 1000,
             opts = {},
         },
-        {
-            "edluffy/specs.nvim",
-            lazy = false,
-            priority = 1000,
-            opts = {},
-        },
+        -- {
+        --     "edluffy/specs.nvim",
+        --     lazy = false,
+        --     priority = 1000,
+        --     opts = {},
+        -- },
         {
             "jackMort/ChatGPT.nvim",
             event = "VeryLazy",
