@@ -27,10 +27,10 @@ return {
 
     ---@type Ollama.Config
     opts = {
-        model = "deepseek-coder:6.7b-instruct",
+        model = "deepseek-llm",
         -- model = "mistral",
         -- url = "http://127.0.0.1:11434",
-        url = "http://akaboxpc:11434", -- this is my own setup , change to your endpoint
+        url = "http://localhost:11434", -- this is my own setup , change to your endpoint
         serve = {
             on_start = false,
             command = "ollama",
