@@ -23,6 +23,7 @@ alias bltree="brew deps --tree --installed"
 #########################system level
 alias rmr="sudo rm -r"
 alias cpr="cp -r"
+alias cprp="cp -rp"
 alias mvr="mv -r"
 alias zipsp150="zip -r -s 150m zip.zip "
 alias zipsp10="zip -r -s 10m zip.zip "
