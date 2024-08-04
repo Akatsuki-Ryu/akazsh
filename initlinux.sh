@@ -36,6 +36,7 @@ case "$yn" in [yY]*) #this is the condition yes
     #installing additional apps
     ./misc/aptinit.sh
     ./misc/fontinit.sh
+    ./misc/rdp/remotedesktopsetup.sh
 
     #ask user if they want to install snap apps
     read -rp "install snap apps? (y/N): " yn
