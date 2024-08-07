@@ -66,6 +66,7 @@ alias kra='open -na "GitKraken" --args -p $(pwd) $(pwd)'
 alias changename="~/akazsh/misc/changename.sh"
 
 alias chx='sudo chmod +x'
+alias gn='gnome-session-quit --logout --no-prompt'
 
 ############################### docker
 alias d="docker"
