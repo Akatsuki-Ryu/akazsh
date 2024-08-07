@@ -43,6 +43,7 @@ case "$yn" in [yY]*) #this is the condition yes
     case "$yn" in [yY]*) #this is the condition yes
       #installing snap apps
       ./misc/snapinit.sh
+      ./misc/installgooglechrome.sh
       ;;
     *) #this is the condition no
       echo "skip the snap packages" ;;
