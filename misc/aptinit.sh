@@ -61,3 +61,6 @@ sudo cp misc/afplinux.conf /etc/netatalk/afp.conf
 # install python
 sudo apt-get install -y python3
 sudo apt-get install -y python3-pip
+
+#install gnome extention plugin
+sudo apt-get install gnome-browser-connector
