@@ -1,5 +1,18 @@
 #!/bin/bash
 
+# check first which os it is running
+# if it is ubuntu , then continue
+
+if [ -f /etc/os-release ]; then
+  . /etc/os-release
+  OS=$NAME
+  VER=$VERSION_ID
+fi
+if [ "$OS" != "Ubuntu" ]; then
+  echo "This script is only for Ubuntu"
+  exit 1
+fi
+
 # Check if the script is run with sudo privileges
 if [ "$EUID" -ne 0 ]; then
   echo "Please run this script with sudo privileges."
