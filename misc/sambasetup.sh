@@ -28,4 +28,11 @@ sudo service smbd restart
 # Update firewall rules
 sudo ufw allow samba
 
+# Set up Samba user and password
+echo "Setting up Samba user..."
+sudo smbpasswd -a "$username"
+
+# Enable the Samba user
+sudo smbpasswd -e "$username"
+
 echo "Samba setup completed for user: $username"
