@@ -28,10 +28,10 @@ cp "$GRUB_CONFIG" "${GRUB_CONFIG}.bak"
 # Add or update the GRUB_CMDLINE_LINUX_DEFAULT parameter
 if grep -q "^GRUB_CMDLINE_LINUX_DEFAULT=" "$GRUB_CONFIG"; then
   # If the line exists, update it
-  sed -i 's/^GRUB_CMDLINE_LINUX_DEFAULT=".*"/GRUB_CMDLINE_LINUX_DEFAULT="amd_iommu=on quiet splash"/' "$GRUB_CONFIG"
+  sed -i 's/^GRUB_CMDLINE_LINUX_DEFAULT=".*"/GRUB_CMDLINE_LINUX_DEFAULT="intel_iommu=on quiet splash"/' "$GRUB_CONFIG"
 else
   # If the line doesn't exist, add it
-  echo 'GRUB_CMDLINE_LINUX_DEFAULT="amd_iommu=on quiet splash"' >>"$GRUB_CONFIG"
+  echo 'GRUB_CMDLINE_LINUX_DEFAULT="intel_iommu=on quiet splash"' >>"$GRUB_CONFIG"
 fi
 
 # Update GRUB
