@@ -92,7 +92,7 @@ alias conupdate="conda update --all -y"
 ################################## ollama
 alias olserve="sudo systemctl stop ollama.service;env OLLAMA_HOST=0.0.0.0:11434 ollama serve"
 # alias olup="sudo systemctl start ollama.service;ollama run mistral"
-alias olup="unameOut=\"\$(uname -s)\"; if [ \"\${unameOut:0:5}\" = Linux ]; then sudo systemctl start ollama.service; ollama run openhermes2.5-mistral; elif [ \"\${unameOut:0:6}\" = Darwin ]; then ollama run openhermes2.5-mistral; fi"
+alias olup="unameOut=\"\$(uname -s)\"; if [ \"\${unameOut:0:5}\" = Linux ]; then sudo systemctl start ollama.service; ollama run deepseek-v2; elif [ \"\${unameOut:0:6}\" = Darwin ]; then ollama run deepseek-v2; fi"
 alias oldn="unameOut=\"\$(uname -s)\"; if [ \"\${unameOut:0:5}\" = Linux ]; then sudo systemctl stop ollama.service; elif [ \"\${unameOut:0:6}\" = Darwin ]; then osascript -e 'tell app \"Ollama\" to quit';  fi"
 alias olls="ollama ls"
 alias olupdate="ollama list | awk 'NR>1 {print \$1}' | tr '\n' '\0' | xargs -0 -I {} sh -c 'echo \"Updating model: {}\"; ollama pull {}; echo \"--\"' && echo \"All models updated.\""
