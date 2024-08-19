@@ -64,3 +64,4 @@ sudo apt-get install -y python3-pip
 
 #install gnome extention plugin
 sudo apt-get install gnome-browser-connector
+sudo apt install gnome-tweak-tool
