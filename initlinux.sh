@@ -1,7 +1,48 @@
 #!/usr/bin/env bash
+
+#!/bin/bash
+
+# Function to display usage information
+usage() {
+  echo "Usage: $0 <parameter>"
+  echo "Example: $0 'Hello World'"
+  exit 1
+}
+
+# Check if a parameter is provided
+if [ $# -eq 0 ]; then
+  echo "Error: No parameter provided."
+  usage
+fi
+
+# Store the parameter in a variable
+autoopflag="$1"
+
+# Function to process the parameter
+process_parameter() {
+  local input="$1"
+  # echo "The parameter you provided is: $input"
+  # echo "Processing the parameter..."
+  # Add your processing logic here
+  # echo "Parameter processed successfully!"
+  if [ "$input" == "-y" ]; then
+    echo "The parameter you provided is: $input"
+  else
+    echo "Error: Invalid parameter provided."
+    usage
+  fi
+}
+
+# Call the function with the provided parameter
+process_parameter "$autoopflag"
+
 echo now we will install basic apps , N to skip
 
-read -rp "ok? (y/N): " yn
+if [ "$autoopflag" != "-y" ]; then
+  read -rp "ok? (y/N): " yn
+else
+  yn="y"
+fi
 case "$yn" in [yY]*) #this is the condition yes
 
   sudo apt-get update
@@ -30,16 +71,24 @@ case "$yn" in [yY]*) #this is the condition yes
   # linking diff_highlight to system . git should be from brew . this needs to be confirmed
   sudo ln -s /usr/local/share/git-core/contrib/diff-highlight/diff-highlight /usr/local/bin/diff-highlight
 
-  #ask user if they want to instal the additional apps
-  read -rp "install additional apps? (y/N): " yn
+  if [ "$autoopflag" != "-y" ]; then
+    #ask user if they want to instal the additional apps
+    read -rp "install additional apps? (y/N): " yn
+  else
+    yn="y"
+  fi
   case "$yn" in [yY]*) #this is the condition yes
     #installing additional apps
     ./misc/aptinit.sh
     ./misc/fontinit.sh
     ./misc/rdp/remotedesktopsetup.sh
 
-    #ask user if they want to install snap apps
-    read -rp "install snap apps? (y/N): " yn
+    if [ "$autoopflag" != "-y" ]; then
+      #ask user if they want to install snap apps
+      read -rp "install snap apps? (y/N): " yn
+    else
+      yn="y"
+    fi
     case "$yn" in [yY]*) #this is the condition yes
       #installing snap apps
       ./misc/snapinit.sh
@@ -62,9 +111,14 @@ esac
 # exit
 
 cd ..
-echo this will overwrite the setting on this user ....
+if [ "$autoopflag" != "-y" ]; then
+  echo this will overwrite the setting on this user ....
 
-read -rp "ok? (y/N): " yn
+  read -rp "ok? (y/N): " yn
+else
+  yn="y"
+fi
+
 case "$yn" in [yY]*) #this is condition for yes
 
   # taking gitconfig to seperate machines.
