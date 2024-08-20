@@ -10,10 +10,10 @@ usage() {
 }
 
 # Check if a parameter is provided
-if [ $# -eq 0 ]; then
-  echo "Error: No parameter provided."
-  usage
-fi
+# if [ $# -eq 0 ]; then
+# echo "Error: No parameter provided."
+# usage
+# fi
 
 # Store the parameter in a variable
 autoopflag="$1"
