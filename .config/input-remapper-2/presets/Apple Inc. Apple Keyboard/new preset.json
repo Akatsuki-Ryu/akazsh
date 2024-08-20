@@ -22,5 +22,22 @@
         "target_uinput": "keyboard",
         "output_symbol": "KEY_ENTER",
         "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 29,
+                "origin_hash": "b7e2d9a9a73496d1a40197ad14799a66"
+            },
+            {
+                "type": 1,
+                "code": 1,
+                "origin_hash": "b7e2d9a9a73496d1a40197ad14799a66"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Caps_Lock",
+        "mapping_type": "key_macro"
     }
 ]
