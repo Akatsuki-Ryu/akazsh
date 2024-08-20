@@ -27,6 +27,8 @@ process_parameter() {
   # echo "Parameter processed successfully!"
   if [ "$input" == "-y" ]; then
     echo "The parameter you provided is: $input"
+  elif [ "$input" == "" ]; then
+    echo "The parameter you provided is: $input"
   else
     echo "Error: Invalid parameter provided."
     usage
