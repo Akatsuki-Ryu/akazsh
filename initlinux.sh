@@ -36,11 +36,11 @@ process_parameter() {
 # Call the function with the provided parameter
 process_parameter "$autoopflag"
 
-echo now we will install basic apps , N to skip
-
 if [ "$autoopflag" != "-y" ]; then
+  echo now we will install basic apps , N to skip
   read -rp "ok? (y/N): " yn
 else
+  echo "auto piloting...  "
   yn="y"
 fi
 case "$yn" in [yY]*) #this is the condition yes
