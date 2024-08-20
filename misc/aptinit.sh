@@ -66,5 +66,5 @@ sudo apt-get install -y python3-pip
 sudo apt-get install gnome-browser-connector
 
 #install gnome tweak tool
-sudo apt install gnome-tweak-tool
+sudo apt install -y gnome-tweak-tool
 sudo apt install -y $(apt search gnome-shell-extension | grep ^gnome | cut -d / -f0)
