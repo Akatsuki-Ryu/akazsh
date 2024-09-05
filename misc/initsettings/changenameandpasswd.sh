@@ -18,4 +18,7 @@ if [ "$(uname)" == "Darwin" ]; then
 elif [ "$(uname)" == "Linux"]; then
   echo running in linux
   sudo hostnamectl set-hostname "$computername"
+
+  #change the current user password
+  passwd
 fi
