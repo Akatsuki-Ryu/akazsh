@@ -1,10 +1,16 @@
-sudo apt install xfce4 xfce4-goodies -y
-sudo apt install xrdp -y
-sudo systemctl start xrdp
-sudo adduser xrdp ssl-cert
+#!/bin/bash
 
-sudo rm -rf ~/.xsessionrc
-# sudo touch ~/.xsessionrc
+# Update package list and install required packages
+sudo apt update
+sudo apt install -y xfce4 xfce4-goodies xrdp
+
+# Configure XRDP
+sudo adduser xrdp ssl-cert
+sudo systemctl enable xrdp
+sudo systemctl start xrdp
+
+# Clean up any existing .xsessionrc file
+sudo rm -f ~/.xsessionrc
 
 # write .xsessionrc to ~/ as root user
 # echo 'export GNOME_SHELL_SESSION_MODE=ubuntu' | sudo tee ~/.xsessionrc
@@ -12,3 +18,5 @@ sudo rm -rf ~/.xsessionrc
 # it turned out the performance of having this xsessionrc file is not good
 
 sudo systemctl restart xrdp
+
+echo "Remote desktop setup complete. Please reboot your system."
