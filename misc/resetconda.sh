@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# judge if running in macos
+if [ "$(uname)" != "Darwin" ]; then
+    echo "This script is only for MacOS"
+    exit 1
+fi
+
 # Define the Miniconda installer URL
 INSTALLER_URL="https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh"
 INSTALLER_PATH="$HOME/miniconda3-installer.sh"
