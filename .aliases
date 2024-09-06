@@ -89,6 +89,12 @@ alias conrm="conda remove --all -y --name"
 alias concr="conda create -y python=3.11 --name"
 alias conupdate="conda update --all -y"
 
+
+############################################### python
+alias py="python3"
+alias pi="pip install -r requirements.txt"
+alias pm="python3 main.py"
+
 ################################## ollama
 alias olserve="sudo systemctl stop ollama.service;env OLLAMA_HOST=0.0.0.0:11434 ollama serve"
 # alias olup="sudo systemctl start ollama.service;ollama run mistral"
