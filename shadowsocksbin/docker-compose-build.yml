@@ -1,0 +1,13 @@
+version: '3'
+services:
+  shadowsocks:
+    container_name: shadowsocks_container
+    build:
+      context: ../misc/shadowsocks-libev/
+      dockerfile: ./docker/alpine/Dockerfile
+    ports:
+      - "4869:8388"
+    environment:
+      - METHOD=aes-256-gcm
+      - PASSWORD=zheshiyigexinwen
+    restart: always
