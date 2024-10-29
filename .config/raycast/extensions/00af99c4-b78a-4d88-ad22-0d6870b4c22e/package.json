@@ -219,7 +219,7 @@
     }
   ],
   "dependencies": {
-    "@langchain/community": "^0.2.0",
+    "@langchain/community": "^0.3.10",
     "@raycast/api": "^1.55.2",
     "@raycast/utils": "^1.9.0",
     "file-type": "^19.0.0",
