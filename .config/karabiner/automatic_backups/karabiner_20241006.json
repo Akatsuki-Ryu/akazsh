@@ -517,6 +517,10 @@
                         {
                             "from": { "key_code": "grave_accent_and_tilde" },
                             "to": [{ "key_code": "backslash" }]
+                        },
+                        {
+                            "from": { "key_code": "non_us_backslash" },
+                            "to": [{ "key_code": "grave_accent_and_tilde" }]
                         }
                     ]
                 },
@@ -603,6 +607,10 @@
                         {
                             "from": { "key_code": "grave_accent_and_tilde" },
                             "to": [{ "key_code": "backslash" }]
+                        },
+                        {
+                            "from": { "key_code": "non_us_backslash" },
+                            "to": [{ "key_code": "grave_accent_and_tilde" }]
                         }
                     ]
                 }
@@ -636,8 +644,7 @@
                     "from": { "key_code": "application" },
                     "to": [{ "key_code": "return_or_enter" }]
                 }
-            ],
-            "virtual_hid_keyboard": { "keyboard_type_v2": "iso" }
+            ]
         }
     ]
 }
