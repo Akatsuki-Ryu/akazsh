@@ -79,6 +79,7 @@ alias dirmall="~/akazsh/misc/dockercommands/dirmall.sh"
 # alias direset="docker system prune -f"
 alias drmall="~/akazsh/misc/dockercommands/drmall.sh"
 alias dreset="~/akazsh/misc/dockercommands/dreset.sh"
+alias dresetall="~/akazsh/misc/dockercommands/dresetall.sh"
 alias dkill="~/akazsh/misc/dockercommands/dkill.sh"
 
 ############################################## conda
