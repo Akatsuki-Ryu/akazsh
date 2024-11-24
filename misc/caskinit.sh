@@ -86,3 +86,7 @@ brew install --cask --force font-hack-nerd-font
 
 # Install Mac App Store apps
 # add Magnet install
+
+
+# disable tencent permissions
+./misc/tecentpermission.sh
