@@ -40,8 +40,10 @@ create_or_resize_swap() {
 if [ -f /swapfile ]; then
     CURRENT_SIZE=$(sudo du -h /swapfile | awk '{print $1}' | sed 's/G//')
     echo "Swap file already exists with size ${CURRENT_SIZE}GB"
-    read -p "Do you want to resize it to ${SWAP_SIZE}GB? (y/n): " RESIZE
+    read -p "Do you want to resize it? (y/n): " RESIZE
     if [ "$RESIZE" = "y" ] || [ "$RESIZE" = "Y" ]; then
+        read -p "Enter new size in GB (default: ${SWAP_SIZE}GB): " NEW_SIZE
+        SWAP_SIZE=${NEW_SIZE:-$SWAP_SIZE}
         create_or_resize_swap $SWAP_SIZE
     else
         echo "Keeping existing swap file"
