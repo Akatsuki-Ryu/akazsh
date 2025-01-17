@@ -21,6 +21,9 @@ curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/lates
 tar xf lazygit.tar.gz lazygit
 sudo install lazygit /usr/local/bin
 
+#install lazydocker
+curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
+
 sudo apt-get install -y prettyping
 sudo apt-get install -y bat
 sudo mv /usr/bin/batcat /usr/bin/bat # rename batcat to bat if there is no other conflict

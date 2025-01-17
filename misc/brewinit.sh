@@ -223,5 +223,8 @@ brew install micro #terminal text editor
 brew tap moncho/dry
 brew install dry
 
+#lazydocker
+brew install lazydocker
+
 # Remove outdated versions from the cellar.
 brew cleanup
