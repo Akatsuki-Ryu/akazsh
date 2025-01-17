@@ -81,6 +81,8 @@ alias drmall="~/akazsh/misc/dockercommands/drmall.sh"
 alias dreset="~/akazsh/misc/dockercommands/dreset.sh"
 alias dresetall="~/akazsh/misc/dockercommands/dresetall.sh"
 alias dkill="~/akazsh/misc/dockercommands/dkill.sh"
+alias dr="lazydocker"
+
 
 ############################################## conda
 alias con="conda"
