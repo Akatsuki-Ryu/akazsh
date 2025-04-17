@@ -223,6 +223,7 @@ fi
 
 
 eval "$(zoxide init zsh)"
+eval "$(ssh-agent -s)"
 
 #####################################################################################################
 ##powerlevel9k configs
@@ -429,3 +430,18 @@ export PATH=$PATH:/snap/bin
 # path for poetry
 export PATH="$HOME/.local/bin:$PATH"
 fi
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/akatsuki/.cache/lm-studio/bin"
+
+# pnpm
+export PNPM_HOME="/Users/akatsuki/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
+export PATH="/opt/homebrew/opt/mysql-client@8.4/bin:$PATH"
+
+. "$HOME/.local/bin/env"
