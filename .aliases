@@ -122,6 +122,8 @@ alias ai="sudo apt-get install"
 alias aup="sudo apt-get update; sudo apt-get upgrade"
 alias au="sudo apt-get remove"
 alias aupfull="sudo apt-get dist-upgrade"
+alias upall="~/akazsh/misc/devops/upall.sh --update-all --no-reboot"
+alias upallreboot="~/akazsh/misc/devops/upall.sh --update-all"
 
 ################################################### local navi
 alias doc="cd ~/Documents"
