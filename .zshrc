@@ -445,3 +445,8 @@ export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
 export PATH="/opt/homebrew/opt/mysql-client@8.4/bin:$PATH"
 
 . "$HOME/.local/bin/env"
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/akatsuki/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
