@@ -15,6 +15,21 @@ show_header() {
   echo
 }
 
+# Function to display help
+show_help() {
+  echo "Usage: $0 [OPTIONS]"
+  echo
+  echo "Options:"
+  echo "  -a, --auto                Run in automatic mode with default values"
+  echo "  -u, --user USER           Remote username (default: $DEFAULT_REMOTE_USER)"
+  echo "  -h, --host HOST           Remote host (default: $DEFAULT_REMOTE_HOST)"
+  echo "  -r, --remote-path PATH    Remote path (default: $DEFAULT_REMOTE_PATH)"
+  echo "  -l, --local-path PATH     Local path (default: $DEFAULT_LOCAL_PATH)"
+  echo "  --help                    Display this help message"
+  echo
+  exit 0
+}
+
 # Function to get user input with default value
 get_input() {
   local prompt="$1"
@@ -42,36 +57,86 @@ get_source_dir_name() {
   echo "$dir_name"
 }
 
-# Interactive menu
-show_header
-echo "Please configure your sync settings:"
-echo "-----------------------------------"
-REMOTE_USER=$(get_input "Remote username" "$DEFAULT_REMOTE_USER")
-REMOTE_HOST=$(get_input "Remote host" "$DEFAULT_REMOTE_HOST")
-REMOTE_PATH=$(get_input "Remote path" "$DEFAULT_REMOTE_PATH")
-LOCAL_PATH=$(get_input "Local path" "$DEFAULT_LOCAL_PATH")
+# Parse command line arguments
+AUTO_MODE=false
+REMOTE_USER="$DEFAULT_REMOTE_USER"
+REMOTE_HOST="$DEFAULT_REMOTE_HOST"
+REMOTE_PATH="$DEFAULT_REMOTE_PATH"
+LOCAL_PATH="$DEFAULT_LOCAL_PATH"
+
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    -a|--auto)
+      AUTO_MODE=true
+      shift
+      ;;
+    -u|--user)
+      REMOTE_USER="$2"
+      shift 2
+      ;;
+    -h|--host)
+      REMOTE_HOST="$2"
+      shift 2
+      ;;
+    -r|--remote-path)
+      REMOTE_PATH="$2"
+      shift 2
+      ;;
+    -l|--local-path)
+      LOCAL_PATH="$2"
+      shift 2
+      ;;
+    --help)
+      show_help
+      ;;
+    *)
+      echo "Error: Unknown option '$1'"
+      show_help
+      ;;
+  esac
+done
+
+# If not in auto mode, run interactive menu
+if [ "$AUTO_MODE" = false ]; then
+  show_header
+  echo "Please configure your sync settings:"
+  echo "-----------------------------------"
+  REMOTE_USER=$(get_input "Remote username" "$REMOTE_USER")
+  REMOTE_HOST=$(get_input "Remote host" "$REMOTE_HOST")
+  REMOTE_PATH=$(get_input "Remote path" "$REMOTE_PATH")
+  LOCAL_PATH=$(get_input "Local path" "$LOCAL_PATH")
+fi
 
 # Get source directory name for creating remote folder
 SOURCE_DIR_NAME=$(get_source_dir_name "$LOCAL_PATH")
 REMOTE_TARGET_PATH="${REMOTE_PATH%/}/${SOURCE_DIR_NAME}"
 
-# Confirm settings
-show_header
-echo "SYNC CONFIGURATION:"
-echo "-----------------------------------"
-echo "From: $LOCAL_PATH/"
-echo "To: $REMOTE_USER@$REMOTE_HOST:$REMOTE_TARGET_PATH"
-echo "Source directory name: $SOURCE_DIR_NAME"
-echo
-read -p "Proceed with these settings? (y/n): " confirm
+# If not in auto mode, show confirmation
+if [ "$AUTO_MODE" = false ]; then
+  show_header
+  echo "SYNC CONFIGURATION:"
+  echo "-----------------------------------"
+  echo "From: $LOCAL_PATH/"
+  echo "To: $REMOTE_USER@$REMOTE_HOST:$REMOTE_TARGET_PATH"
+  echo "Source directory name: $SOURCE_DIR_NAME"
+  echo
+  read -p "Proceed with these settings? (y/n): " confirm
 
-if [[ "$confirm" != "y" && "$confirm" != "Y" ]]; then
-  echo "Operation cancelled."
-  exit 0
+  if [[ "$confirm" != "y" && "$confirm" != "Y" ]]; then
+    echo "Operation cancelled."
+    exit 0
+  fi
+else
+  # In auto mode, just show the configuration
+  echo "SYNC CONFIGURATION (Automatic Mode):"
+  echo "-----------------------------------"
+  echo "From: $LOCAL_PATH/"
+  echo "To: $REMOTE_USER@$REMOTE_HOST:$REMOTE_TARGET_PATH"
+  echo "Source directory name: $SOURCE_DIR_NAME"
+  echo
 fi
 
 # Show progress
-echo
 echo "Starting sync operation..."
 echo "-----------------------------------"
 
