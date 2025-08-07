@@ -469,10 +469,6 @@
                     },
                     "simple_modifications": [
                         {
-                            "from": { "key_code": "grave_accent_and_tilde" },
-                            "to": [{ "key_code": "non_us_backslash" }]
-                        },
-                        {
                             "from": { "key_code": "insert" },
                             "to": [{ "key_code": "fn" }]
                         },
@@ -491,6 +487,10 @@
                         {
                             "from": { "key_code": "right_option" },
                             "to": [{ "key_code": "right_command" }]
+                        },
+                        {
+                            "from": { "key_code": "grave_accent_and_tilde" },
+                            "to": [{ "key_code": "non_us_backslash" }]
                         }
                     ]
                 },
@@ -607,21 +607,6 @@
                         {
                             "from": { "key_code": "grave_accent_and_tilde" },
                             "to": [{ "key_code": "backslash" }]
-                        }
-                    ]
-                },
-                {
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "is_pointing_device": true,
-                        "product_id": 2609,
-                        "vendor_id": 13364
-                    },
-                    "ignore": false,
-                    "simple_modifications": [
-                        {
-                            "from": { "key_code": "non_us_pound" },
-                            "to": [{ "key_code": "return_or_enter" }]
                         }
                     ]
                 }
