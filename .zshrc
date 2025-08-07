@@ -187,39 +187,39 @@ export PATH="/opt/homebrew/sbin:$PATH"
 
 
 
-#setup for conda
+# #setup for conda
 
-if [[ $platform == "Darwin" ]]; then
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/akatsuki/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/akatsuki/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/akatsuki/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/akatsuki/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-elif [[ $platform == "Linux" ]]; then
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/akatsuki/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/akatsuki/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/akatsuki/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/akatsuki/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-fi
+# if [[ $platform == "Darwin" ]]; then
+# # >>> conda initialize >>>
+# # !! Contents within this block are managed by 'conda init' !!
+# __conda_setup="$('/Users/akatsuki/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+# if [ $? -eq 0 ]; then
+#     eval "$__conda_setup"
+# else
+#     if [ -f "/Users/akatsuki/miniconda3/etc/profile.d/conda.sh" ]; then
+#         . "/Users/akatsuki/miniconda3/etc/profile.d/conda.sh"
+#     else
+#         export PATH="/Users/akatsuki/miniconda3/bin:$PATH"
+#     fi
+# fi
+# unset __conda_setup
+# # <<< conda initialize <<<
+# elif [[ $platform == "Linux" ]]; then
+# # >>> conda initialize >>>
+# # !! Contents within this block are managed by 'conda init' !!
+# __conda_setup="$('/Users/akatsuki/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+# if [ $? -eq 0 ]; then
+#     eval "$__conda_setup"
+# else
+#     if [ -f "/Users/akatsuki/miniconda3/etc/profile.d/conda.sh" ]; then
+#         . "/Users/akatsuki/miniconda3/etc/profile.d/conda.sh"
+#     else
+#         export PATH="/Users/akatsuki/miniconda3/bin:$PATH"
+#     fi
+# fi
+# unset __conda_setup
+# # <<< conda initialize <<<
+# fi
 
 
 eval "$(zoxide init zsh)"
