@@ -4,6 +4,11 @@
 green='\033[0;32m'
 reset='\033[0m'
 
+# Source aliases to ensure fd works cross-platform
+if [ -f ~/.aliases ]; then
+    source ~/.aliases
+fi
+
 eza --long --tree -abghHS -s modified --icons --color always --color-scale "$@"
 
 echo

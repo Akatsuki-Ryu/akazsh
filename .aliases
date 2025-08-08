@@ -57,6 +57,10 @@ alias hs='sudo htop'
 alias du='ncdu -2 -x -e --exclude .git --color dark'
 alias df='duf'
 alias c='bat'
+# Cross-platform fd alias - use fdfind on Linux, fd on macOS
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    alias fd='fdfind'
+fi
 alias ping='prettyping'
 alias mksnapshot='tmutil snapshot'
 alias lssnapshot='tmutil listlocalsnapshots /Volumes'
