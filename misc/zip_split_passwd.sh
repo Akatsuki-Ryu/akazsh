@@ -106,7 +106,7 @@ organize_into_subfolders() {
     echo "Renaming zip files to include total volume count..."
     
     # Count total volumes created
-    total_volumes=$(ls ${base_name}_vol*.zip 2>/dev/null | wc -l)
+    total_volumes=$(ls ${base_name}_vol*.zip 2>/dev/null | wc -l | tr -d ' ')
     
     if [ $total_volumes -gt 0 ]; then
         # Rename each zip file
@@ -127,6 +127,16 @@ organize_into_subfolders() {
     echo ""
     echo "All subfolders have been zipped successfully!"
     echo "Created zip files: ${base_name}_vol*of${total_volumes}.zip"
+    
+    # Summary - repeat password and file names
+    echo ""
+    echo "=== SUMMARY ==="
+    echo "Created files:"
+    for i in $(seq 1 $total_volumes); do
+        echo "  ${base_name}_vol${i}of${total_volumes}.zip"
+    done
+    echo "Password: $password"
+    echo "================"
 }
 
 # Main script starts here
@@ -158,11 +168,26 @@ case $choice in
         if [ -z "$volsize" ]; then
             # No splitting - create single zip file
             zip -r -P $password $filename.zip *
+            
+            # Summary for single file
+            echo ""
+            echo "=== SUMMARY ==="
+            echo "Password: $password"
+            echo "Created file: $filename.zip"
+            echo "================"
         else
             # Split the archive
             zip -r -P $password $filename+compress.zip *
             zip -r -s $volsize\m $filename.zip $filename+compress.zip
             rm -r $filename+compress.zip
+            
+            # Summary for split files
+            echo ""
+            echo "=== SUMMARY ==="
+            echo "Password: $password"
+            echo "Split size: ${volsize}mb"
+            echo "Created files: $filename.z?? (volume files)"
+            echo "================"
         fi
         ;;
     2)
