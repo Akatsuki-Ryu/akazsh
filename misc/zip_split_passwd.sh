@@ -40,18 +40,26 @@ organize_into_subfolders() {
     # Get all files with their sizes
     declare -a files
     declare -a file_sizes
-    declare -A file_size_map
     
     while IFS= read -r -d '' file; do
+        # Skip empty filenames
+        [ -z "$file" ] && continue
+        
         file_size=$(get_file_size "$file")
-        if [ $file_size -gt $max_size_bytes ]; then
+        
+        # Ensure file_size is a valid number
+        if ! [[ "$file_size" =~ ^[0-9]+$ ]]; then
+            echo "Warning: Could not determine size for file $(basename "$file"), skipping..."
+            continue
+        fi
+        
+        if [ "$file_size" -gt "$max_size_bytes" ]; then
             echo "Warning: File $(basename "$file") ($(numfmt --to=iec $file_size)) exceeds maximum size limit ($(numfmt --to=iec $max_size_bytes))"
             echo "This file will be placed in its own archive."
         fi
         files+=("$file")
         file_sizes+=("$file_size")
-        file_size_map["$file"]=$file_size
-    done < <(find . -maxdepth 1 -type f ! -name ".*" ! -name "$(basename "$0")" ! -name "$temp_dir" -print0)
+    done < <(find . -maxdepth 1 -type f ! -name ".*" ! -name "$(basename "$0")" ! -name "$temp_dir" -print0 2>/dev/null)
     
     if [ ${#files[@]} -eq 0 ]; then
         echo "No files found to organize."
@@ -109,15 +117,16 @@ organize_into_subfolders() {
         local best_remaining_space=$max_size_bytes
         
         for bin_idx in $(seq 0 $((num_bins-1))); do
-            local remaining_space=$((max_size_bytes - bin_sizes[bin_idx]))
-            if [ $remaining_space -ge $file_size ] && [ $remaining_space -lt $best_remaining_space ]; then
+            local current_bin_size=${bin_sizes[$bin_idx]:-0}
+            local remaining_space=$((max_size_bytes - current_bin_size))
+            if [ "$remaining_space" -ge "$file_size" ] && [ "$remaining_space" -lt "$best_remaining_space" ]; then
                 best_bin=$bin_idx
                 best_remaining_space=$remaining_space
             fi
         done
         
         # If no suitable bin found, create a new one
-        if [ $best_bin -eq -1 ]; then
+        if [ "$best_bin" -eq -1 ]; then
             best_bin=$num_bins
             bin_sizes[$best_bin]=0
             bin_files[$best_bin]=""
@@ -125,7 +134,8 @@ organize_into_subfolders() {
         fi
         
         # Add file to the best bin
-        bin_sizes[$best_bin]=$((bin_sizes[best_bin] + file_size))
+        local current_size=${bin_sizes[$best_bin]:-0}
+        bin_sizes[$best_bin]=$((current_size + file_size))
         if [ -z "${bin_files[$best_bin]}" ]; then
             bin_files[$best_bin]="$file"
         else
@@ -143,17 +153,17 @@ organize_into_subfolders() {
     local max_size=0
     
     for bin_idx in $(seq 0 $((num_bins-1))); do
-        local bin_size=${bin_sizes[$bin_idx]}
+        local bin_size=${bin_sizes[$bin_idx]:-0}
         local bin_num=$((bin_idx + 1))
         local utilization=$((bin_size * 100 / max_size_bytes))
         
         echo "Volume $bin_num: $(numfmt --to=iec $bin_size) (${utilization}% of max)"
         
         total_size=$((total_size + bin_size))
-        if [ $bin_size -lt $min_size ]; then
+        if [ "$bin_size" -lt "$min_size" ]; then
             min_size=$bin_size
         fi
-        if [ $bin_size -gt $max_size ]; then
+        if [ "$bin_size" -gt "$max_size" ]; then
             max_size=$bin_size
         fi
     done
@@ -320,7 +330,7 @@ case $choice in
         # Convert size to bytes
         max_size_bytes=$(size_to_bytes "$max_size")
         
-        if [ $max_size_bytes -eq 0 ]; then
+        if [ "$max_size_bytes" -eq 0 ]; then
             echo "Error: Invalid size format. Use formats like 100m, 1g, 500k"
             exit 1
         fi
