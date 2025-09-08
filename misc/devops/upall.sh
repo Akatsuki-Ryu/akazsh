@@ -71,9 +71,9 @@ update_machines() {
       if [ "$os_type" = "linux" ]; then
         # Linux update commands
         if [ "$with_reboot" = true ]; then
-          tmux send-keys "ssh -t \"$machine\" 'sudo apt-get update && sudo apt-get upgrade -y && echo \"Updates completed, rebooting in 5 seconds...\" && sleep 5 && sudo reboot'" C-m
+          tmux send-keys "ssh -t \"$machine\" 'sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y && sudo apt-get autoremove -y && echo \"Updates completed, rebooting in 5 seconds...\" && sleep 5 && sudo reboot'" C-m
         else
-          tmux send-keys "ssh -t \"$machine\" 'sudo apt-get update && sudo apt-get upgrade -y'" C-m
+          tmux send-keys "ssh -t \"$machine\" 'sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y && sudo apt-get autoremove -y'" C-m
         fi
       elif [ "$os_type" = "mac" ]; then
         # Mac update commands
