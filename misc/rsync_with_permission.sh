@@ -25,6 +25,7 @@ show_help() {
   echo "  -h, --host HOST           Remote host (default: $DEFAULT_REMOTE_HOST)"
   echo "  -r, --remote-path PATH    Remote path (default: $DEFAULT_REMOTE_PATH)"
   echo "  -l, --local-path PATH     Local path (default: $DEFAULT_LOCAL_PATH)"
+  echo "  --cyber24                 Quick sync to cyber24 host with akatsuki user"
   echo "  --help                    Display this help message"
   echo
   exit 0
@@ -86,6 +87,12 @@ while [[ $# -gt 0 ]]; do
       LOCAL_PATH="$2"
       shift 2
       ;;
+    --cyber24)
+      REMOTE_HOST="cyber24"
+      REMOTE_USER="akatsuki"
+      AUTO_MODE=true
+      shift
+      ;;
     --help)
       show_help
       ;;
@@ -99,12 +106,37 @@ done
 # If not in auto mode, run interactive menu
 if [ "$AUTO_MODE" = false ]; then
   show_header
-  echo "Please configure your sync settings:"
+  echo "Quick Options:"
   echo "-----------------------------------"
-  REMOTE_USER=$(get_input "Remote username" "$REMOTE_USER")
-  REMOTE_HOST=$(get_input "Remote host" "$REMOTE_HOST")
-  REMOTE_PATH=$(get_input "Remote path" "$REMOTE_PATH")
-  LOCAL_PATH=$(get_input "Local path" "$LOCAL_PATH")
+  echo "1) Sync to cyber24 (akatsuki@cyber24)"
+  echo "2) Sync to box (ubuntu@box) - Default"
+  echo "3) Custom configuration"
+  echo
+  read -p "Select an option (1-3): " quick_option
+  
+  case "$quick_option" in
+    1)
+      REMOTE_HOST="cyber24"
+      REMOTE_USER="akatsuki"
+      LOCAL_PATH=$(get_input "Local path" "$LOCAL_PATH")
+      REMOTE_PATH=$(get_input "Remote path" "$REMOTE_PATH")
+      ;;
+    2)
+      REMOTE_HOST="$DEFAULT_REMOTE_HOST"
+      REMOTE_USER="$DEFAULT_REMOTE_USER"
+      LOCAL_PATH=$(get_input "Local path" "$LOCAL_PATH")
+      REMOTE_PATH=$(get_input "Remote path" "$REMOTE_PATH")
+      ;;
+    3|*)
+      echo
+      echo "Please configure your sync settings:"
+      echo "-----------------------------------"
+      REMOTE_USER=$(get_input "Remote username" "$REMOTE_USER")
+      REMOTE_HOST=$(get_input "Remote host" "$REMOTE_HOST")
+      REMOTE_PATH=$(get_input "Remote path" "$REMOTE_PATH")
+      LOCAL_PATH=$(get_input "Local path" "$LOCAL_PATH")
+      ;;
+  esac
 fi
 
 # Get source directory name for creating remote folder
