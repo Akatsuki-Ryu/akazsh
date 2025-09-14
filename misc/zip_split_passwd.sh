@@ -25,6 +25,21 @@ get_file_size() {
     fi
 }
 
+# Function to calculate total size of zip files
+calculate_total_zip_size() {
+    local pattern=$1
+    local total_size=0
+    
+    for file in $pattern; do
+        if [ -f "$file" ]; then
+            local file_size=$(get_file_size "$file")
+            total_size=$((total_size + file_size))
+        fi
+    done
+    
+    echo $total_size
+}
+
 # Function to organize files into subfolders by size using intelligent bin-packing
 organize_into_subfolders() {
     local max_size_bytes=$1
@@ -244,14 +259,21 @@ organize_into_subfolders() {
     echo "All subfolders have been zipped successfully!"
     echo "Created zip files: ${base_name}_vol*of${total_volumes}.zip"
     
+    # Calculate total size of all created zip files
+    total_zip_size=$(calculate_total_zip_size "${base_name}_vol*of${total_volumes}.zip")
+    
     # Summary - repeat password and file names
+    echo "  ${base_name}_${total_volumes}分卷打包 ${total_zip_size}"
     echo ""
     echo "=== SUMMARY ==="
     echo "Created files:"
     for i in $(seq 1 $total_volumes); do
         echo "  ${base_name}_vol${i}of${total_volumes}.zip"
     done
+    echo "Total size: $(numfmt --to=iec $total_zip_size)"
+    echo "[hide]"
     echo "Password: $password"
+    echo "[/hide]"
     echo "================"
 }
 
@@ -285,11 +307,19 @@ case $choice in
             # No splitting - create single zip file
             zip -r -P $password $filename.zip *
             
+            # Calculate total size
+            total_size=$(calculate_total_zip_size "$filename.zip")
+            
             # Summary for single file
+            echo " ${filename} 打包 ${total_size}"
             echo ""
             echo "=== SUMMARY ==="
-            echo "Password: $password"
+
             echo "Created file: $filename.zip"
+            echo "Total size: $(numfmt --to=iec $total_size)"
+            echo "[hide]"
+            echo "Password: $password"
+            echo "[/hide]"
             echo "================"
         else
             # Split the archive
@@ -297,12 +327,19 @@ case $choice in
             zip -r -s $volsize\m $filename.zip $filename+compress.zip
             rm -r $filename+compress.zip
             
+            # Calculate total size of all volume files
+            total_size=$(calculate_total_zip_size "$filename.z*")
+            
             # Summary for split files
+            echo " ${filename} 打包 ${total_size}"
             echo ""
             echo "=== SUMMARY ==="
-            echo "Password: $password"
             echo "Split size: ${volsize}mb"
             echo "Created files: $filename.z?? (volume files)"
+            echo "Total size: $(numfmt --to=iec $total_size)"
+            echo "[hide]"
+            echo "Password: $password"
+            echo "[/hide]"
             echo "================"
         fi
         ;;
