@@ -263,7 +263,8 @@ organize_into_subfolders() {
     total_zip_size=$(calculate_total_zip_size "${base_name}_vol*of${total_volumes}.zip")
     
     # Summary - repeat password and file names
-    echo "  ${base_name}_${total_volumes}分卷打包 ${total_zip_size}"
+    echo ""
+    echo "  ${base_name}_${total_volumes}分卷打包 $(numfmt --to=iec $total_zip_size)"
     echo ""
     echo "=== SUMMARY ==="
     echo "Created files:"
@@ -311,7 +312,8 @@ case $choice in
             total_size=$(calculate_total_zip_size "$filename.zip")
             
             # Summary for single file
-            echo " ${filename} 打包 ${total_size}"
+            echo ""
+            echo " ${filename} 打包 $(numfmt --to=iec $total_size)"
             echo ""
             echo "=== SUMMARY ==="
 
@@ -331,7 +333,8 @@ case $choice in
             total_size=$(calculate_total_zip_size "$filename.z*")
             
             # Summary for split files
-            echo " ${filename} 打包 ${total_size}"
+            echo ""
+            echo " ${filename} 打包 $(numfmt --to=iec $total_size)"
             echo ""
             echo "=== SUMMARY ==="
             echo "Split size: ${volsize}mb"
