@@ -268,8 +268,11 @@ organize_into_subfolders() {
     echo ""
     echo "=== SUMMARY ==="
     echo "Created files:"
-    for i in $(seq 1 $total_volumes); do
-        echo "  ${base_name}_vol${i}of${total_volumes}.zip"
+    # List all actual volume files that were created
+    for vol_file in ${base_name}_vol*of${total_volumes}.zip; do
+        if [ -f "$vol_file" ]; then
+            echo "  $vol_file"
+        fi
     done
     echo "Total size: $(numfmt --to=iec $total_zip_size)"
     echo "[hide]"
@@ -316,8 +319,8 @@ case $choice in
             echo " ${filename} 打包 $(numfmt --to=iec $total_size)"
             echo ""
             echo "=== SUMMARY ==="
-
-            echo "Created file: $filename.zip"
+            echo "Created files:"
+            echo "  $filename.zip"
             echo "Total size: $(numfmt --to=iec $total_size)"
             echo "[hide]"
             echo "Password: $password"
@@ -338,7 +341,13 @@ case $choice in
             echo ""
             echo "=== SUMMARY ==="
             echo "Split size: ${volsize}mb"
-            echo "Created files: $filename.z?? (volume files)"
+            echo "Created files:"
+            # List all volume files
+            for vol_file in $filename.z*; do
+                if [ -f "$vol_file" ]; then
+                    echo "  $vol_file"
+                fi
+            done
             echo "Total size: $(numfmt --to=iec $total_size)"
             echo "[hide]"
             echo "Password: $password"
