@@ -3,6 +3,11 @@ return {
 
     {
         "nvim-treesitter/nvim-treesitter",
+        build = ":TSUpdate",
+        event = { "BufReadPost", "BufNewFile" },
+        dependencies = {
+            "nvim-treesitter/nvim-treesitter-textobjects",
+        },
         opts = {
             ensure_installed = {
                 -- "astro",
@@ -67,7 +72,7 @@ return {
             },
         },
         config = function(_, opts)
-            require("nvim-treesitter.configs").setup(opts)
+            require("nvim-treesitter").setup(opts)
 
             -- MDX
             vim.filetype.add({

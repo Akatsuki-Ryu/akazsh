@@ -62,7 +62,7 @@ return {
 
     -- animations
     {
-        "echasnovski/mini.animate",
+        "nvim-mini/mini.animate",
         event = "VeryLazy",
         opts = function(_, opts)
             opts.scroll = {
@@ -163,6 +163,7 @@ return {
 ]]
 
             logo = string.rep("\n", 8) .. logo .. "\n\n"
+            opts.config = opts.config or {}
             opts.config.header = vim.split(logo, "\n")
         end,
     },

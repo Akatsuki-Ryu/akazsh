@@ -14,7 +14,7 @@ return {
     },
 
     {
-        "echasnovski/mini.hipatterns",
+        "nvim-mini/mini.hipatterns",
         event = "BufReadPre",
         opts = {
             highlighters = {
@@ -156,7 +156,7 @@ return {
             local actions = require("telescope.actions")
             local fb_actions = require("telescope").extensions.file_browser.actions
 
-            opts.defaults = vim.tbl_deep_extend("force", opts.defaults, {
+            opts.defaults = vim.tbl_deep_extend("force", opts.defaults or {}, {
                 wrap_results = true,
                 layout_strategy = "horizontal",
                 layout_config = { prompt_position = "top" },
