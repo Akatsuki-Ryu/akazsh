@@ -6,6 +6,34 @@ DEFAULT_REMOTE_HOST="box"
 DEFAULT_REMOTE_PATH="~/"
 DEFAULT_LOCAL_PATH="."
 
+# Host list file path
+HOST_LIST_FILE="$(dirname "$0")/remote_hosts.txt"
+
+# Function to load host list from file
+load_host_list() {
+  local hosts=()
+  local host_file="$1"
+  
+  if [[ ! -f "$host_file" ]]; then
+    echo "Warning: Host list file '$host_file' not found. Using default hosts only." >&2
+    return 1
+  fi
+  
+  while IFS= read -r line; do
+    # Skip empty lines and comments
+    if [[ -z "$line" || "$line" =~ ^[[:space:]]*# ]]; then
+      continue
+    fi
+    
+    # Parse format: hostname:username:remote_path:description
+    if [[ "$line" =~ ^([^:]+):([^:]+):([^:]+):(.+)$ ]]; then
+      hosts+=("${BASH_REMATCH[1]}:${BASH_REMATCH[2]}:${BASH_REMATCH[3]}:${BASH_REMATCH[4]}")
+    fi
+  done < "$host_file"
+  
+  printf '%s\n' "${hosts[@]}"
+}
+
 # Function to display header
 show_header() {
   clear
@@ -27,6 +55,11 @@ show_help() {
   echo "  -l, --local-path PATH     Local path (default: $DEFAULT_LOCAL_PATH)"
   echo "  --cyber24                 Quick sync to cyber24 host with akatsuki user"
   echo "  --help                    Display this help message"
+  echo
+  echo "Host Configuration:"
+  echo "  The script loads remote hosts from: $HOST_LIST_FILE"
+  echo "  Format: hostname:username:remote_path:description"
+  echo "  Lines starting with # are comments"
   echo
   exit 0
 }
@@ -106,28 +139,52 @@ done
 # If not in auto mode, run interactive menu
 if [ "$AUTO_MODE" = false ]; then
   show_header
-  echo "Quick Options:"
-  echo "-----------------------------------"
-  echo "1) Sync to cyber24 (akatsuki@cyber24)"
-  echo "2) Sync to box (ubuntu@box) - Default"
-  echo "3) Custom configuration"
-  echo
-  read -p "Select an option (1-3): " quick_option
   
-  case "$quick_option" in
-    1)
-      REMOTE_HOST="cyber24"
-      REMOTE_USER="akatsuki"
+  # Load hosts from external file
+  echo "Available Remote Hosts:"
+  echo "-----------------------------------"
+  
+  # Load and display hosts from file
+  host_count=0
+  declare -a host_array
+  declare -a user_array
+  declare -a path_array
+  declare -a desc_array
+  
+  while IFS= read -r host_line; do
+    if [[ -n "$host_line" ]]; then
+      IFS=':' read -r host user path desc <<< "$host_line"
+      host_count=$((host_count + 1))
+      host_array+=("$host")
+      user_array+=("$user")
+      path_array+=("$path")
+      desc_array+=("$desc")
+      echo "$host_count) $desc ($user@$host:$path)"
+    fi
+  done < <(load_host_list "$HOST_LIST_FILE")
+  
+  # Add default options
+  host_count=$((host_count + 1))
+  echo "$host_count) Custom configuration"
+  host_count=$((host_count + 1))
+  echo "$host_count) Use default (ubuntu@box)"
+  
+  echo
+  read -p "Select a host (1-$host_count): " host_option
+  
+  # Validate selection
+  if [[ "$host_option" =~ ^[0-9]+$ ]] && [ "$host_option" -ge 1 ] && [ "$host_option" -le "$host_count" ]; then
+    total_hosts=${#host_array[@]}
+    
+    if [ "$host_option" -le "$total_hosts" ]; then
+      # Selected from external list
+      selected_index=$((host_option - 1))
+      REMOTE_HOST="${host_array[$selected_index]}"
+      REMOTE_USER="${user_array[$selected_index]}"
+      REMOTE_PATH="${path_array[$selected_index]}"
       LOCAL_PATH=$(get_input "Local path" "$LOCAL_PATH")
-      REMOTE_PATH=$(get_input "Remote path" "$REMOTE_PATH")
-      ;;
-    2)
-      REMOTE_HOST="$DEFAULT_REMOTE_HOST"
-      REMOTE_USER="$DEFAULT_REMOTE_USER"
-      LOCAL_PATH=$(get_input "Local path" "$LOCAL_PATH")
-      REMOTE_PATH=$(get_input "Remote path" "$REMOTE_PATH")
-      ;;
-    3|*)
+    elif [ "$host_option" -eq $((total_hosts + 1)) ]; then
+      # Custom configuration
       echo
       echo "Please configure your sync settings:"
       echo "-----------------------------------"
@@ -135,8 +192,20 @@ if [ "$AUTO_MODE" = false ]; then
       REMOTE_HOST=$(get_input "Remote host" "$REMOTE_HOST")
       REMOTE_PATH=$(get_input "Remote path" "$REMOTE_PATH")
       LOCAL_PATH=$(get_input "Local path" "$LOCAL_PATH")
-      ;;
-  esac
+    else
+      # Use default
+      REMOTE_HOST="$DEFAULT_REMOTE_HOST"
+      REMOTE_USER="$DEFAULT_REMOTE_USER"
+      LOCAL_PATH=$(get_input "Local path" "$LOCAL_PATH")
+      REMOTE_PATH=$(get_input "Remote path" "$REMOTE_PATH")
+    fi
+  else
+    echo "Invalid selection. Using default configuration."
+    REMOTE_HOST="$DEFAULT_REMOTE_HOST"
+    REMOTE_USER="$DEFAULT_REMOTE_USER"
+    LOCAL_PATH=$(get_input "Local path" "$LOCAL_PATH")
+    REMOTE_PATH=$(get_input "Remote path" "$REMOTE_PATH")
+  fi
 fi
 
 # Get source directory name for creating remote folder
