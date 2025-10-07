@@ -25,7 +25,7 @@ load_host_list() {
       continue
     fi
     
-    # Parse format: hostname:username:remote_path:description
+    # Parse format: username:hostname:remote_path:description
     if [[ "$line" =~ ^([^:]+):([^:]+):([^:]+):(.+)$ ]]; then
       hosts+=("${BASH_REMATCH[1]}:${BASH_REMATCH[2]}:${BASH_REMATCH[3]}:${BASH_REMATCH[4]}")
     fi
@@ -58,7 +58,7 @@ show_help() {
   echo
   echo "Host Configuration:"
   echo "  The script loads remote hosts from: $HOST_LIST_FILE"
-  echo "  Format: hostname:username:remote_path:description"
+  echo "  Format: username:hostname:remote_path:description"
   echo "  Lines starting with # are comments"
   echo
   exit 0
@@ -153,7 +153,7 @@ if [ "$AUTO_MODE" = false ]; then
   
   while IFS= read -r host_line; do
     if [[ -n "$host_line" ]]; then
-      IFS=':' read -r host user path desc <<< "$host_line"
+      IFS=':' read -r user host path desc <<< "$host_line"
       host_count=$((host_count + 1))
       host_array+=("$host")
       user_array+=("$user")

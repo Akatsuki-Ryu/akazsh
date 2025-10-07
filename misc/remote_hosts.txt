@@ -1,16 +1,19 @@
 # Remote Hosts Configuration
-# Format: hostname:username:remote_path:description
+# Format: username:hostname:remote_path:description
 # Lines starting with # are comments
 # 
 # To add more hosts, simply add new lines in the format:
-# hostname:username:remote_path:description
+# username:hostname:remote_path:description
 #
 # Examples:
-# myserver:myuser:~/projects:My Production Server
-# devbox:developer:/var/www:Development Machine
-# testserver:testuser:~/test:Testing Environment
+# myuser:myserver:~/projects:My Production Server
+# developer:devbox:/var/www:Development Machine
+# testuser:testserver:~/test:Testing Environment
 
-cyber24:akatsuki:~/:Cyber24 Server
-box:ubuntu:~/:Default Box Server
-cyber24:akatsuki:/media/2t:Cyber24 Server 2t
-cyber24:akatsuki:/media/4t:Cyber24 Server 4t
+akatsuki:deskmain:~/:deskmain
+akatsuki:cyber24:~/:Cyber24 Server
+ubuntu:box:~/:Default Box Server
+akatsuki:cyber24:/media/2t:Cyber24 Server 2t
+akatsuki:cyber24:/media/4t:Cyber24 Server 4t
+ubuntu:core:~/:core
+ubuntu:a1:~/:a1
