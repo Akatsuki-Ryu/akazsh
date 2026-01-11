@@ -45,4 +45,3 @@ return {
         vim.keymap.set("n", "-", "<C-x>", { desc = "Decrement", noremap = true })
     end,
 }
-
