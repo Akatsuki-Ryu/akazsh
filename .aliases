@@ -74,6 +74,9 @@ alias changename="~/akazsh/misc/changename.sh"
 alias chx='sudo chmod +x'
 alias gn='gnome-session-quit --logout --no-prompt'
 
+# ai related
+alias op="opencode"
+
 ############################### docker
 alias d="docker"
 alias dps="docker ps -al"
