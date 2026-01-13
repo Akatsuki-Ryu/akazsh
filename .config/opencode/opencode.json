@@ -5,7 +5,7 @@
       "npm": "@ai-sdk/openai-compatible",
       "name": "Ollama (local)",
       "options": {
-        "baseURL": "http://kvmwin:11434/v1"
+        "baseURL": "http://cyber24:11434/v1"
       },
       "models": {
         "qwen3-coder:30b": {
@@ -17,7 +17,5 @@
       }
     }
   },
-  "plugin": [
-    "oh-my-opencode"
-  ]
+  "plugin": ["oh-my-opencode"]
 }

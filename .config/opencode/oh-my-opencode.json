@@ -1,8 +1,12 @@
 {
   "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-opencode/master/assets/oh-my-opencode.schema.json",
   "agents": {
+    "Planner-Sisyphus": {
+      "enabled": true,
+      "replace_plan": true
+    },
     "Sisyphus": {
-      "model": "opencode/glm-4.7-free"
+      "model": "opencode/grok-code"
     },
     "librarian": {
       "model": "opencode/glm-4.7-free"
