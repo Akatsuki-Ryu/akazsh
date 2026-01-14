@@ -29,15 +29,25 @@ get_file_size() {
 calculate_total_zip_size() {
     local pattern=$1
     local total_size=0
-    
+
     for file in $pattern; do
         if [ -f "$file" ]; then
             local file_size=$(get_file_size "$file")
             total_size=$((total_size + file_size))
         fi
     done
-    
+
     echo $total_size
+}
+
+# Function to generate a 32-character strong password
+generate_password() {
+    local chars="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+    local password=""
+    for i in {1..32}; do
+        password+=${chars:$((RANDOM % ${#chars})):1}
+    done
+    echo "$password"
 }
 
 # Function to organize files into subfolders by size using intelligent bin-packing
@@ -282,7 +292,17 @@ organize_into_subfolders() {
 }
 
 # Main script starts here
+original_dir=$(pwd)
 echo "=== Zip File Creator ==="
+echo ""
+
+# Ask about forum posts
+read -p "Do you want to make forum posts? (y/n) " make_posts
+
+# Always post to fid=2, without sharer
+FORUM_ID=2
+memo_suffix=''
+
 echo ""
 echo "Choose an option:"
 echo "1. Create zip file(s) with volume splitting"
@@ -300,60 +320,166 @@ case $choice in
         echo "File name (default: $default_filename):"
         read filename
         filename=${filename:-$default_filename}
+        if [[ ! "$filename" =~ ^[0-9]{2}-[0-9]{2}-[0-9]{2}- ]]; then
+            filename="$(date +%y-%m-%d)-${filename}"
+        fi
 
-        echo "Input the package password (default: $filename):"
+        echo "Input the package password (press y for: $filename, or press Enter to generate a strong 32-char password):"
         read password
-        password=${password:-$filename}
+        if [ -z "$password" ]; then
+            read -p "Generate a strong 32-char password? (y/n) [y]: " generate
+            generate=${generate:-y}
+            if [ "$generate" = "y" ]; then
+                password=$(generate_password)
+            else
+                password=$filename
+            fi
+        fi
         echo "Input the split size in mb (leave empty for no splitting):"
         read volsize
 
         if [ -z "$volsize" ]; then
             # No splitting - create single zip file
             zip -r -P $password $filename.zip *
-            
+
             # Calculate total size
             total_size=$(calculate_total_zip_size "$filename.zip")
-            
-            # Summary for single file
-            echo ""
-            echo " ${filename} 打包 $(numfmt --to=iec $total_size)"
-            echo ""
-            echo "=== SUMMARY ==="
-            echo "Created files:"
-            echo "  $filename.zip"
-            echo "Total size: $(numfmt --to=iec $total_size)"
-            echo "[hide]"
-            echo "Password: $password"
-            echo "[/hide]"
-            echo "================"
+
+            # Build summary content
+            summary_content=" ${filename} 打包 $(numfmt --to=iec $total_size)
+
+=== SUMMARY ===
+Created files:
+  $filename.zip
+Total size: $(numfmt --to=iec $total_size)
+[hide]
+Password: $password
+[/hide]
+==============="
+
+            # Print summary
+            echo "$summary_content"
+
+                        if [ "$make_posts" = "y" ]; then
+                mkdir -p ~/Nextcloud
+                cp $filename.zip ~/Nextcloud/
+                echo "Zip files copied to ~/Nextcloud/"
+            fi
+
+            # Forum posting
+            if [ "$make_posts" = "y" ]; then
+                post_title="${filename} 打包 $(numfmt --to=iec $total_size) ${memo_suffix}"
+                post_content="$summary_content"
+
+                # Escape single quotes for SQL
+                post_title_escaped=$(echo "$post_title" | sed "s/'/\\'/g")
+                post_content_escaped=$(echo "$post_content" | sed "s/'/\\'/g")
+
+                current_time=$(date +%s)
+
+                echo "Creating forum post for ${post_title}..."
+                mysql -h linux24.tail22dc1.ts.net -u root -p'root_password' --ssl-mode=DISABLED --default-character-set=utf8mb4 ultrax <<EOF
+START TRANSACTION;
+
+# Create a new thread
+INSERT INTO pre_forum_thread
+(fid, author, authorid, subject, dateline, lastpost, lastposter, views, replies, displayorder, readperm)
+VALUES
+($FORUM_ID, '苦艾酒', 1, '${post_title_escaped}', $current_time, $current_time, '苦艾酒', 0, 0, 0, 10);
+
+SET @tid = LAST_INSERT_ID();
+
+# Get a new PID from the tableid table
+INSERT INTO pre_forum_post_tableid VALUES (NULL);
+SET @next_pid = LAST_INSERT_ID();
+
+# Create the post with the generated PID
+INSERT INTO pre_forum_post
+(pid, tid, fid, first, author, authorid, subject, dateline, message, useip, port,
+premsg, invisible, anonymous, usesig, htmlon, bbcodeoff, smileyoff, parseurloff, attachment, status, position)
+VALUES
+(@next_pid, @tid, $FORUM_ID, 1, '苦艾酒', 1, '${post_title_escaped}', $current_time, '${post_content_escaped}', '127.0.0.1', 0,
+'', 0, 0, 0, 0, 0, 0, 0, 0, 0, 1);
+
+COMMIT;
+EOF
+                echo "Forum post created!"
+            fi
         else
             # Split the archive
             zip -r -P $password $filename+compress.zip *
             zip -r -s $volsize\m $filename.zip $filename+compress.zip
             rm -r $filename+compress.zip
-            
+
             # Calculate total size of all volume files
             total_size=$(calculate_total_zip_size "$filename.z*")
-            
-            # Summary for split files
-            echo ""
-            echo " ${filename} 打包 $(numfmt --to=iec $total_size)"
-            echo ""
-            echo "=== SUMMARY ==="
-            echo "Split size: ${volsize}mb"
-            echo "Created files:"
-            # List all volume files
-            for vol_file in $filename.z*; do
-                if [ -f "$vol_file" ]; then
-                    echo "  $vol_file"
-                fi
-            done
-            echo "Total size: $(numfmt --to=iec $total_size)"
-            echo "[hide]"
-            echo "Password: $password"
-            echo "[/hide]"
-            echo "================"
-        fi
+
+            # Build summary content
+            summary_content=" ${filename} 打包 $(numfmt --to=iec $total_size)
+
+=== SUMMARY ===
+Split size: ${volsize}mb
+Created files:
+$(for vol_file in $filename.z*; do
+    if [ -f "$vol_file" ]; then
+        echo "  $vol_file"
+    fi
+done)
+Total size: $(numfmt --to=iec $total_size)
+[hide]
+Password: $password
+[/hide]
+==============="
+
+            # Print summary
+            echo "$summary_content"
+
+            if [ "$make_posts" = "y" ]; then
+                mkdir -p ~/Nextcloud
+                cp $filename.z* ~/Nextcloud/
+                echo "Zip files copied to ~/Nextcloud/"
+            fi
+
+            # Forum posting
+            if [ "$make_posts" = "y" ]; then
+                post_title="${filename} 打包 $(numfmt --to=iec $total_size) ${memo_suffix}"
+                post_content="$summary_content"
+
+                # Escape single quotes for SQL
+                post_title_escaped=$(echo "$post_title" | sed "s/'/\\'/g")
+                post_content_escaped=$(echo "$post_content" | sed "s/'/\\'/g")
+
+                current_time=$(date +%s)
+
+                echo "Creating forum post for ${post_title}..."
+                mysql -h linux24.tail22dc1.ts.net -u root -p'root_password' --ssl-mode=DISABLED --default-character-set=utf8mb4 ultrax <<EOF
+START TRANSACTION;
+
+# Create a new thread
+INSERT INTO pre_forum_thread
+(fid, author, authorid, subject, dateline, lastpost, lastposter, views, replies, displayorder, readperm)
+VALUES
+($FORUM_ID, '苦艾酒', 1, '${post_title_escaped}', $current_time, $current_time, '苦艾酒', 0, 0, 0, 10);
+
+SET @tid = LAST_INSERT_ID();
+
+# Get a new PID from the tableid table
+INSERT INTO pre_forum_post_tableid VALUES (NULL);
+SET @next_pid = LAST_INSERT_ID();
+
+# Create the post with the generated PID
+INSERT INTO pre_forum_post
+(pid, tid, fid, first, author, authorid, subject, dateline, message, useip, port,
+premsg, invisible, anonymous, usesig, htmlon, bbcodeoff, smileyoff, parseurloff, attachment, status, position)
+VALUES
+(@next_pid, @tid, $FORUM_ID, 1, '苦艾酒', 1, '${post_title_escaped}', $current_time, '${post_content_escaped}', '127.0.0.1', 0,
+'', 0, 0, 0, 0, 0, 0, 0, 0, 0, 1);
+
+COMMIT;
+EOF
+                echo "Forum post created!"
+             fi
+         fi
         ;;
     2)
         echo ""
@@ -363,10 +489,21 @@ case $choice in
         echo "Base name for subfolders (default: $default_filename):"
         read filename
         filename=${filename:-$default_filename}
+        if [[ ! "$filename" =~ ^[0-9]{2}-[0-9]{2}-[0-9]{2}- ]]; then
+            filename="$(date +%y-%m-%d)-${filename}"
+        fi
 
-        echo "Input the package password (default: $filename):"
+        echo "Input the package password (default: $filename, or press Enter to generate a strong 32-char password):"
         read password
-        password=${password:-$filename}
+        if [ -z "$password" ]; then
+            read -p "Generate a strong 32-char password? (y/n) [y]: " generate
+            generate=${generate:-y}
+            if [ "$generate" = "y" ]; then
+                password=$(generate_password)
+            else
+                password=$filename
+            fi
+        fi
         echo "Input the maximum size per subfolder (default: 500m, examples: 100m, 1g, 500k):"
         read max_size
         max_size=${max_size:-500m}
@@ -386,12 +523,86 @@ case $choice in
 
         echo "Maximum size per subfolder: $(numfmt --to=iec $max_size_bytes)"
         echo ""
-        
+
         organize_into_subfolders $max_size_bytes $filename $password
+
+        # Calculate total volumes and size for posting
+        total_volumes=$(ls ${filename}_vol*of*.zip 2>/dev/null | wc -l | tr -d ' ')
+        if [ $total_volumes -gt 0 ]; then
+            total_zip_size=$(calculate_total_zip_size "${filename}_vol*of${total_volumes}.zip")
+
+            # Forum posting
+            if [ "$make_posts" = "y" ]; then
+                post_title="${filename}_${total_volumes}分卷打包 $(numfmt --to=iec $total_zip_size) ${memo_suffix}"
+                post_content=" ${filename}_${total_volumes}分卷打包 $(numfmt --to=iec $total_zip_size)
+
+=== SUMMARY ===
+Created files:
+$(for vol_file in ${filename}_vol*of${total_volumes}.zip; do
+    if [ -f "$vol_file" ]; then
+        echo "  $vol_file"
+    fi
+done)
+Total size: $(numfmt --to=iec $total_zip_size)
+[hide]
+Password: $password
+[/hide]
+================"
+
+                # Escape single quotes for SQL
+                post_title_escaped=$(echo "$post_title" | sed "s/'/\\'/g")
+                post_content_escaped=$(echo "$post_content" | sed "s/'/\\'/g")
+
+                current_time=$(date +%s)
+
+                echo "Creating forum post for ${post_title}..."
+                mysql -h linux24.tail22dc1.ts.net -u root -p'root_password' --ssl-mode=DISABLED --default-character-set=utf8mb4 ultrax <<EOF
+START TRANSACTION;
+
+# Create a new thread
+INSERT INTO pre_forum_thread
+(fid, author, authorid, subject, dateline, lastpost, lastposter, views, replies, displayorder, readperm)
+VALUES
+($FORUM_ID, '苦艾酒', 1, '${post_title_escaped}', $current_time, $current_time, '苦艾酒', 0, 0, 0, 10);
+
+SET @tid = LAST_INSERT_ID();
+
+# Get a new PID from the tableid table
+INSERT INTO pre_forum_post_tableid VALUES (NULL);
+SET @next_pid = LAST_INSERT_ID();
+
+# Create the post with the generated PID
+INSERT INTO pre_forum_post
+(pid, tid, fid, first, author, authorid, subject, dateline, message, useip, port,
+premsg, invisible, anonymous, usesig, htmlon, bbcodeoff, smileyoff, parseurloff, attachment, status, position)
+VALUES
+(@next_pid, @tid, $FORUM_ID, 1, '苦艾酒', 1, '${post_title_escaped}', $current_time, '${post_content_escaped}', '127.0.0.1', 0,
+'', 0, 0, 0, 0, 0, 0, 0, 0, 0, 1);
+
+COMMIT;
+EOF
+                echo "Forum post created!"
+            fi
+        fi
+
+        if [ "$make_posts" = "y" ]; then
+            mkdir -p ~/Nextcloud
+            # Calculate total volumes
+            total_volumes=$(ls ${filename}_vol*of*.zip 2>/dev/null | wc -l | tr -d ' ')
+            if [ $total_volumes -gt 0 ]; then
+                cp ${filename}_vol*of${total_volumes}.zip ~/Nextcloud/
+            fi
+            echo "Zip files copied to ~/Nextcloud/"
+        fi
         ;;
     *)
         echo "Invalid choice. Please run the script again and choose 1 or 2."
         exit 1
         ;;
 esac
+
+if [ "$make_posts" = "y" ] && [ "$filename" != "$(basename "$original_dir")" ]; then
+    cd ..
+    mv "$original_dir" "$filename"
+fi
 
