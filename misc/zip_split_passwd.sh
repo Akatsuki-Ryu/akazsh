@@ -40,11 +40,11 @@ calculate_total_zip_size() {
     echo $total_size
 }
 
-# Function to generate a 16-character strong password
+# Function to generate a 32-character strong password
 generate_password() {
-    local chars="abcdefghijklmnopqrstuvwxyz0123456789"
+    local chars="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
     local password=""
-    for i in {1..16}; do
+    for i in {1..32}; do
         password+=${chars:$((RANDOM % ${#chars})):1}
     done
     echo "$password"
