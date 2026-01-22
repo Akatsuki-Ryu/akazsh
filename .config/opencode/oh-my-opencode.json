@@ -3,7 +3,8 @@
   "agents": {
     "Planner-Sisyphus": {
       "enabled": true,
-      "replace_plan": true
+      "replace_plan": true,
+      "model": "opencode/minimax-m2.1-free"
     },
     "Sisyphus": {
       "model": "opencode/grok-code"
