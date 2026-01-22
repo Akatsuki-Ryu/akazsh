@@ -1,5 +1,18 @@
 vim.g.mapleader = " "
 
+-- OSC 52 clipboard for remote SSH yank to local clipboard
+vim.g.clipboard = {
+  name = 'OSC 52',
+  copy = {
+    ['+'] = require('vim.clipboard.osc52').copy('+'),
+    ['*'] = require('vim.clipboard.osc52').copy('*'),
+  },
+  paste = {
+    ['+'] = require('vim.clipboard.osc52').paste('+'),
+    ['*'] = require('vim.clipboard.osc52').paste('*'),
+  },
+}
+
 vim.scriptencoding = "utf-8"
 vim.opt.encoding = "utf-8"
 vim.opt.fileencoding = "utf-8"
