@@ -13,7 +13,13 @@
         },
         "qwen3-vl:30b": {
           "name": "qwen3-vl:30b"
-        }
+        },
+        "glm-4.7-flash:latest": {
+          "name": "glm-4.7-flash:latest"
+        },
+        "ministral-3:14b": {
+          "name": "ministral-3:14b"
+        },
       }
     }
   },
