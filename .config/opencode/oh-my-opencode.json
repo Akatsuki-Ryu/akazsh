@@ -1,31 +1,34 @@
 {
   "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-opencode/master/assets/oh-my-opencode.schema.json",
   "agents": {
-    "Planner-Sisyphus": {
+    "prometheus": {
       "enabled": true,
       "replace_plan": true,
-      "model": "opencode/minimax-m2.1-free"
+      "model": "ollama/glm-4.7-flash:latest"
     },
-    "Sisyphus": {
-      "model": "opencode/grok-code"
+    "sisyphus": {
+      "model": "ollama/glm-4.7-flash:latest"
+    },
+    "atlas":{
+      "model": "ollama/glm-4.7-flash:latest"
     },
     "librarian": {
-      "model": "opencode/glm-4.7-free"
+      "model": "ollama/glm-4.7-flash:latest"
     },
     "explore": {
-      "model": "opencode/glm-4.7-free"
+      "model": "ollama/glm-4.7-flash:latest"
     },
     "oracle": {
-      "model": "opencode/glm-4.7-free"
+      "model": "ollama/glm-4.7-flash:latest"
     },
     "frontend-ui-ux-engineer": {
-      "model": "opencode/glm-4.7-free"
+      "model": "ollama/glm-4.7-flash:latest"
     },
     "document-writer": {
-      "model": "opencode/glm-4.7-free"
+      "model": "ollama/glm-4.7-flash:latest"
     },
     "multimodal-looker": {
-      "model": "opencode/glm-4.7-free"
+      "model": "ollama/glm-4.7-flash:latest"
     }
   }
 }
