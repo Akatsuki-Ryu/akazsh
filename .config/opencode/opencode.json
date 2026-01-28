@@ -16,7 +16,32 @@
         },
         "ministral-3:14b": {
           "name": "ministral-3:14b"
+        }
+      }
+    },
+    "aihub": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "aihub",
+      "options": {
+        "baseURL": "https://gpt.digitalist.tools/openai",
+        "apiKey": "{env:AIHUB_API_KEY}"
+      },
+      "models": {
+        "anthropic.claude-sonnet-4-5-20250929": {
+          "name": "anthropic.claude-sonnet-4-5-20250929"
         },
+        "xAI.grok-code-fast-1": {
+          "name": "xAI.grok-code-fast-1"
+        },
+        "gpt-5-nano": {
+          "name": "gpt-5-nano"
+        },
+        "gpt-5.2": {
+          "name": "gpt-5.2"
+        },
+        "berget_.zai-org/GLM-4.7": {
+          "name": "berget_.zai-org/GLM-4.7"
+        }
       }
     }
   },
