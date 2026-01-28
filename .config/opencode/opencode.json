@@ -33,14 +33,11 @@
         "xAI.grok-code-fast-1": {
           "name": "xAI.grok-code-fast-1"
         },
-        "gpt-5-nano": {
-          "name": "gpt-5-nano"
+        "gpt-5-mini": {
+          "name": "gpt-5-mini"
         },
         "gpt-5.2": {
           "name": "gpt-5.2"
-        },
-        "berget_.zai-org/GLM-4.7": {
-          "name": "berget_.zai-org/GLM-4.7"
         }
       }
     }

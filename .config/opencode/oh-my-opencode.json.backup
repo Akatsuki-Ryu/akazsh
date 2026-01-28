@@ -4,31 +4,31 @@
     "prometheus": {
       "enabled": true,
       "replace_plan": true,
-      "model": "aihub/gpt-5.2"
+      "model": "aihub/claude-sonnet-4.5-20250929"
     },
     "sisyphus": {
-      "model": "aihub/xAI.grok-code-fast-1"
+      "model": "aihub/grok-code-fast-1"
     },
-    "atlas": {
-      "model": "aihub/gpt-5.2"
+    "atlas":{
+      "model": "aihub/claude-sonnet-4.5-20250929"
     },
     "explore": {
-      "model": "aihub/gpt-5-mini"
+      "model": "aihub/gpt-5-nano"
     },
     "librarian": {
-      "model": "aihub/gpt-5-mini"
+      "model": "aihub/gpt-5-nano"
     },
     "oracle": {
       "model": "aihub/gpt-5.2"
     },
     "frontend-ui-ux-engineer": {
-      "model": "aihub/gpt-5-mini"
+      "model": "aihub/claude-sonnet-4.5-20250929"
     },
     "document-writer": {
-      "model": "aihub/gpt-5-mini"
+      "model": "aihub/gpt-5-nano"
     },
     "multimodal-looker": {
-      "model": "aihub/xAI.grok-code-fast-1"
+      "model": "aihub/grok-code-fast-1"
     }
   }
 }
