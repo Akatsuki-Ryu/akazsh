@@ -457,3 +457,20 @@ fpath=(/Users/akatsuki/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
 # End of Docker CLI completions
+
+export PATH="$PATH:/Users/akatsuki/code/fluttersdk/flutter/bin"export ANDROID_HOME="/opt/homebrew/share/android-commandlinetools"
+export PATH="$PATH:/Users/akatsuki/flutter/bin"
+
+# Added by Antigravity
+export PATH="/Users/akatsuki/.antigravity/antigravity/bin:$PATH"
+export OLLAMA_ORIGINS="chrome-extension://*"
+
+# bun completions
+[ -s "/Users/akatsuki/.oh-my-zsh/completions/_bun" ] && source "/Users/akatsuki/.oh-my-zsh/completions/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Load secrets automatically
+source ~/akazsh/.secrets

@@ -210,3 +210,7 @@ obj/
 .config/btop/
 .config/flutter
 .config/nvim/lazy-lock.json
+
+
+# secrets in env
+.secrets
