@@ -42,5 +42,8 @@
       }
     }
   },
-  "plugin": ["oh-my-opencode"]
+    "experimental": {
+    "openTelemetry": true
+  },
+  "plugin": ["oh-my-opencode","opencode-plugin-langfuse"]
 }
