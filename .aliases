@@ -76,6 +76,10 @@ alias gn='gnome-session-quit --logout --no-prompt'
 
 # ai related
 alias op="opencode"
+alias cl="openclaw"
+alias clrr="openclaw gateway restart"
+alias cldn="openclaw gateway stop"
+alias tui="openclaw tui"
 
 ############################### docker
 alias d="docker"
