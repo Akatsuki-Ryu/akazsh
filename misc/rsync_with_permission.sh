@@ -53,6 +53,7 @@ show_help() {
   echo "  -h, --host HOST           Remote host (default: $DEFAULT_REMOTE_HOST)"
   echo "  -r, --remote-path PATH    Remote path (default: $DEFAULT_REMOTE_PATH)"
   echo "  -l, --local-path PATH     Local path (default: $DEFAULT_LOCAL_PATH)"
+  echo "  -s, --server ID           Choose server from host list by ID (1-based, enables auto mode)"
   echo "  --cyber24                 Quick sync to cyber24 host with akatsuki user"
   echo "  --help                    Display this help message"
   echo
@@ -93,6 +94,7 @@ get_source_dir_name() {
 
 # Parse command line arguments
 AUTO_MODE=false
+SERVER_ID=""
 REMOTE_USER="$DEFAULT_REMOTE_USER"
 REMOTE_HOST="$DEFAULT_REMOTE_HOST"
 REMOTE_PATH="$DEFAULT_REMOTE_PATH"
@@ -120,6 +122,10 @@ while [[ $# -gt 0 ]]; do
       LOCAL_PATH="$2"
       shift 2
       ;;
+    -s|--server)
+      SERVER_ID="$2"
+      shift 2
+      ;;
     --cyber24)
       REMOTE_HOST="cyber24"
       REMOTE_USER="akatsuki"
@@ -135,6 +141,22 @@ while [[ $# -gt 0 ]]; do
       ;;
   esac
 done
+
+# Handle server selection for auto mode
+if [[ -n "$SERVER_ID" ]]; then
+  hosts=($(load_host_list "$HOST_LIST_FILE"))
+  if [[ ${#hosts[@]} -eq 0 ]]; then
+    echo "Error: No hosts available in $HOST_LIST_FILE"
+    exit 1
+  fi
+  if [[ "$SERVER_ID" =~ ^[0-9]+$ && "$SERVER_ID" -ge 1 && "$SERVER_ID" -le ${#hosts[@]} ]]; then
+    IFS=':' read -r REMOTE_USER REMOTE_HOST REMOTE_PATH DESC <<< "${hosts[$((SERVER_ID-1))]}"
+    AUTO_MODE=true
+  else
+    echo "Error: Invalid server ID '$SERVER_ID'. Must be between 1 and ${#hosts[@]}"
+    exit 1
+  fi
+fi
 
 # If not in auto mode, run interactive menu
 if [ "$AUTO_MODE" = false ]; then
