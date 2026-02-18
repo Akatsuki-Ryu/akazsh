@@ -74,9 +74,12 @@ alias changename="~/akazsh/misc/changename.sh"
 alias chx='sudo chmod +x'
 alias gn='gnome-session-quit --logout --no-prompt'
 
-# ai related
+####################################################################### ai related
 alias op="opencode"
 alias cl="openclaw"
+alias clg="openclaw gateway"
+alias cld="openclaw doctor"
+alias clst="openclaw status"
 alias clrr="openclaw gateway restart"
 alias cldn="openclaw gateway stop"
 alias tui="openclaw tui"
