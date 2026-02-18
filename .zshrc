@@ -474,3 +474,9 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # Load secrets automatically
 source ~/akazsh/.secrets
+
+# OpenClaw Completion
+source "/Users/akatsuki/.openclaw/completions/openclaw.zsh"
+
+# opencode
+export PATH=/Users/akatsuki/.opencode/bin:$PATH
