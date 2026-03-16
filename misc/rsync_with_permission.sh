@@ -290,7 +290,7 @@ if [ "$DELETE_MODE" = true ]; then
   DELETE_FLAG="--delete"
 fi
 
-sudo rsync -avz --atimes $DELETE_FLAG --rsync-path="sudo rsync" "$LOCAL_PATH/" "$REMOTE_USER@$REMOTE_HOST:$REMOTE_TARGET_PATH"
+sudo rsync -avz $DELETE_FLAG --rsync-path="sudo rsync" "$LOCAL_PATH/" "$REMOTE_USER@$REMOTE_HOST:$REMOTE_TARGET_PATH"
 
 # Step 3: Fix permissions on remote server
 echo "Step 3: Fixing file permissions on remote server..."
