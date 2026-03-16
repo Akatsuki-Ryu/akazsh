@@ -55,6 +55,7 @@ show_help() {
   echo "  -l, --local-path PATH     Local path (default: $DEFAULT_LOCAL_PATH)"
   echo "  -s, --server ID           Choose server from host list by ID (1-based, enables auto mode)"
   echo "  --cyber24                 Quick sync to cyber24 host with akatsuki user"
+  echo "  -d, --delete              Delete files on remote that don't exist on source"
   echo "  --help                    Display this help message"
   echo
   echo "Host Configuration:"
@@ -99,6 +100,7 @@ REMOTE_USER="$DEFAULT_REMOTE_USER"
 REMOTE_HOST="$DEFAULT_REMOTE_HOST"
 REMOTE_PATH="$DEFAULT_REMOTE_PATH"
 LOCAL_PATH="$DEFAULT_LOCAL_PATH"
+DELETE_MODE=false
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
@@ -130,6 +132,10 @@ while [[ $# -gt 0 ]]; do
       REMOTE_HOST="cyber24"
       REMOTE_USER="akatsuki"
       AUTO_MODE=true
+      shift
+      ;;
+    -d|--delete)
+      DELETE_MODE=true
       shift
       ;;
     --help)
@@ -242,6 +248,14 @@ if [ "$AUTO_MODE" = false ]; then
   echo "From: $LOCAL_PATH/"
   echo "To: $REMOTE_USER@$REMOTE_HOST:$REMOTE_TARGET_PATH"
   echo "Source directory name: $SOURCE_DIR_NAME"
+  echo "Delete remote files: $([ "$DELETE_MODE" = true ] && echo "Yes" || echo "No")"
+  echo
+  read -p "Delete files on remote that don't exist on source? (y/n) [n]: " delete_confirm
+  if [[ "$delete_confirm" == "y" || "$delete_confirm" == "Y" ]]; then
+    DELETE_MODE=true
+  else
+    DELETE_MODE=false
+  fi
   echo
   read -p "Proceed with these settings? (y/n): " confirm
 
@@ -256,6 +270,7 @@ else
   echo "From: $LOCAL_PATH/"
   echo "To: $REMOTE_USER@$REMOTE_HOST:$REMOTE_TARGET_PATH"
   echo "Source directory name: $SOURCE_DIR_NAME"
+  echo "Delete remote files: $([ "$DELETE_MODE" = true ] && echo "Yes" || echo "No")"
   echo
 fi
 
@@ -269,7 +284,13 @@ ssh "$REMOTE_USER@$REMOTE_HOST" "mkdir -p $REMOTE_TARGET_PATH"
 
 # Step 2: Sync files from local directory to remote server with sudo permissions
 echo "Step 2: Syncing files to remote server..."
-sudo rsync -avz --rsync-path="sudo rsync" "$LOCAL_PATH/" "$REMOTE_USER@$REMOTE_HOST:$REMOTE_TARGET_PATH"
+
+DELETE_FLAG=""
+if [ "$DELETE_MODE" = true ]; then
+  DELETE_FLAG="--delete"
+fi
+
+sudo rsync -avz --atimes $DELETE_FLAG --rsync-path="sudo rsync" "$LOCAL_PATH/" "$REMOTE_USER@$REMOTE_HOST:$REMOTE_TARGET_PATH"
 
 # Step 3: Fix permissions on remote server
 echo "Step 3: Fixing file permissions on remote server..."
