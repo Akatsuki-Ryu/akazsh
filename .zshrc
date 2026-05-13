@@ -7,6 +7,7 @@ fi
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH="$HOME/.opencode/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -480,3 +481,8 @@ source "/Users/akatsuki/.openclaw/completions/openclaw.zsh"
 
 # opencode
 export PATH=/Users/akatsuki/.opencode/bin:$PATH
+
+# Android SDK
+export ANDROID_HOME=/opt/homebrew/share/android-commandlinetools
+export PATH="$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/platform-tools:$PATH"
+export PATH="$HOME/.opencode/bin:$PATH"
